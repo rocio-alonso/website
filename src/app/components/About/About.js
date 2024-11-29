@@ -31,7 +31,7 @@ const About = async () => {
           crear un espacio de contemplación y autoexploración, alejándome de la
           superficialidad para abrazar lo esencial en cada composición.
         </p>
-        <Link className="button w-1/2" href={""}>Sobre mi</Link>
+        <Link className="button" href={""}>Sobre mi</Link>
       </div>
 
       <div className={styles.aboutMeVideo}>

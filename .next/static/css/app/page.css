@@ -75,15 +75,30 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/Card/Card.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
 .Card_card__Tuw2S {
-  width: 22.5vw;
-  height: 45vh;
+  width: 25vw;
+  height: fit-content;
+}
+
+.Card_card__Tuw2S:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.Card_card__Tuw2S:hover > .Card_cardText__IFyLM {
+  padding: 0 3%;
+}
+
+.Card_card__Tuw2S h2 {
+  font-weight: 500;
+}
+
+.Card_cardText__IFyLM{
+  margin: var(--margin) 0;
 }
 
 .Card_cardImage__PhPFO {
   position: relative;
   overflow: hidden;
-  height: 60%;
-  margin-bottom: calc(var(--margin)/2);
+  height: 35vh;
 }
 
 .Card_cardImage__PhPFO img {
@@ -98,19 +113,30 @@
 }
 
 .Card_cardImage__PhPFO img:hover {
-  width: 120%;
-  height: 120%;
+  width: 110%;
+  height: 110%;
 }
 
 .Card_dataBox__5Snnt {
-  border: 0.5px solid black;
   width: fit-content;
-  padding: 2%;
-  border-radius: 10px;
-  margin-bottom: calc(var(--margin)/2);
+  padding: 1% 0;
+  margin: calc(var(--margin) / 2) 0 0 0;
 }
 
 .Card_divData__M4ggs {
+  gap: calc(var(--margin));
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.Card_dataLocation__Gzlut {
+  align-items: center;
   gap: calc(var(--margin) / 2);
+  align-items: baseline;
+}
+
+.Card_divData__M4ggs,
+.Card_dataLocation__Gzlut p {
+  font-size: 0.85em;
 }
 

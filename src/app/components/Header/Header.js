@@ -20,19 +20,19 @@ const Header = () => {
       <div className="text-white">
         <ul className="flex thin">
           <li className={styles.buttonHeader}>
-            <Link href={""} className="bold">Inicio</Link>
+            <Link className="subtitle bold" href={""}>Inicio</Link>
           </li>
           <li className={styles.buttonHeader}>
-            <Link href={""}>Mis obras</Link>
+            <Link className="subtitle" href={""}>Mis obras</Link>
           </li>
           <li className={styles.buttonHeader}>
-            <Link href={""}>Sobre mi</Link>
+            <Link className="subtitle" href={""}>Sobre mi</Link>
           </li>
           <li className={styles.buttonHeader}>
-            <Link href={""}>Taller Mozzafiato</Link>
+            <Link className="subtitle" href={""}>Taller Mozzafiato</Link>
           </li>
           <li className={styles.buttonHeader}>
-            <Link href={""}>Contacto</Link>
+            <Link className="subtitle" href={""}>Contacto</Link>
           </li>
         </ul>
       </div>

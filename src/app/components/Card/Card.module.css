@@ -1,13 +1,28 @@
 .card {
-  width: 22.5vw;
-  height: 45vh;
+  width: 25vw;
+  height: fit-content;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.card:hover > .cardText {
+  padding: 0 3%;
+}
+
+.card h2 {
+  font-weight: 500;
+}
+
+.cardText{
+  margin: var(--margin) 0;
 }
 
 .cardImage {
   position: relative;
   overflow: hidden;
-  height: 60%;
-  margin-bottom: calc(var(--margin)/2);
+  height: 35vh;
 }
 
 .cardImage img {
@@ -22,18 +37,29 @@
 }
 
 .cardImage img:hover {
-  width: 120%;
-  height: 120%;
+  width: 110%;
+  height: 110%;
 }
 
 .dataBox {
-  border: 0.5px solid black;
   width: fit-content;
-  padding: 2%;
-  border-radius: 10px;
-  margin-bottom: calc(var(--margin)/2);
+  padding: 1% 0;
+  margin: calc(var(--margin) / 2) 0 0 0;
 }
 
 .divData {
+  gap: calc(var(--margin));
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.dataLocation {
+  align-items: center;
   gap: calc(var(--margin) / 2);
+  align-items: baseline;
+}
+
+.divData,
+.dataLocation p {
+  font-size: 0.85em;
 }

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://use.typekit.net/mqv6hso.css");
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
 
 * {
   margin: 0;
@@ -20,12 +20,12 @@
   --border: 10px;
   --height: 40px;
   --shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.4);
-  font-family: "neue-haas-unica", sans-serif;
   --padding-section: 2vw 5vw;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 }
 
-.paddingSection{
-  padding: 2vw 8vw;
+.paddingSection {
+  padding: 3vw 8vw;
 }
 
 html,
@@ -34,17 +34,16 @@ body {
   overflow-x: hidden;
 }
 
-.title{
-  font-family: "neue-haas-unica", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.subtitle{
-  font-family: "neue-haas-unica", sans-serif;
+.title {
   font-weight: 500;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+
+.subtitle {
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1em;
 }
 
 video::-webkit-media-controls-panel {
@@ -54,21 +53,46 @@ video::-webkit-media-controls-panel {
 .button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: calc(var(--border) * 1.1);
-  background-color: var(--main-color);
-  color: var(--secondary-color);
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   padding: calc(var(--margin) / 2) var(--margin);
   width: fit-content;
   height: 2.5em;
+  font-weight: 500;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 250ms;
+}
+
+.button:hover,
+.button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.button:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
 }
 
 .button.secondary {
   background-color: rgba(0, 0, 0, 0) !important;
+  color: white;
   border: 1px solid var(--secondary-color);
 }
 
-.hero .button.secondary{
+.hero .button.secondary {
   margin-left: var(--margin);
 }
 
@@ -77,4 +101,31 @@ video::-webkit-media-controls-panel {
   font-family: "neue-haas-unica", sans-serif;
   font-weight: 100;
   font-style: normal;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border: 0.9px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.selected {
+  background-color: black;
+}
+
+.carrousellHandler {
+  gap: calc(var(--margin));
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.dots {
+  gap: calc(var(--margin) / 2);
+}
+
+.cardsExpo {
+  margin-bottom: calc(var(--margin) / 2);
 }
