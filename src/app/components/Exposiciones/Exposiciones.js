@@ -2,15 +2,18 @@ import React from "react";
 import "@/app/globals.css";
 import Card from "@/app/components/Card/Card";
 import styles from "@/app/page.module.css";
+import { getAllProductsDB } from "@/app/actions";
 
-const Exposiciones = () => {
+const Exposiciones = async () => {
+  const response = await getAllProductsDB();
+  console.log(response)
   return (
-    <section className={`paddingSection ${styles.expoSubtitle}`}>
-      <h2 className={`subtitle ${styles.expoSubtitle2}`}>
+    <section className="paddingBody">
+      <h2 className="title m-bottom">
         Exposiciones en las que participé
       </h2>
 
-      <div className="cardsExpo flex w-full justify-between">
+      <div className={`cardsExpo flex flex-wrap w-full justify-between ${styles.divExpo}`}>
         <Card />
         <Card />
         <Card />

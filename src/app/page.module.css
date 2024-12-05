@@ -6,11 +6,33 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+  overflow: hidden; /* Prevent content overflow */
+}
 
-  background-image: url("/images/background-image-2.png");
+.heroSection1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/imagenes/esta-si-3.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 0; /* Place it behind content */
+}
+
+.heroSection1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Add the dark overlay */
+  z-index: 1; /* Place it above the image but behind content */
 }
 
 .heroSection1 .heroText h2 {
@@ -26,9 +48,10 @@
   bottom: 0;
   flex-direction: column;
   width: 100vw;
+  z-index: 100;
 }
 
-.buttonHeader2{
+.buttonHeader2 {
   margin-left: calc(var(--margin));
 }
 
@@ -58,12 +81,68 @@
   height: 65vh;
 }
 
-.expoSubtitle2 {
-  font-size: 1.2em;
-  font-weight: 500;
-  margin-bottom: calc(var(--margin) / 2);
+.parent {
+  display: grid;
+  grid-template-columns: 20% 10% 40% 20%;
+  gap: 15px;
 }
 
-.expoSubtitle {
-  padding: 0 8vw 2vw;
+.parent div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.parent div video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.div1 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+}
+
+.div2 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+}
+
+.div3 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+}
+
+.div4 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.div5 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.div6 {
+  grid-column: span 2 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.tallerText {
+  margin-left: calc(var(--margin) * 2);
+}
+
+@media (max-width: 800px) {
+  .divExpo {
+    justify-content: center !important;
+  }
+
+  .heroText h2{
+    font-size: 2em;
+  }
 }

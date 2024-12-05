@@ -1,6 +1,7 @@
 .card {
   width: 25vw;
   height: fit-content;
+  transition: all ease 0.5s !important;
 }
 
 .card:hover {
@@ -15,7 +16,8 @@
   font-weight: 500;
 }
 
-.cardText{
+.cardText {
+  transition: all ease 0.5s !important;
   margin: var(--margin) 0;
 }
 
@@ -62,4 +64,11 @@
 .divData,
 .dataLocation p {
   font-size: 0.85em;
+}
+
+
+@media (max-width: 800px) {
+  .card{
+    width: 70vw;
+  }
 }

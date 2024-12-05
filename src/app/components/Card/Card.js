@@ -21,7 +21,6 @@ const Card = () => {
 
         <div className={`flex w-full ${styles.divData}`}>
           <p className={`${styles.dataBox} subtitle`}>2018</p>/
-          <p className={`${styles.dataBox} subtitle`}>Individual</p>/
           <p className={`flex subtitle ${styles.dataLocation}`}>
             <GoLocation />
             Buenos Aires, Argentina

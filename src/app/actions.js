@@ -7,7 +7,6 @@ const getAllProductsDB = async () => {
   await dbConnect();
   try {
     const products = await Product.find();
-    console.log(products);
     return { products: JSON.parse(JSON.stringify(products)) };
   } catch (error) {
     console.log("Error: ", error.message);

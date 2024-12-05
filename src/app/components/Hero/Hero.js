@@ -12,7 +12,7 @@ const Hero = async () => {
         </h2>
         <div className="flex">
           <Link className={`button ${styles.buttonHeader}`} href={""}>
-            Conocé mi obra
+            Conoce mi obra
           </Link>
           <Link
             className={`button secondary ${styles.buttonHeader2}`}

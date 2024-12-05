@@ -7,7 +7,6 @@
 * {
   margin: 0;
   padding: 0;
-  transition: all ease 0.5s !important;
   box-sizing: border-box;
 }
 
@@ -24,8 +23,23 @@
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 }
 
+img,
+video {
+  filter: saturate(0.65); /* Reduce saturation */
+  transition: filter 0.3s ease; /* Smooth transition on hover */
+}
+
+img:hover,
+video:hover {
+  filter: saturate(1); /* Restore full saturation on hover */
+}
+
 .paddingSection {
   padding: 3vw 8vw;
+}
+
+.paddingBody {
+  padding: 0 8vw 2vw;
 }
 
 html,
@@ -44,6 +58,10 @@ body {
   font-weight: 100;
   font-style: normal;
   font-size: 1em;
+}
+
+.m-bottom {
+  margin-bottom: var(--margin);
 }
 
 video::-webkit-media-controls-panel {
@@ -128,4 +146,14 @@ video::-webkit-media-controls-panel {
 
 .cardsExpo {
   margin-bottom: calc(var(--margin) / 2);
+}
+
+.gap {
+  gap: calc(var(--margin) / 2);
+}
+
+@media (max-width: 800px) {
+  .paddingSection{
+    padding: 6vw 8vw !important;
+  }
 }
