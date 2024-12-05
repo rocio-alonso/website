@@ -5,8 +5,6 @@ import styles from "@/app/page.module.css";
 import { getAllProductsDB } from "@/app/actions";
 
 const Exposiciones = async () => {
-  const response = await getAllProductsDB();
-  console.log(response)
   return (
     <section className="paddingBody">
       <h2 className="title m-bottom">

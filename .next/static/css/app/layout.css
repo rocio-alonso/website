@@ -522,9 +522,6 @@ video {
 .items-center {
   align-items: center;
 }
-.justify-center {
-  justify-content: center;
-}
 .justify-between {
   justify-content: space-between;
 }
@@ -696,13 +693,6 @@ video::-webkit-media-controls-panel {
 @media (max-width: 800px) {
   .paddingSection{
     padding: 6vw 8vw !important;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .md\:justify-center {
-    justify-content: center;
   }
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
