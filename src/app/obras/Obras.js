@@ -1,7 +1,8 @@
 import React from "react";
 import Card from "@/app/components/Card/Card";
+import styles from "@/app/obras/page.module.css";
 
-const Obras = () => {
+const Obras = ({data}) => {
   return (
     <div>
       <div className={styles.hero}>
@@ -10,7 +11,7 @@ const Obras = () => {
         </div>
       </div>
       <section className="paddingSection">
-        {dataObras.map((dataItem, index) => (
+        {data.map((dataItem, index) => (
           <div key={index}>
             <h2 className="title flex m-bottom">
               {dataItem.titulo}{" "}
