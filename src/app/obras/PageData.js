@@ -1,15 +1,27 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Card from "../components/Card/Card";
-import { getAllProductsDB } from "@/app/actions";
 import Obras from "./Obras";
 
-const PageData = async () => {
-  const response = await getAllProductsDB();
-  const dataObras = response.products[3].obras;
+const PageData = () => {
+  const [dataObras, setDataObras] = useState([]);
 
-  return (
-    <Obras data={dataObras}/>
-  );
+  useEffect(() => {
+    const fetchFiles = async () => {
+      try {
+        const response = await fetch("/api/getProducts");
+        const data = await response.json();
+        setDataObras(data.response.products[3].obras);
+      } catch (error) {
+        console.error("An error occurred while fetching files.", error);
+      }
+    };
+
+    fetchFiles();
+  }, []);
+
+  return <Obras data={dataObras} />;
 };
 
 export default PageData;
