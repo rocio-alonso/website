@@ -8,8 +8,8 @@ import styles from "@/app/components/Card/Card.module.css";
 
 const AnimateEntrance = ({ children }) => {
   const { ref, inView } = useInView({
-    threshold: 0.4, // Trigger animation when 50% of the card is in view
-    triggerOnce: true, // Trigger only once
+    threshold: 0.1,
+    triggerOnce: true,
   });
 
   const springs = useSpring({
