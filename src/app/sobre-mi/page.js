@@ -3,8 +3,6 @@ import Image from "next/image";
 import "@/app/globals.css";
 import styles from "@/app/sobre-mi/page.module.css";
 
-import Premios from "@/app/components/Premios/Premios";
-
 const page = () => {
   return (
     <main>
