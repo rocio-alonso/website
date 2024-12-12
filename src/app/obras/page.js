@@ -5,7 +5,6 @@ import PageData from "@/app/obras/PageData"
 const page = async () => {
   return (
     <main>
-      <PageData/>
     </main>
   );
 };
