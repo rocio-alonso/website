@@ -1,4 +1,8 @@
 {
   "/api/getProducts/route": "app/api/getProducts/route.js",
-  "/obras/page": "app/obras/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/taller/page": "app/taller/page.js",
+  "/obras/page": "app/obras/page.js",
+  "/sobre-mi/page": "app/sobre-mi/page.js",
+  "/page": "app/page.js"
 }
