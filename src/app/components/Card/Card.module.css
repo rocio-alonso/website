@@ -9,7 +9,7 @@
 }
 
 .card:hover > .cardText {
-  padding: 0 3%;
+  padding: var(--margin) 3%;
 }
 
 .card h2 {
@@ -18,7 +18,7 @@
 
 .cardText {
   transition: all ease 0.5s !important;
-  margin: var(--margin) 0;
+  padding: var(--margin) 0;
 }
 
 .cardImage {
@@ -66,9 +66,8 @@
   font-size: 0.85em;
 }
 
-
 @media (max-width: 800px) {
-  .card{
-    width: 70vw;
+  .card {
+    width: 100%;
   }
 }

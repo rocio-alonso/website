@@ -45,11 +45,21 @@
   display: none;
 }
 
+.imgLogo{
+  z-index: 500;
+}
+
+.headerDivResponsive {
+  display: none;
+  transition: all 0.5s ease;
+}
+
 @media (max-width: 800px) {
   .menuIcon {
     display: block;
     font-size: 2em;
     margin-right: calc(var(--margin) / 2);
+    z-index: 500;
   }
 
   .header {
@@ -61,10 +71,14 @@
   }
 
   .headerDivResponsive {
+    display: block;
+    top: 0;
+    left: 0;
     position: fixed;
     padding: 20vw 10vw !important;
     height: 100vh;
     background-color: white;
+    color: black;
     z-index: 300;
   }
 

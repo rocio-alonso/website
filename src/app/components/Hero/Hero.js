@@ -11,12 +11,12 @@ const Hero = async () => {
           En lo esencial reside la auténtica riqueza
         </h2>
         <div className="flex">
-          <Link className={`button ${styles.buttonHeader}`} href={""}>
+          <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>
             Conoce mi obra
           </Link>
           <Link
             className={`button secondary ${styles.buttonHeader2}`}
-            href={""}
+            href={"/sobre-mi"}
           >
             Sobre mi
           </Link>

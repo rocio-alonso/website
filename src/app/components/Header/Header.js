@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import "@/app/globals.css";
 
+import Navbar from "./Navbar";
+
 import styles from "@/app/components/Header/Header.module.css";
 import { IoIosMenu } from "react-icons/io";
 
@@ -44,16 +46,19 @@ const Header = () => {
           isScrolled ? styles.scrolled : ""
         } paddingSection`}
       >
-        <IoIosMenu className={`${styles.menuIcon} ${menuOpen ? styles.blackMenu : ""}`} onClick={toggleMenu} />
+        <IoIosMenu
+          className={`${styles.menuIcon} ${menuOpen ? styles.blackMenu : ""}`}
+          onClick={toggleMenu}
+        />
 
-        <Link href="/" className="flex items-center">
+        <Link href="/" className={`flex items-center ${styles.imgLogo}`}>
           {isScrolled || menuOpen ? (
             <Image
               src="/logoBlack.svg"
               height={100}
               width={100}
               alt="Rocio Alonso Logo"
-              className={styles.headerImg}
+              className={`${styles.headerImg}`}
             />
           ) : (
             <Image
@@ -61,74 +66,16 @@ const Header = () => {
               height={100}
               width={100}
               alt="Rocio Alonso Logo"
-              className={styles.headerImg}
+              className={`${styles.headerImg}`}
             />
           )}
         </Link>
-        {!menuOpen && (
-        <div className={styles.headerDiv}>
-          <ul className="flex thin">
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle bold" href={"/"}>
-                Inicio
-              </Link>
-            </li>
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle" href={""}>
-                Mis obras
-              </Link>
-            </li>
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle" href={""}>
-                Sobre mi
-              </Link>
-            </li>
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle" href={"/taller"}>
-                Taller Mozzafiato
-              </Link>
-            </li>
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle" href={""}>
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
-        
+        {menuOpen ? (
+          <Navbar responsive={true} onClick={() => setMenuOpen(!menuOpen)} />
+        ) : (
+          <Navbar responsive={false} />
+        )}
       </section>
-      {menuOpen && (
-        <div className={styles.headerDivResponsive}>
-          <ul className="thin">
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle bold" href={"/"}>
-                Inicio
-              </Link>
-            </li>
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle" href={""}>
-                Mis obras
-              </Link>
-            </li>
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle" href={""}>
-                Sobre mi
-              </Link>
-            </li>
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle" href={"/taller"}>
-                Taller Mozzafiato
-              </Link>
-            </li>
-            <li className={styles.buttonHeader}>
-              <Link className="subtitle" href={""}>
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
     </section>
   );
 };

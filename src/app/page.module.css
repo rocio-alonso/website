@@ -83,8 +83,11 @@
 
 .parent {
   display: grid;
-  grid-template-columns: 20% 10% 40% 20%;
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: var(--margin);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .parent div img {
@@ -99,50 +102,40 @@
   height: 100%;
 }
 
-.div1 {
-  grid-column: span 2 / span 2;
-  grid-row: span 2 / span 2;
-}
-
-.div2 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-}
-
-.div3 {
-  grid-row: span 3 / span 3;
-  grid-column-start: 4;
-}
-
-.div4 {
-  grid-column: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 3;
-}
-
-.div5 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 3;
-}
-
-.div6 {
-  grid-column: span 2 / span 3;
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 4;
-}
-
 .tallerText {
   margin-left: calc(var(--margin) * 2);
 }
 
 @media (max-width: 800px) {
+  .heroText div a {
+    width: 50%;
+  }
+
+  .heroText div {
+    width: 100%;
+  }
+
   .divExpo {
     justify-content: center !important;
   }
 
-  .heroText h2{
+  .heroText h2 {
     font-size: 2em;
+  }
+
+  .aboutMe {
+    display: flex;
+  }
+
+  .aboutMeText {
+    padding: 0;
+  }
+
+  .aboutMeText .button {
+    width: 100%;
+  }
+
+  .divCards{
+    width: 100%;
   }
 }

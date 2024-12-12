@@ -1,10 +1,7 @@
-import Image from "next/image";
-import Hero from "@/app/components/Hero/Hero";
 import "@/app/globals.css";
+import Hero from "@/app/components/Hero/Hero";
 
-import styles from "@/app/page.module.css";
 import About from "@/app/components/About/About";
-import Card from "@/app/components/Card/Card";
 import Exposiciones from "./components/Exposiciones/Exposiciones";
 import TallerComponent from "./components/TallerComponent/TallerComponent";
 

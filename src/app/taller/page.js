@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Hero from "@/app/components/Hero/Hero";
 import styles from "@/app/taller/page.module.css";
+import Grid from "../components/TallerComponent/Grid";
 
 import { CiClock1 } from "react-icons/ci";
 import { PiBookBookmarkThin } from "react-icons/pi";
@@ -27,8 +28,8 @@ const page = () => {
         </div>
       </section>
 
-      <section className="paddingSection flex">
-        <div className="w-1/3">
+      <section className="paddingSection flex flex-wrap">
+        <div className={`${styles.divTallerDetails} w-1/3`}>
           <h2 className={`title m-bottom`}>Recuperación de clases</h2>
           <p className="m-bottom font-thin w-3/5">
             Si no puedes asistir a una clase, te pedimos que nos avises con al
@@ -37,7 +38,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="w-1/3">
+        <div className={`${styles.divTallerDetails} w-1/3`}>
           <h2 className={`title m-bottom`}>Modalidad del taller</h2>
           <div className={`${styles.modalidadesDiv} flex font-thin`}>
             <div className={`flex ${styles.modalidadDiv}`}>
@@ -62,7 +63,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className={`${styles.horarios} w-1/3`}>
+        <div className={`${styles.divTallerDetails} w-1/3`}>
           <h2 className={`title m-bottom`}>Horarios</h2>
           <div className={`${styles.horariosDiv} gap`}>
             <div className={`flex m-bottom gap`}>
@@ -85,17 +86,29 @@ const page = () => {
               <div className={`flex ${styles.modalidadDiv}`}>
                 <p>Jueves</p>
               </div>
-              <div className={`flex m-bottom ${styles.modalidadDiv}`}>
-                <CiClock1 className={`${styles.icon}`} />
-                <p className="font-thin">17hs - 19hs</p>
+              <div className="gap">
+                <div className={`flex ${styles.modalidadDiv}`}>
+                  <CiClock1 className={`${styles.icon}`} />
+                  <p className="font-thin">17hs - 19hs</p>
+                </div>
+
+                <div className={`flex ${styles.modalidadDiv}`}>
+                  <CiClock1 className={`${styles.icon}`} />
+                  <p className="font-thin">19hs - 21hs</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <section className="paddingBody">
+        <h2 className={`title m-bottom`}>Galería</h2>
+        <Grid />
+      </section>
+
       <section className="paddingBody flex">
-        <div className="w-1/2">
+        <div className={`w-1/2 ${styles.divTallerDetails}`}>
           <h2 className={`title m-bottom`}>Técnicas que puedes usar</h2>
           <p className="m-bottom font-thin w-4/5">
             Tendrás la oportunidad de conocer una amplia variedad de materiales

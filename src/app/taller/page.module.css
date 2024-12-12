@@ -83,5 +83,15 @@
 }
 
 @media (max-width: 800px) {
-  
+  .heroText h2{
+    font-size: 3em;
+  }
+
+  .heroText p, .divTallerDetails{
+    width: 100% !important;
+  }
+
+  .divTallerDetails p{
+    width: 100%;
+  }
 }

@@ -1,33 +1,21 @@
-import React from "react";
 import "@/app/globals.css";
 import Card from "@/app/components/Card/Card";
 import styles from "@/app/page.module.css";
 import { getAllProductsDB } from "@/app/actions";
 
+import AnimateEntrance from "@/app/components/AnimateEntrance/AnimateEntrance";
+import ExposicionesData from "@/app/components/Exposiciones/ExposicionesData";
+
 const Exposiciones = async () => {
+  const response = await getAllProductsDB();
+  const data = response.products[2].exposiciones;
   return (
-    <section className="paddingBody">
-      <h2 className="title m-bottom">
-        Exposiciones en las que participé
-      </h2>
-
-      <div className={`cardsExpo flex flex-wrap w-full justify-between ${styles.divExpo}`}>
-        <Card />
-        <Card />
-        <Card />
-      </div>
-
-      <section className="carrousellHandler flex items-center">
-        <button className="button">&#60;</button>
-        <div className="dots flex align-middle">
-          <div className="dot selected"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-        </div>
-        <button className="button">&#62;</button>
+    <AnimateEntrance>
+      <section className="paddingBody">
+        <h2 className="title m-bottom">Exposiciones en las que participé</h2>
+        <ExposicionesData data={data} />
       </section>
-    </section>
+    </AnimateEntrance>
   );
 };
 

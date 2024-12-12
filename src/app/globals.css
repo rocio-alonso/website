@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+main{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 :root {
   --main-color: #000000;
   --secondary-color: #ffffff;
@@ -39,7 +44,7 @@ video:hover {
 }
 
 .paddingBody {
-  padding: 0 8vw 2vw;
+  padding: 0 8vw 3vw;
 }
 
 html,
@@ -138,6 +143,7 @@ video::-webkit-media-controls-panel {
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
+  margin-top: var(--margin);
 }
 
 .dots {
@@ -155,5 +161,9 @@ video::-webkit-media-controls-panel {
 @media (max-width: 800px) {
   .paddingSection{
     padding: 6vw 8vw !important;
+  }
+
+  .button{
+    width: 100%;
   }
 }
