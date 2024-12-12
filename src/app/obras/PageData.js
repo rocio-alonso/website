@@ -1,9 +1,17 @@
 import React from "react";
 import Card from "../components/Card/Card";
 import styles from "@/app/obras/page.module.css";
+import { getAllProductsDB } from "@/app/actions";
 
-const PageData = ({ data }) => {
-  const dataObras = data.products[3].obras;
+const PageData = async () => {
+  const response = await getAllProductsDB();
+  let dataObras;
+
+  response.products.map((data, index) => {
+    if (data._id === "6759a9766ea67bd4f392801e") {
+      dataObras = data.obras;
+    }
+  });
   return (
     <div>
       <div className={styles.hero}>
