@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { getAllProductsDB } from "@/app/actions";
 import cardStyles from "@/app/components/Card/Card.module.css";
 import styles from "@/app/sobre-mi/page.module.css";
@@ -33,3 +33,4 @@ const Premios = async () => {
 };
 
 export default Premios;
+*/
