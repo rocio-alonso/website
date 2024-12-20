@@ -32,12 +32,16 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollProgress]);
+  }, []);
 
   return (
     <section>
@@ -71,7 +75,7 @@ const Header = () => {
           )}
         </Link>
         {menuOpen ? (
-          <Navbar responsive={true} onClick={() => setMenuOpen(!menuOpen)} />
+          <Navbar responsive={true} onClick={closeMenu} />
         ) : (
           <Navbar responsive={false} />
         )}

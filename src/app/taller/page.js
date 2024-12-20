@@ -3,15 +3,43 @@ import Link from "next/link";
 import Hero from "@/app/components/Hero/Hero";
 import styles from "@/app/taller/page.module.css";
 import Grid from "../components/TallerComponent/Grid";
+import AnimateEntrance from "../components/AnimateEntrance/AnimateEntrance";
 
 import { CiClock1 } from "react-icons/ci";
 import { PiBookBookmarkThin } from "react-icons/pi";
 import { PiUsers } from "react-icons/pi";
 import { CiUser } from "react-icons/ci";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 const page = () => {
   return (
     <main>
+      <AnimateEntrance>
+      <div className={`${styles.divModal}`}>
+        <div
+          className={`paddingSection justify-between flex ${styles.divModalChild}`}
+        >
+          <div>
+            <h2 className={`title`}>Precio</h2>
+            <p className="subtitle">1 Clase semanal de 2hs</p>
+          </div>
+
+          <div>
+            <p className={`title`}>€80/mes</p>
+            <p className={`subtitle`}>(Matrícula gratis)</p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <p className={`subtitle`}>¿Te interesa participar de una clase?</p>
+            <Link className="button gap-1" href={"/sobre-mi"}>
+              <AiOutlineWhatsApp className="" />
+              Contactar
+            </Link>
+          </div>
+        </div>
+      </div>
+      </AnimateEntrance>
+
       <section className={styles.hero}>
         <div className={`${styles.heroText} paddingSection text-white`}>
           <h2 className="text-6xl thin">Nuestro espacio</h2>
@@ -38,7 +66,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className={`${styles.divTallerDetails} w-1/3`}>
+        <div className={`${styles.divTallerDetails} w-1/3 m-bottom`}>
           <h2 className={`title m-bottom`}>Modalidad del taller</h2>
           <div className={`${styles.modalidadesDiv} flex font-thin`}>
             <div className={`flex ${styles.modalidadDiv}`}>

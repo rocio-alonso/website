@@ -8,9 +8,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-main{
+main {
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -159,11 +160,31 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 800px) {
-  .paddingSection{
+  .paddingSection {
     padding: 6vw 8vw !important;
   }
 
-  .button{
+  .button {
     width: 100%;
   }
+}
+
+.lines {
+  position: absolute;
+  height: 100%;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.line {
+  height: 115px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  margin-left: 5.3px;
 }

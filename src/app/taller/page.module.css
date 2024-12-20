@@ -82,16 +82,46 @@
   margin-right: 5vw;
 }
 
+.divModal {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+}
+
+.divModalChild {
+  background-color: white;
+  bottom: 0;
+  width: 84vw;
+  border-radius: 20px 20px 0 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
 @media (max-width: 800px) {
-  .heroText h2{
+
+  .divModalChild{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .divModalChild div {
+    width: 100%;
+  }
+  .heroText h2 {
     font-size: 3em;
   }
 
-  .heroText p, .divTallerDetails{
+  .heroText p,
+  .divTallerDetails {
     width: 100% !important;
   }
 
-  .divTallerDetails p{
+  .divTallerDetails p {
     width: 100%;
   }
 }

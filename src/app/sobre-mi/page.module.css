@@ -1,54 +1,71 @@
 .hero {
-    width: 100vw;
-    height: 50vh;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/imagenes/hero-mis-obras.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.textAbout {
+  position: relative;
+  padding-left: calc(var(--margin) * 2);
+}
+
+.textBio {
+}
+
+.cardPremio {
+  width: 25vw;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: var(--margin);
+}
+
+@media (max-width: 800px) {
+  .imageAbout {
+    display: none;
   }
-  
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+
+  .textAbout {
     width: 100%;
-    height: 100%;
-    background-image: url("/images/imagenes/hero-mis-obras.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 0;
+    padding: 0;
   }
-  
-  .hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+
+  .cardPremio {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
   }
 
-  .textAbout{
-    padding-left: calc(var(--margin)*2);
+  .navbarBottom{
+    display: none;
   }
-
-  .cardPremio{
-    
-  }
-
-  @media (max-width: 800px) {
-    .imageAbout{
-      display: none;
-    }
-
-    .textAbout{
-      width: 100%;
-    }
-  }
+}

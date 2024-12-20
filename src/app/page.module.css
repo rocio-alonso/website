@@ -6,23 +6,21 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative; /* Ensure the pseudo-element is positioned correctly */
-  overflow: hidden; /* Prevent content overflow */
+  overflow: hidden;
 }
 
-.heroSection1::before {
+/*.heroSection1::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/images/imagenes/esta-si-3.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  z-index: 0; /* Place it behind content */
-}
+  background-size: cover;
+  z-index: 0;
+  background-image: url("/images/imagenes/esta-si-3.JPG");
+}*/
 
 .heroSection1::after {
   content: "";
@@ -35,7 +33,7 @@
   z-index: 1; /* Place it above the image but behind content */
 }
 
-.heroSection1 .heroText h2 {
+.heroText h2 {
   display: inline-block;
   width: 60%;
   margin-bottom: calc(var(--margin) / 3);
@@ -121,6 +119,7 @@
 
   .heroText h2 {
     font-size: 2em;
+    width: 100%;
   }
 
   .aboutMe {
@@ -137,5 +136,23 @@
 
   .divCards{
     width: 100%;
+  }
+
+  .containerTaller{
+    flex-flow: column;
+  }
+
+  .containerTaller div{
+    width: 100%;
+  }
+
+  .tallerText{
+    margin: 0;
+    order: 1;
+    margin-bottom: var(--margin);
+  }
+
+  .gridTaller{
+    order: 2;
   }
 }

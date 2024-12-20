@@ -495,6 +495,15 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-0 {
+  bottom: 0px;
+}
 .z-50 {
   z-index: 50;
 }
@@ -529,6 +538,12 @@ video {
 .flex {
   display: flex;
 }
+.hidden {
+  display: none;
+}
+.h-full {
+  height: 100%;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -556,6 +571,9 @@ video {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -565,8 +583,20 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .align-middle {
   vertical-align: middle;
@@ -582,6 +612,18 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.saturate-100 {
+  --tw-saturate: saturate(1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 @import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
 
@@ -589,9 +631,10 @@ video {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-main{
+main {
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -740,14 +783,35 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 800px) {
-  .paddingSection{
+  .paddingSection {
     padding: 6vw 8vw !important;
   }
 
-  .button{
+  .button {
     width: 100%;
   }
 }
+
+.lines {
+  position: absolute;
+  height: 100%;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.line {
+  height: 115px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  margin-left: 5.3px;
+}
+
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/Header/Header.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/

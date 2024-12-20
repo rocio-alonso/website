@@ -3,12 +3,17 @@ import React from "react";
 import "@/app/globals.css";
 import styles from "@/app/page.module.css";
 
-const Hero = async () => {
+const Hero = () => {
+  const images = [1, 2, 3];
+
   return (
-    <section className={styles.heroSection1}>
+    <>
+      <section
+        className={`relative ${styles.heroSection1}`}
+      ></section>
       <div className={`${styles.heroText} paddingSection`}>
         <h2 className="text-6xl thin text-white">
-          En lo esencial reside la auténtica riqueza
+          Horror Vacui: <p className="subtitle">La belleza de lo ausente</p>
         </h2>
         <div className="flex">
           <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>
@@ -22,7 +27,7 @@ const Hero = async () => {
           </Link>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

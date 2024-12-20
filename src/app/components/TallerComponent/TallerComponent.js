@@ -10,8 +10,8 @@ const TallerComponent = () => {
     <AnimateEntrance>
       <section>
         <div className="paddingBody">
-          <section className="flex">
-            <div className="w-2/4">
+          <section className={`flex ${styles.containerTaller}`}>
+            <div className={`w-2/4 ${styles.gridTaller}`}>
               <Grid />
             </div>
             <div className={`${styles.tallerText} w-2/4`}>
