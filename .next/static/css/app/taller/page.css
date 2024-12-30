@@ -1,0 +1,395 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/MaterialesDetails/MaterialesDetails.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
+.MaterialesDetails_cardDetail__B3KgR{
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/Card/Card.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Card_card__Tuw2S {
+  width: 25vw;
+  height: fit-content;
+  transition: all ease 0.5s !important;
+}
+
+.Card_card__Tuw2S:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.Card_card__Tuw2S:hover > .Card_cardText__IFyLM {
+  padding: var(--margin) 3%;
+}
+
+.Card_card__Tuw2S h2 {
+  font-weight: 500;
+}
+
+.Card_cardText__IFyLM {
+  transition: all ease 0.5s !important;
+  padding: var(--margin) 0;
+}
+
+.Card_cardImage__PhPFO {
+  position: relative;
+  overflow: hidden;
+  height: 35vh;
+}
+
+.Card_cardImage__PhPFO img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease; /* Smooth scaling */
+}
+
+.Card_cardImage__PhPFO img:hover {
+  width: 110%;
+  height: 110%;
+}
+
+.Card_dataBox__5Snnt {
+  width: fit-content;
+  padding: 1% 0;
+  margin: calc(var(--margin) / 2) 0 0 0;
+}
+
+.Card_divData__M4ggs {
+  gap: calc(var(--margin));
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.Card_dataLocation__Gzlut {
+  align-items: center;
+  gap: calc(var(--margin) / 2);
+  align-items: baseline;
+}
+
+.Card_divData__M4ggs,
+.Card_dataLocation__Gzlut p {
+  font-size: 0.85em;
+}
+
+@media (max-width: 800px) {
+  .Card_card__Tuw2S {
+    width: 100%;
+  }
+
+  .Card_card__Tuw2S:nth-child(2), .Card_card__Tuw2S:nth-child(3){
+    display: none;
+  }
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/taller/page.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.page_hero__hsQRg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.page_hero__hsQRg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/taller-hero-2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.page_hero__hsQRg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.page_hero__hsQRg .page_heroText__6thRd h2 {
+  display: inline-block;
+  margin-bottom: calc(var(--margin) / 3);
+}
+
+.page_heroText__6thRd {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  width: 100vw;
+  z-index: 100;
+}
+
+.page_buttonHeader2__eTvGr {
+  margin-left: calc(var(--margin));
+}
+
+.page_hero__hsQRg .page_heroText__6thRd p {
+  font-weight: 300;
+}
+
+.page_modalidadDiv__udUvb {
+  align-items: center;
+  padding: calc(var(--margin) / 2);
+  border-bottom: 0.9px solid black;
+  height: fit-content;
+  width: fit-content;
+  .page_icon__uLOAA {
+    margin-right: calc(var(--margin) / 2);
+  }
+}
+
+.page_modalidadesDiv__GuNGL {
+  flex-wrap: wrap;
+  gap: calc(var(--margin) / 2);
+}
+
+.page_icon__uLOAA {
+  font-size: 1.5em;
+}
+
+.page_horarios__PMfKj {
+  margin-right: 5vw;
+}
+
+.page_divModal__bjf57 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+}
+
+.page_divModalChild__q3W9e {
+  background-color: white;
+  bottom: 0;
+  width: 84vw;
+  border-radius: 20px 20px 0 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
+.page_price__yk9bc{
+  color: var(--success-color) !important;
+}
+
+@media (max-width: 800px) {
+
+  .page_divModalChild__q3W9e{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page_divModalChild__q3W9e div {
+    width: 100%;
+  }
+  .page_heroText__6thRd h2 {
+    font-size: 3em;
+  }
+
+  .page_heroText__6thRd p,
+  .page_divTallerDetails__C7NqR {
+    width: 100% !important;
+  }
+
+  .page_divTallerDetails__C7NqR p {
+    width: 100%;
+  }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/ModalTaller/ModalTaller.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (max-width: 800px) {
+    .ModalTaller_textContact__p5T4o{
+        display: none;
+    }
+
+    .ModalTaller_textContactButton__6nwiV{
+        margin-top: 1em;
+    }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.page_heroSection1__iN3Ot {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/*.heroSection1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  background-image: url("/images/imagenes/esta-si-3.JPG");
+}*/
+
+.page_heroSection1__iN3Ot::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Add the dark overlay */
+  z-index: 1; /* Place it above the image but behind content */
+}
+
+.page_heroText__g5S3T h2 {
+  display: inline-block;
+  width: 60%;
+  margin-bottom: calc(var(--margin) / 3);
+}
+
+.page_heroText__g5S3T {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  width: 100vw;
+  z-index: 100;
+}
+
+.page_buttonHeader2__IuVUr {
+  margin-left: calc(var(--margin));
+}
+
+.page_aboutMe__XPGkS {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.page_aboutMe__XPGkS video {
+  width: 60vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page_aboutMeText__T1LyT {
+  display: grid;
+  height: 100%;
+  align-items: center;
+  gap: 1vw;
+  padding: 0 var(--margin);
+}
+
+.page_aboutMeVideo__Fj_h1 {
+  position: relative;
+  overflow: hidden;
+  height: 65vh;
+}
+
+.page_parent__HJWUK {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: var(--margin);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page_parent__HJWUK div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.page_parent__HJWUK div video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.page_tallerText__APr5j {
+  margin-left: calc(var(--margin) * 2);
+}
+
+@media (max-width: 800px) {
+  .page_heroText__g5S3T div a {
+    width: 50%;
+  }
+
+  .page_heroText__g5S3T div {
+    width: 100%;
+  }
+
+  .page_divExpo__ABgYV {
+    justify-content: center !important;
+  }
+
+  .page_heroText__g5S3T h2 {
+    font-size: 2em;
+    width: 100%;
+  }
+
+  .page_aboutMe__XPGkS {
+    display: flex;
+  }
+
+  .page_aboutMeText__T1LyT {
+    padding: 0;
+  }
+
+  .page_aboutMeText__T1LyT .page_button__vnlhW {
+    width: 100%;
+  }
+
+  .page_divCards__n9j6n{
+    width: 100%;
+  }
+
+  .page_containerTaller__OgDaB{
+    flex-flow: column;
+  }
+
+  .page_containerTaller__OgDaB div{
+    width: 100%;
+  }
+
+  .page_tallerText__APr5j{
+    margin: 0;
+    order: 1;
+    margin-bottom: var(--margin);
+  }
+
+  .page_gridTaller__Bdf33{
+    order: 2;
+  }
+}
+

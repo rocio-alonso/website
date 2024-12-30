@@ -61,7 +61,7 @@
 .modalidadDiv {
   align-items: center;
   padding: calc(var(--margin) / 2);
-  border: 0.9px solid black;
+  border-bottom: 0.9px solid black;
   height: fit-content;
   width: fit-content;
   .icon {
@@ -100,6 +100,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.7);
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
+.price{
+  color: var(--success-color) !important;
 }
 
 @media (max-width: 800px) {

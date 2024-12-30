@@ -1,45 +1,18 @@
-import React from "react";
 import Link from "next/link";
-import Hero from "@/app/components/Hero/Hero";
 import styles from "@/app/taller/page.module.css";
 import Grid from "../components/TallerComponent/Grid";
-import AnimateEntrance from "../components/AnimateEntrance/AnimateEntrance";
 
 import { CiClock1 } from "react-icons/ci";
 import { PiBookBookmarkThin } from "react-icons/pi";
 import { PiUsers } from "react-icons/pi";
 import { CiUser } from "react-icons/ci";
-import { AiOutlineWhatsApp } from "react-icons/ai";
+import ModalTaller from "../components/ModalTaller/ModalTaller";
+import MaterialesDetails from "../components/MaterialesDetails/MaterialesDetails";
 
 const page = () => {
   return (
     <main>
-      <AnimateEntrance>
-      <div className={`${styles.divModal}`}>
-        <div
-          className={`paddingSection justify-between flex ${styles.divModalChild}`}
-        >
-          <div>
-            <h2 className={`title`}>Precio</h2>
-            <p className="subtitle">1 Clase semanal de 2hs</p>
-          </div>
-
-          <div>
-            <p className={`title`}>€80/mes</p>
-            <p className={`subtitle`}>(Matrícula gratis)</p>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <p className={`subtitle`}>¿Te interesa participar de una clase?</p>
-            <Link className="button gap-1" href={"/sobre-mi"}>
-              <AiOutlineWhatsApp className="" />
-              Contactar
-            </Link>
-          </div>
-        </div>
-      </div>
-      </AnimateEntrance>
-
+      <ModalTaller />
       <section className={styles.hero}>
         <div className={`${styles.heroText} paddingSection text-white`}>
           <h2 className="text-6xl thin">Nuestro espacio</h2>
@@ -59,7 +32,7 @@ const page = () => {
       <section className="paddingSection flex flex-wrap">
         <div className={`${styles.divTallerDetails} w-1/3`}>
           <h2 className={`title m-bottom`}>Recuperación de clases</h2>
-          <p className="m-bottom font-thin w-3/5">
+          <p className="m-bottom font-thin w-4/5">
             Si no puedes asistir a una clase, te pedimos que nos avises con al
             menos 48 horas de antelación. De esta manera, podremos reprogramar
             tu clase para otro horario disponible dentro del mismo mes.
@@ -137,7 +110,7 @@ const page = () => {
 
       <section className="paddingBody flex">
         <div className={`w-1/2 ${styles.divTallerDetails}`}>
-          <h2 className={`title m-bottom`}>Técnicas que puedes usar</h2>
+          <h2 className={`title m-bottom`}>Explora materiales y técnicas</h2>
           <p className="m-bottom font-thin w-4/5">
             Tendrás la oportunidad de conocer una amplia variedad de materiales
             y descubrir sus usos y posibilidades. Además, podrás experimentar
@@ -150,8 +123,10 @@ const page = () => {
             habilidades técnicas y el oficio de las artes visuales, sino también
             su creatividad, originalidad y estilo personal como artista.
           </p>
+        </div>
 
-          <div></div>
+        <div className={`w-1/2 flex justify-center items-center ${styles.divTallerDetails}`}>
+          <MaterialesDetails />
         </div>
       </section>
     </main>

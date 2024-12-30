@@ -19,7 +19,7 @@ main {
 :root {
   --main-color: #000000;
   --secondary-color: #ffffff;
-  --success-color: #008000;
+  --success-color: #3fbd3f;
   --font-size: 1em;
   --margin: 1em;
   --border: 10px;
@@ -114,6 +114,19 @@ video::-webkit-media-controls-panel {
   background-color: rgba(0, 0, 0, 0) !important;
   color: white;
   border: 1px solid var(--secondary-color);
+}
+
+.button-wpp{
+  color: var(--success-color) !important;
+}
+
+.button-wpp:hover{
+  background-color: var(--success-color) !important;
+  color: black !important;
+}
+
+.button-wpp:hover > svg{
+  color: black !important;
 }
 
 .hero .button.secondary {

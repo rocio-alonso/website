@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+    .textContact{
+        display: none;
+    }
+
+    .textContactButton{
+        margin-top: 1em;
+    }
+}

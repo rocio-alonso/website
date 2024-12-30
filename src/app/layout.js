@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 export const metadata = {
   title: "Rocio Alonso",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

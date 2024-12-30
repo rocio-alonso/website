@@ -1,0 +1,25 @@
+.footerSection{
+    font-size: .9em !important;
+}
+
+.footerSection{
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.navbarFooter ul{
+    display: block !important;
+}
+
+.navbarFooter ul li{
+    margin-bottom: var(--margin);
+}
+
+@media (max-width: 800px) {
+    .navbarFooter div{
+        display: block !important;
+    }
+
+    .footerSection{
+        font-size: .8em !important;
+    }
+}
