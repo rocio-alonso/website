@@ -16,7 +16,7 @@
 
 @media (max-width: 800px) {
     .navbarFooter div{
-        display: block !important;
+        display: none !important;
     }
 
     .footerSection{

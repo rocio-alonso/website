@@ -16,8 +16,8 @@ const Footer = () => {
         <Link href="/" className={`${styles.imgLogo}`}>
           <Image
             src="/logoBlack.svg"
-            height={70}
-            width={70}
+            height={200}
+            width={200}
             alt="Rocio Alonso Logo"
             className={`${styles.headerImg}`}
           />

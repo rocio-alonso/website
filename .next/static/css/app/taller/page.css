@@ -214,6 +214,10 @@
     width: 100% !important;
   }
 
+  .page_sectionTallerDetails__clDwU{
+    flex-direction: column;
+  }
+
   .page_divTallerDetails__C7NqR p {
     width: 100%;
   }
@@ -245,7 +249,7 @@
   overflow: hidden;
 }
 
-/*.heroSection1::before {
+.page_heroSection1__iN3Ot::before {
   content: "";
   position: absolute;
   top: 0;
@@ -256,7 +260,7 @@
   background-size: cover;
   z-index: 0;
   background-image: url("/images/imagenes/esta-si-3.JPG");
-}*/
+}
 
 .page_heroSection1__iN3Ot::after {
   content: "";
@@ -370,25 +374,25 @@
     width: 100%;
   }
 
-  .page_divCards__n9j6n{
+  .page_divCards__n9j6n {
     width: 100%;
   }
 
-  .page_containerTaller__OgDaB{
+  .page_containerTaller__OgDaB {
     flex-flow: column;
   }
 
-  .page_containerTaller__OgDaB div{
+  .page_containerTaller__OgDaB div {
     width: 100%;
   }
 
-  .page_tallerText__APr5j{
+  .page_tallerText__APr5j {
     margin: 0;
     order: 1;
     margin-bottom: var(--margin);
   }
 
-  .page_gridTaller__Bdf33{
+  .page_gridTaller__Bdf33 {
     order: 2;
   }
 }

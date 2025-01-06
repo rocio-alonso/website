@@ -116,16 +116,16 @@ video::-webkit-media-controls-panel {
   border: 1px solid var(--secondary-color);
 }
 
-.button-wpp{
+.button-wpp {
   color: var(--success-color) !important;
 }
 
-.button-wpp:hover{
+.button-wpp:hover {
   background-color: var(--success-color) !important;
   color: black !important;
 }
 
-.button-wpp:hover > svg{
+.button-wpp:hover > svg {
   color: black !important;
 }
 
@@ -179,6 +179,15 @@ video::-webkit-media-controls-panel {
 
   .button {
     width: 100%;
+  }
+
+  .dots {
+    gap: calc(var(--margin) / 4);
+  }
+
+  .dot {
+    width: 10px !important;
+    height: 10px !important;
   }
 }
 

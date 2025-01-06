@@ -9,14 +9,16 @@ import { GoLocation } from "react-icons/go";
 const Card = ({ data, isObra, dataObra }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.cardImage}>
-        <Image
-          src="/images/expo-1.jpg"
-          alt="Exterior view of Asociación Dante Alighieri"
-          width={500}
-          height={500}
-        />
-      </div>
+      {!isObra && (
+        <div className={styles.cardImage}>
+          <Image
+            src={data.img ? `/images/expo/${data.img}` : "/images/expo-1.jpg"}
+            alt="exposition Image"
+            width={500}
+            height={500}
+          />
+        </div>
+      )}
 
       {!isObra ? (
         <div className={styles.cardText}>

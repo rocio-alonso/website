@@ -32,7 +32,7 @@ const Obras = () => {
       try {
         const response = await fetch("/api/getProducts");
         const data2 = await response.json();
-        setDataObras(data2.response.products[3].obras);
+        setDataObras(data2.response.products[2].obras);
       } catch (error) {
         console.error("An error occurred while fetching files.", error);
       }

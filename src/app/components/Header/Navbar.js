@@ -1,46 +1,43 @@
+"use client"
+
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // Hook para obtener la ruta actual
 
 import "@/app/globals.css";
 import styles from "@/app/components/Header/Header.module.css";
 
-import AnimateEntrance from "@/app/components/AnimateEntrance/AnimateEntrance";
-
 const Navbar = ({ responsive, onClick }) => {
+  const pathname = usePathname(); // Ruta actual
+
   return (
-      <div
-        className={`${
-          responsive ? styles.headerDivResponsive : styles.headerDiv
-        }`}
-      >
-        <ul className={`${responsive ? "" : "flex"} thin`}>
-          <li className={styles.buttonHeader} onClick={onClick}>
-            <Link className="subtitle bold" href={"/"}>
-              Inicio
+    <div
+      className={`${
+        responsive ? styles.headerDivResponsive : styles.headerDiv
+      }`}
+    >
+      <ul className={`${responsive ? "" : "flex"} thin`}>
+        {[
+          { href: "/", label: "Inicio" },
+          { href: "/obras", label: "Mis obras" },
+          { href: "/sobre-mi", label: "Sobre mi" },
+          { href: "/taller", label: "Taller Mozzafiato" },
+          { href: "/contacto", label: "Contacto" },
+        ].map((link) => (
+          <li
+            key={link.href}
+            className={`${styles.buttonHeader} ${
+              pathname === link.href ? styles.activeLink : ""
+            }`}
+            onClick={onClick}
+          >
+            <Link className="subtitle" href={link.href}>
+              {link.label}
             </Link>
           </li>
-          <li className={styles.buttonHeader} onClick={onClick}>
-            <Link className="subtitle" href={"/obras"}>
-              Mis obras
-            </Link>
-          </li>
-          <li className={styles.buttonHeader} onClick={onClick}>
-            <Link className="subtitle" href={"/sobre-mi"}>
-              Sobre mi
-            </Link>
-          </li>
-          <li className={styles.buttonHeader} onClick={onClick}>
-            <Link className="subtitle" href={"/taller"}>
-              Taller Mozzafiato
-            </Link>
-          </li>
-          <li className={styles.buttonHeader} onClick={onClick}>
-            <Link className="subtitle" href={""}>
-              Contacto
-            </Link>
-          </li>
-        </ul>
-      </div>
+        ))}
+      </ul>
+    </div>
   );
 };
 

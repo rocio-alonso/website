@@ -8,6 +8,7 @@ import { PiUsers } from "react-icons/pi";
 import { CiUser } from "react-icons/ci";
 import ModalTaller from "../components/ModalTaller/ModalTaller";
 import MaterialesDetails from "../components/MaterialesDetails/MaterialesDetails";
+import DivModalTaller from "../components/ModalTaller/DivModalTaller";
 
 const page = () => {
   return (
@@ -103,12 +104,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className="paddingBody">
-        <h2 className={`title m-bottom`}>Galería</h2>
-        <Grid />
-      </section>
-
-      <section className="paddingBody flex">
+      <section className={`paddingBody flex ${styles.sectionTallerDetails}`}>
         <div className={`w-1/2 ${styles.divTallerDetails}`}>
           <h2 className={`title m-bottom`}>Explora materiales y técnicas</h2>
           <p className="m-bottom font-thin w-4/5">
@@ -125,9 +121,19 @@ const page = () => {
           </p>
         </div>
 
-        <div className={`w-1/2 flex justify-center items-center ${styles.divTallerDetails}`}>
+        <div
+          className={`w-1/2 flex justify-center items-center ${styles.divTallerDetails}`}
+        >
           <MaterialesDetails />
         </div>
+      </section>
+
+      <section className="paddingBody">
+        <Grid />
+      </section>
+      
+      <section className="paddingBody">
+        <DivModalTaller />
       </section>
     </main>
   );

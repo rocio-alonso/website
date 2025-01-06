@@ -6,7 +6,7 @@ import AnimateEntrance from "../AnimateEntrance/AnimateEntrance";
 
 const MaterialsDetailsData = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 4; // Define the number of items per page
+  const itemsPerPage = 4;
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
   const handlePrevious = () => {
@@ -17,7 +17,6 @@ const MaterialsDetailsData = ({ data }) => {
     if (currentPage < totalPages - 1) setCurrentPage((prev) => prev + 1);
   };
 
-  // Determine the data to display for the current page
   const startIndex = currentPage * itemsPerPage;
   const currentData = data.slice(startIndex, startIndex + itemsPerPage);
 

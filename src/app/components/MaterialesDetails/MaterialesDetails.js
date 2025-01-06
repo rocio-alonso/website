@@ -5,7 +5,7 @@ import MaterialsDetailsData from "@/app/components/MaterialesDetails/MaterialsDe
 
 const MaterialesDetails = async () => {
   const response = await getAllProductsDB();
-  const data = response.products[4].materiales;
+  const data = response.products[3].materiales;
   return (
     <MaterialsDetailsData data={data}/>
   );

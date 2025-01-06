@@ -31,20 +31,21 @@ const About = async () => {
 
         <div className={`${styles.aboutMeText} ${AboutStyles.aboutMetext}`}>
           <p className="ultralight">
+            Mi pasión por el <b>arte</b> nace del deseo de encontrar belleza en lo
+            cotidiano. Cada <b>obra</b> es una exploración de lo que puede surgir
+            cuando nos tomamos el tiempo para mirar <b>más allá de lo superficial</b>.
+          </p>
+          <p className="ultralight">
             Mi <b>enfoque artístico</b> se basa en la capacidad de transformar{" "}
             <b>materiales triviales</b> en estructuras visualmente atractivas y
             complejas, revelando su potencial estético y emotivo.
           </p>
           <p className="ultralight">
-            Desde una edad temprana, me he dedicado a explorar el arte,
-            comenzando con la <b>escultura</b> y expandiendo mi pasión al{" "}
-            <b>dibujo</b> y la <b>pintura</b>.
-          </p>
-          <p className="ultralight">
-            En mi <b>proceso creativo</b>, empleo técnicas mixtas con el
-            objetivo de crear un espacio de contemplación y autoexploración,
-            alejándome de la superficialidad para abrazar lo esencial en cada
-            composición.
+            Mi trayectoria ha sido enriquecida por mentorías con reconocidos
+            artistas como Ernesto Allí, Héctor Destefanis y Norberto Iera, y me
+            he formado en la <b>Universidad Nacional de las Artes </b>(UNA,
+            Argentina) donde estudié la <b>Licenciatura en Artes Visuales</b>{" "}
+            con orientación en <b>Pintura</b> y <b>Dibujo</b>.
           </p>
           <Link className="button" href={"/sobre-mi"}>
             Sobre mi

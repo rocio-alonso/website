@@ -125,6 +125,10 @@
     width: 100% !important;
   }
 
+  .sectionTallerDetails{
+    flex-direction: column;
+  }
+
   .divTallerDetails p {
     width: 100%;
   }

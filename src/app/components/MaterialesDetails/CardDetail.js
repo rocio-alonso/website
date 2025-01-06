@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "@/app/components/MaterialesDetails/MaterialesDetails.module.css";
 
 const CardDetail = ({ data }) => {
-  console.log(data);
   return (
     <div className={`flex flex-col text-center w-24 ${styles.cardDetail}`}>
       <Image

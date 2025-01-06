@@ -1,13 +1,27 @@
 "use client";
+import React, { useState, useEffect } from "react";
 import Card from "@/app/components/Card/Card";
-import React, { useState } from "react";
 import styles from "@/app/page.module.css";
 import AnimateEntrance from "@/app/components/AnimateEntrance/AnimateEntrance";
 
 const ExposicionesData = ({ data }) => {
-  const [currentPage, setCurrentPage] = useState(0); // Tracks the current page (group of 3 cards)
-  const cardsPerPage = 3; // Number of cards per step
+  const [currentPage, setCurrentPage] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const cardsPerPage = isMobile ? 1 : 3;
   const totalPages = Math.ceil(data.length / cardsPerPage);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 800px)");
+    const handleMediaChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    setIsMobile(mediaQuery.matches);
+    mediaQuery.addEventListener("change", handleMediaChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaChange);
+    };
+  }, []);
 
   const handlePrevious = () => {
     if (currentPage > 0) {
