@@ -169,7 +169,7 @@
 
 @media (max-width: 800px) {
   .page_contactForm__yEYTq {
-    width: 80%;
+    width: 80% !important;
   }
 
   .page_formButton__TNqAN {
