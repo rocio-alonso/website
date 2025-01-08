@@ -66,7 +66,7 @@
 
 .Card_divData__M4ggs,
 .Card_dataLocation__Gzlut p {
-  font-size: 0.85em;
+  font-size: 0.95em;
 }
 
 @media (max-width: 800px) {
@@ -74,7 +74,8 @@
     width: 100%;
   }
 
-  .Card_card__Tuw2S:nth-child(2), .Card_card__Tuw2S:nth-child(3){
+  .Card_card__Tuw2S:nth-child(2),
+  .Card_card__Tuw2S:nth-child(3) {
     display: none;
   }
 }
@@ -805,7 +806,7 @@ main {
 
 :root {
   --main-color: #000000;
-  --secondary-color: #ffffff;
+  --secondary-color: #fff;
   --success-color: #3fbd3f;
   --font-size: 1em;
   --margin: 1em;
@@ -1091,11 +1092,15 @@ video::-webkit-media-controls-panel {
     top: 0;
     left: 0;
     position: fixed;
-    padding: 20vw 16.5vw !important;
+    padding: 20vw 23vw 20vw 8vw !important;
     height: 100vh;
     background-color: white;
     color: black;
     z-index: 300;
+  }
+
+  .Header_headerDivResponsive__Bjy_5 a{
+    font-weight: 400;
   }
 
   .Header_headerDivResponsive__Bjy_5::after {

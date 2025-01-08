@@ -20,6 +20,17 @@ const Card = ({ data, isObra, dataObra }) => {
         </div>
       )}
 
+      {isObra && (
+        <div className={styles.cardImage}>
+          <Image
+            src="/images/expo-1.jpg"
+            alt="exposition Image"
+            width={500}
+            height={500}
+          />
+        </div>
+      )}
+
       {!isObra ? (
         <div className={styles.cardText}>
           <h2 className="subtitle w-4/5">{data.lugar}</h2>

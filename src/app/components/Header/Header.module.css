@@ -88,11 +88,15 @@
     top: 0;
     left: 0;
     position: fixed;
-    padding: 20vw 16.5vw !important;
+    padding: 20vw 23vw 20vw 8vw !important;
     height: 100vh;
     background-color: white;
     color: black;
     z-index: 300;
+  }
+
+  .headerDivResponsive a{
+    font-weight: 400;
   }
 
   .headerDivResponsive::after {
