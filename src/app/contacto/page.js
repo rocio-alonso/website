@@ -12,7 +12,7 @@ const ContactPage = () => {
     <div className={`w-full h-full ${styles.heroSection1}`}>
       <form
         onSubmit={handleSubmit}
-        className={`${stylesForm.contactForm} z-50 text-white flex flex-col gap-2 w-1/4`}
+        className={`${stylesForm.contactForm} z-50 text-white flex flex-col gap-2 w-2/4`}
       >
         {/* Campo de Nombre */}
 
