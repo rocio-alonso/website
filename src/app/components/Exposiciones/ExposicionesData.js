@@ -8,7 +8,10 @@ const ExposicionesData = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const cardsPerPage = isMobile ? 1 : 3;
-  const totalPages = Math.ceil(data.length / cardsPerPage);
+  
+  // Limit to 5 items if on mobile
+  const mobileData = isMobile ? data.slice(0, 10) : data;
+  const totalPages = Math.ceil(mobileData.length / cardsPerPage);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 800px)");
@@ -42,13 +45,13 @@ const ExposicionesData = ({ data }) => {
     <div className={`cardsExpo flex flex-col w-full ${styles.divExpo}`}>
       <AnimateEntrance key={currentPage}>
         <div className={`flex flex-wrap justify-between ${styles.divCards}`}>
-          {data.slice(startIndex, endIndex).map((dataItem, index) => (
+          {mobileData.slice(startIndex, endIndex).map((dataItem, index) => (
             <Card key={startIndex + index} data={dataItem} />
           ))}
         </div>
       </AnimateEntrance>
 
-      <section className="carrousellHandler flex items-center mt-4">
+      <section className="paddingBody carrousellHandler flex items-center mt-4">
         <button
           className="button"
           onClick={handlePrevious}
@@ -72,6 +75,8 @@ const ExposicionesData = ({ data }) => {
           &#62;
         </button>
       </section>
+
+      <button className="button mt-4">Ver más</button>
     </div>
   );
 };

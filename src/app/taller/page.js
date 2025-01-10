@@ -22,16 +22,17 @@ const page = () => {
             conocimiento y la orientación que necesitas para ganar autonomía en
             tus decisiones creativas.
           </p>
-          <p className="w-1/3 font-thin">
+          <p className={`w-1/3 font-thin m-bottom ${styles.responsiveParagraph}`}>
             Te acompañamos en cada paso para que explores y desarrolles una
             visión artística propia, disfrutando del proceso creativo y de
             experimentar en cada proyecto
           </p>
+          <Link className="button" href={"/taller/#mainSection"}>Conoce más</Link>
         </div>
       </section>
 
       <section className="paddingSection flex flex-wrap">
-        <div className={`${styles.divTallerDetails} w-1/3`}>
+        <div className={`${styles.divTallerDetails} w-1/3`} id="mainSection">
           <h2 className={`title m-bottom`}>Recuperación de clases</h2>
           <p className="m-bottom font-thin w-4/5">
             Si no puedes asistir a una clase, te pedimos que nos avises con al

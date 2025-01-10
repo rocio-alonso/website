@@ -5,7 +5,7 @@ import styles from "@/app/components/MaterialesDetails/MaterialesDetails.module.
 
 const CardDetail = ({ data }) => {
   return (
-    <div className={`flex flex-col text-center w-24 ${styles.cardDetail}`}>
+    <div className={`flex flex-col text-center w-24 items-center ${styles.cardDetail}`}>
       <Image
         src={`/images/materiales/${data}.png`}
         alt="material"

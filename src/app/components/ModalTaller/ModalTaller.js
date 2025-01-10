@@ -12,7 +12,7 @@ const ModalTaller = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowModal(true);
-    }, 15000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,7 +22,7 @@ const ModalTaller = () => {
   }
 
   return (
-    <div className={`${styles.divModal} relative`}>
+    <div className={`${styles.divModal}`}>
       <AnimateEntrance>
         <div className="absolute right-0 p-5">
           <IoCloseOutline
@@ -31,7 +31,7 @@ const ModalTaller = () => {
           />
         </div>
         <div
-          className={`paddingSection justify-between flex ${styles.divModalChild}`}
+          className={`paddingSection justify-between flex ${styles.divModalChild} ${stylesModal.divModalChild}`}
         >
           <div>
             <h2 className={`title flex m-bottom`}>

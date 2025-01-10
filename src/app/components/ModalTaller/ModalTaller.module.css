@@ -1,9 +1,13 @@
 @media (max-width: 800px) {
-    .textContact{
-        display: none;
-    }
+  .textContact {
+    display: none;
+  }
 
-    .textContactButton{
-        margin-top: 1em;
-    }
+  .textContactButton {
+    margin-top: 1em;
+  }
+
+  .divModalChild div {
+    font-size: 0.9em !important;
+  }
 }

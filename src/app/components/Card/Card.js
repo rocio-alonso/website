@@ -21,14 +21,12 @@ const Card = ({ data, isObra, dataObra }) => {
       )}
 
       {isObra && (
-        <div className={styles.cardImage}>
           <Image
-            src="/images/expo-1.jpg"
+            src="/images/about.jpg"
             alt="exposition Image"
             width={500}
             height={500}
           />
-        </div>
       )}
 
       {!isObra ? (

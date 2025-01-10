@@ -173,6 +173,10 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 800px) {
+  .subtitle{
+    
+  }
+
   .paddingSection {
     padding: 6vw 8vw !important;
   }

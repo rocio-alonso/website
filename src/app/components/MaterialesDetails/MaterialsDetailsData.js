@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import CardDetail from "@/app/components/MaterialesDetails/CardDetail";
+import styles from "@/app/components/MaterialesDetails/MaterialesDetails.module.css";
 import AnimateEntrance from "../AnimateEntrance/AnimateEntrance";
+import "@/app/globals.css";
 
 const MaterialsDetailsData = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -21,9 +23,9 @@ const MaterialsDetailsData = ({ data }) => {
   const currentData = data.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <div className={`flex align-center justify-center flex-col`}>
+    <div className={`flex align-center justify-center flex-col paddingSection`}>
       <AnimateEntrance key={currentPage}>
-        <div className="flex align-center justify-center gap-4 m-bottom">
+        <div className={`flex align-center justify-center gap-4 ${styles.sectionDetail}`}>
           {currentData.map((item, index) => (
             <CardDetail data={item} key={index} />
           ))}

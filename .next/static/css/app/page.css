@@ -645,6 +645,9 @@ video {
 .mt-4 {
   margin-top: 1rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .flex {
   display: flex;
 }
@@ -952,6 +955,10 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 800px) {
+  .subtitle{
+    
+  }
+
   .paddingSection {
     padding: 6vw 8vw !important;
   }

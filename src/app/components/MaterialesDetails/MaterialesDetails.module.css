@@ -1,2 +1,18 @@
-.cardDetail{
+@media (max-width: 800px) {
+  .cardDetail img {
+    width: 90%;
+    height: auto;
+  }
+
+  .cardDetail {
+    width: 20vw !important;
+  }
+
+  .cardDetail p {
+    font-size: 0.85em;
+  }
+
+  .sectionDetail {
+    gap: 0 !important;
+  }
 }
