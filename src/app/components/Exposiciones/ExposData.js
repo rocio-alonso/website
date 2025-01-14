@@ -7,13 +7,11 @@ import AnimateEntrance from "../AnimateEntrance/AnimateEntrance";
 const ExposData = ({ data }) => {
   console.log(data);
   return (
-    <AnimateEntrance>
       <section className="paddingSection flex flex-wrap justify-between gap-10">
         {data.map((item, index) => (
           <Card key={index} data={item} />
         ))}
       </section>
-    </AnimateEntrance>
   );
 };
 
