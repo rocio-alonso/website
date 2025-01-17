@@ -12,6 +12,8 @@ const Obras = () => {
   const [data, setDataObras] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
 
+  console.log(selectedItem);
+
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState();
 
@@ -32,7 +34,7 @@ const Obras = () => {
       try {
         const response = await fetch("/api/getProducts");
         const data2 = await response.json();
-        setDataObras(data2.response.products[2].obras);
+        setDataObras(data2.response.products[4].obras);
       } catch (error) {
         console.error("An error occurred while fetching files.", error);
       }
@@ -41,9 +43,9 @@ const Obras = () => {
     fetchFiles();
   }, []);
 
-  const handleFullscreen = (dataItem) => {
-    setSelectedItem(dataItem);
-    setTotalPages(data.length);
+  const handleFullscreen = (dataobras) => {
+    setSelectedItem(dataobras);
+    setTotalPages(dataobras.length);
   };
 
   const closeFullscreen = () => {
@@ -52,26 +54,26 @@ const Obras = () => {
 
   return (
     <div>
-      <section className="paddingSection">
+      <section className={`paddingSection ${styles.obrasMain}`}>
         {data.map((dataItem, index) => (
           <AnimateEntrance key={index}>
-          <div>
-            <div className={`flex items-center m-bottom ${styles.titleDiv}`}>
-              <h2 className="title flex">
-                {dataItem.titulo}{" "}
-                <p className="subtitle ml-2">({dataItem.ano})</p>
-              </h2>
-              <BsFullscreen
-                className="cursor-pointer"
-                onClick={() => handleFullscreen(dataItem)}
-              />
+            <div>
+              <div className={`flex items-center m-bottom gap-4 ${styles.titleDiv}`}>
+                <h2 className="title flex">
+                  {dataItem.titulo}{" "}
+                  <p className="subtitle ml-2">({dataItem.ano})</p>
+                </h2>
+                <BsFullscreen
+                  className="cursor-pointer"
+                  onClick={() => handleFullscreen(dataItem.obras)}
+                />
+              </div>
+              <div className="m-bottom flex flex-wrap justify-between">
+                {dataItem.obras?.map((obraData, index) => (
+                  <Card dataObra={obraData} isObra={true} key={index} />
+                ))}
+              </div>
             </div>
-            <div className="m-bottom flex flex-wrap justify-between">
-              <Card dataObra={dataItem} isObra={true} />
-              <Card dataObra={dataItem} isObra={true} />
-              <Card dataObra={dataItem} isObra={true} />
-            </div>
-          </div>
           </AnimateEntrance>
         ))}
       </section>
@@ -89,16 +91,14 @@ const Obras = () => {
             </div>
 
             <Image
-              src="/images/expo-1.jpg"
+              src={`/images/obras${selectedItem[currentPage].img}`}
               alt="Exterior view of Asociación Dante Alighieri"
               width={500}
               height={500}
-              className="m-bottom saturate-100"
+              className={`m-bottom saturate-100 ${styles.obraImgFull}`}
             />
-            <h2>
-              {selectedItem.titulo} ({selectedItem.ano})
-            </h2>
-            <p>{selectedItem.description}</p>
+
+            <h2>{selectedItem[currentPage].titulo}</h2>
             <section className="carrousellHandler flex items-center mt-4">
               <button
                 className="button"

@@ -9,7 +9,7 @@
 }
 
 .card:hover > .cardText {
-  padding: var(--margin) 3%;
+  padding: calc(var(--margin)*2) calc(var(--margin)*2);
 }
 
 .card h2 {
@@ -18,7 +18,7 @@
 
 .cardText {
   transition: all ease 0.5s !important;
-  padding: var(--margin) 0;
+  padding: calc(var(--margin)*2) var(--margin);
 }
 
 .cardImage {

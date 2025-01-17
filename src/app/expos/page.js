@@ -6,7 +6,7 @@ import ExposData from "@/app/components/Exposiciones/ExposData";
 
 const page = async () => {
   const response = await getAllProductsDB();
-  const data = response.products[4].exposiciones;
+  const data = response.products[3].exposiciones;
   return (
     <main>
       <div className={`${styles.hero} ${styles2.heroText}`}>

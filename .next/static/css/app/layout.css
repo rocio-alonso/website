@@ -12,7 +12,7 @@
 }
 
 .Card_card__Tuw2S:hover > .Card_cardText__IFyLM {
-  padding: var(--margin) 3%;
+  padding: calc(var(--margin)*2) calc(var(--margin)*2);
 }
 
 .Card_card__Tuw2S h2 {
@@ -21,7 +21,7 @@
 
 .Card_cardText__IFyLM {
   transition: all ease 0.5s !important;
-  padding: var(--margin) 0;
+  padding: calc(var(--margin)*2) var(--margin);
 }
 
 .Card_cardImage__PhPFO {
@@ -767,17 +767,25 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
 }
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .font-thin {
   font-weight: 100;
@@ -862,7 +870,7 @@ body {
 }
 
 .subtitle {
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-size: 1em;
 }
@@ -912,9 +920,9 @@ video::-webkit-media-controls-panel {
 }
 
 .button.secondary {
-  background-color: rgba(0, 0, 0, 0) !important;
-  color: white;
-  border: 1px solid var(--secondary-color);
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
 }
 
 .button-wpp {
@@ -934,7 +942,6 @@ video::-webkit-media-controls-panel {
   margin-left: var(--margin);
 }
 
-/* Neue Haas Unica W1G UltraLight */
 .ultralight {
   font-family: "neue-haas-unica", sans-serif;
   font-weight: 100;
@@ -974,10 +981,6 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 800px) {
-  .subtitle{
-    
-  }
-
   .paddingSection {
     padding: 6vw 8vw !important;
   }
@@ -1024,16 +1027,20 @@ video::-webkit-media-controls-panel {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  color: white;
+  color: black !important;
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
 }
 
+.Header_headerDiv__tmsys{
+  font-size: 1.05em;
+}
+
 .Header_activeLink__WJyjL {
   display: block;
   content: "";
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px black;
   transform: scaleX(1);
   opacity: 1;
 }
@@ -1064,7 +1071,7 @@ video::-webkit-media-controls-panel {
 .Header_buttonHeader__qsnMx:after {
   display: block;
   content: "";
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px black;
   transform: scaleX(0);
   opacity: 0;
   transition: all 500ms ease-in-out;
@@ -1109,7 +1116,7 @@ video::-webkit-media-controls-panel {
     top: 0;
     left: 0;
     position: fixed;
-    padding: 20vw 23vw 20vw 8vw !important;
+    padding: 25vw 23vw 20vw 8vw !important;
     height: 100vh;
     background-color: white;
     color: black;

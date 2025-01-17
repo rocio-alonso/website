@@ -15,7 +15,7 @@ const page = () => {
     <main>
       <ModalTaller />
       <section className={styles.hero}>
-        <div className={`${styles.heroText} paddingSection text-white`}>
+        <div className={`${styles.heroText} paddingSection text-black`}>
           <h2 className="text-6xl thin">Nuestro espacio</h2>
           <p className={`w-1/3 font-thin m-bottom`}>
             Nuestras clases personalizadas están diseñadas para ofrecerte el

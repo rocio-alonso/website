@@ -54,7 +54,7 @@ const ModalTaller = () => {
             <a
               className={`button gap-1 button-wpp ${stylesModal.textContactButton}`}
               target="blank_"
-              href="https://api.whatsapp.com/send/?phone=541167435738&text=Hola!%20Me%20interesa%20asistir%20a%20una%20clase%20del%20taller"
+              href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20interesa%20asistir%20a%20una%20clase%20del%20taller"
             >
               <AiOutlineWhatsApp className={styles.price} />
               Contactar

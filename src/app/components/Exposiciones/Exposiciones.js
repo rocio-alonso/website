@@ -8,7 +8,7 @@ import ExposicionesData from "@/app/components/Exposiciones/ExposicionesData";
 
 const Exposiciones = async () => {
   const response = await getAllProductsDB();
-  const data = response.products[4].exposiciones;
+  const data = response.products[3].exposiciones;
   return (
     <AnimateEntrance>
       <section className="paddingBody">

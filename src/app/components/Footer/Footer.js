@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { PiInstagramLogoLight } from "react-icons/pi";
 import { CiLocationOn } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -16,8 +18,8 @@ const Footer = () => {
         <Link href="/" className={`${styles.imgLogo}`}>
           <Image
             src="/logoBlack.svg"
-            height={200}
-            width={200}
+            height={100}
+            width={100}
             alt="Rocio Alonso Logo"
             className={`${styles.headerImg}`}
           />
@@ -26,7 +28,7 @@ const Footer = () => {
         <a
           href="https://www.instagram.com/rocioalonsoarte/"
           target="_blank"
-          className={`flex gap align-center ${styles.imgLogo} mt-4`}
+          className={`flex gap align-center button ${styles.imgLogo} mt-4`}
         >
           <PiInstagramLogoLight className="text-xl" />
           <p className="subtitle">rocioalonsoarte</p>
@@ -35,10 +37,19 @@ const Footer = () => {
         <a
           href="https://www.instagram.com/tallermozzafiato/"
           target="_blank"
-          className={`flex gap align-center ${styles.imgLogo} mt-4`}
+          className={`flex gap align-center button ${styles.imgLogo} mt-4`}
         >
           <PiInstagramLogoLight className="text-xl" />
           <p className="subtitle">tallermozzafiato</p>
+        </a>
+
+        <a
+          href="mailto:rocioalonsoart@gmail.com"
+          target="_blank"
+          className={`flex gap align-center button ${styles.imgLogo} mt-4`}
+        >
+          <CiMail className="text-xl" />
+          <p className="subtitle">rocioalonsoart@gmail.com</p>
         </a>
       </div>
 
@@ -51,9 +62,20 @@ const Footer = () => {
         <p className="subtitle">Martes y Jueves</p>
         <p className="subtitle m-bottom">De 17hs a 19hs y de 19hs a 21hs</p>
 
-        <div className="subtitle flex float-right">
-          <CiLocationOn className="text-xl mb-1" />
-          <p>El Guinardó, Barcelona</p>
+        <div className="subtitle flex flex-col float-right justify-end">
+          <a
+            href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20quisiera%20recibir%20más%20información"
+            target="_blank"
+            className={`gap align-center button m-bottom`}
+          >
+            <FiPhone />
+            <p className="subtitle">+34 677 37 49 70</p>
+          </a>
+
+          <div className="flex float-right">
+            <CiLocationOn className="text-xl mb-1" />
+            <p>El Guinardó, Barcelona</p>
+          </div>
         </div>
       </div>
     </footer>

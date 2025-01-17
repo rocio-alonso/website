@@ -1,3 +1,12 @@
+.heroSection1 {
+  background-color: white;
+}
+
+.heroSection1 input, .heroSection1 textarea{
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .formButton {
   margin-top: 2em;
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import "@/app/globals.css";
 import styles from "@/app/components/Card/Card.module.css";
@@ -21,12 +22,12 @@ const Card = ({ data, isObra, dataObra }) => {
       )}
 
       {isObra && (
-          <Image
-            src="/images/about.jpg"
-            alt="exposition Image"
-            width={500}
-            height={500}
-          />
+        <Image
+          src={`/images/obras${dataObra.img}`}
+          alt="exposition Image"
+          width={500}
+          height={500}
+        />
       )}
 
       {!isObra ? (
@@ -42,8 +43,14 @@ const Card = ({ data, isObra, dataObra }) => {
           </div>
         </div>
       ) : (
-        <div className={`${styles.cardText}`}>
-          <h2 className="subtitle w-4/5">{dataObra.titulo}</h2>
+        <div className={`flex items-center justify-between ${styles.cardText}`}>
+          <div>
+            <h2 className="title">{dataObra.titulo}</h2>
+            <p className="subtitle thin">{dataObra.medidas}</p>
+          </div>
+          <Link className="button" href="mailto:rocioalonsoart@gmail.com">
+            Consultar
+          </Link>
         </div>
       )}
     </div>

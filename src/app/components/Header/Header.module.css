@@ -3,16 +3,20 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  color: white;
+  color: black !important;
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
 }
 
+.headerDiv{
+  font-size: 1.05em;
+}
+
 .activeLink {
   display: block;
   content: "";
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px black;
   transform: scaleX(1);
   opacity: 1;
 }
@@ -43,7 +47,7 @@
 .buttonHeader:after {
   display: block;
   content: "";
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px black;
   transform: scaleX(0);
   opacity: 0;
   transition: all 500ms ease-in-out;
@@ -88,7 +92,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    padding: 20vw 23vw 20vw 8vw !important;
+    padding: 25vw 23vw 20vw 8vw !important;
     height: 100vh;
     background-color: white;
     color: black;

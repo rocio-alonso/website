@@ -15,11 +15,11 @@ const page = () => {
   return (
     <main>
       <div className={styles.hero}>
-        <div className={`z-50 w-full text-white flex justify-center`}>
-          <h2 className="text-6xl thin">Sobre mi</h2>
+        <div className={`z-50 w-full text-black flex justify-center`}>
+          <h2 className="text-7xl thin">Sobre mi</h2>
         </div>
 
-        <div className={`flex z-50 text-white gap bottom-0 absolute paddingSection ${styles.navbarBottom}`}>
+        <div className={`flex z-50 text-black gap bottom-0 absolute paddingSection text-lg ${styles.navbarBottom}`}>
           <AnimateEntrance>
             <ul className="flex">
               <li className={stylesHeader.buttonHeader}>

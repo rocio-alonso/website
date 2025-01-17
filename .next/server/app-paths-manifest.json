@@ -1,10 +1,7 @@
 {
   "/api/getProducts/route": "app/api/getProducts/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/expos/page": "app/expos/page.js",
-  "/taller/page": "app/taller/page.js",
   "/sobre-mi/page": "app/sobre-mi/page.js",
-  "/contacto/page": "app/contacto/page.js",
   "/obras/page": "app/obras/page.js",
+  "/contacto/page": "app/contacto/page.js",
   "/page": "app/page.js"
 }

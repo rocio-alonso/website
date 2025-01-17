@@ -56,7 +56,6 @@ const Header = () => {
         />
 
         <Link href="/" className={`flex items-center ${styles.imgLogo}`}>
-          {isScrolled || menuOpen ? (
             <Image
               src="/logoBlack.svg"
               height={100}
@@ -64,15 +63,6 @@ const Header = () => {
               alt="Rocio Alonso Logo"
               className={`${styles.headerImg}`}
             />
-          ) : (
-            <Image
-              src="/logoWhite.svg"
-              height={100}
-              width={100}
-              alt="Rocio Alonso Logo"
-              className={`${styles.headerImg}`}
-            />
-          )}
         </Link>
         {menuOpen ? (
           <Navbar responsive={true} onClick={closeMenu} />
