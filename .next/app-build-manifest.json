@@ -6,23 +6,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/contacto/page": [
+    "/obras/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/contacto/page.css",
-      "static/chunks/app/contacto/page.js"
+      "static/css/app/obras/page.css",
+      "static/chunks/app/obras/page.js"
     ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
-    ],
-    "/obras/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/obras/page.css",
-      "static/chunks/app/obras/page.js"
     ],
     "/api/getProducts/route": [
       "static/chunks/webpack.js",
@@ -34,6 +28,18 @@
       "static/chunks/main-app.js",
       "static/css/app/sobre-mi/page.css",
       "static/chunks/app/sobre-mi/page.js"
+    ],
+    "/contacto/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contacto/page.css",
+      "static/chunks/app/contacto/page.js"
+    ],
+    "/taller/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/taller/page.css",
+      "static/chunks/app/taller/page.js"
     ]
   }
 }

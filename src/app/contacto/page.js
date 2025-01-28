@@ -4,20 +4,55 @@ import React from "react";
 import styles from "@/app/page.module.css";
 import stylesForm from "@/app/contacto/page.module.css";
 import { useForm, ValidationError } from "@formspree/react";
+import { CiLocationOn } from "react-icons/ci";
+import { FiPhone } from "react-icons/fi";
+
+import Image from "next/image";
 
 const ContactPage = () => {
   const [state, handleSubmit] = useForm("mvggvvwa");
 
   return (
-    <div className={`w-screen h-screen ${styles.heroSection1} ${stylesForm.heroSection1}`}>
+    <div
+      className={`w-screen flex gap-20 paddingSection ${stylesForm.heroSection1}`}
+    >
+      <div className={`w-1/4 ${stylesForm.responsiveSection}`}>
+        <Image
+          src={"/images/imagenes/contact.jpg"}
+          alt={`Property image`}
+          width={500}
+          height={500}
+        />
+      </div>
+
+      <div className={`${stylesForm.responsiveSection}`}>
+        <div className="text-start justify-right">
+          <p className="title m-bottom">Taller Mozzafiato</p>
+          <p className="subtitle">Martes y Jueves</p>
+          <p className="subtitle m-bottom">De 17hs a 19hs y de 19hs a 21hs</p>
+
+          <div className="subtitle flex flex-col float-left justify-start">
+            <a
+              href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20quisiera%20recibir%20más%20información"
+              target="_blank"
+              className={`gap align-center button m-bottom`}
+            >
+              <FiPhone />
+              <p className="subtitle">+34 677 37 49 70</p>
+            </a>
+
+            <div className="flex float-left">
+              <CiLocationOn className="text-xl mb-1" />
+              <p>El Guinardó, Barcelona</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <form
         onSubmit={handleSubmit}
         className={`${stylesForm.contactForm} z-50 text-black flex flex-col gap-2 w-1/4`}
       >
-        {/* Campo de Nombre */}
-
-        <h2 className="title m-bottom">Contacto</h2>
-
         <label htmlFor="name" className="subtitle">
           Nombre
         </label>

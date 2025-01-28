@@ -61,7 +61,7 @@ body {
 }
 
 .subtitle {
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-size: 1em;
 }
@@ -187,6 +187,10 @@ video::-webkit-media-controls-panel {
   .dot {
     width: 10px !important;
     height: 10px !important;
+  }
+
+  .subtitle {
+    font-weight: 400;
   }
 }
 

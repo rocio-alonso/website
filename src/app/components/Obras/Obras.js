@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import PageData from "./PageData";
 import Card from "../Card/Card";
 import { BsFullscreen } from "react-icons/bs";
 import styles from "@/app/obras/page.module.css";
@@ -68,6 +67,54 @@ const Obras = () => {
                   onClick={() => handleFullscreen(dataItem.obras)}
                 />
               </div>
+
+              {dataItem.titulo === "Horror Vacui" && (
+                <div>
+                  <p className="m-bottom subtitle">
+                    Horror Vacui refleja la esencia más profunda de la sociedad
+                    contemporánea: la compulsión inherente de la condición
+                    humana a llenar ese vacío que persiste en nuestra búsqueda
+                    existencial. Así, nos empeñamos en alcanzar objetivos
+                    materiales, emocionales o profesionales, intentando colmar
+                    nuestras vidas de intensas actividades y objetos banales.
+                    Sin embargo, el vacío no es algo que podamos superar por
+                    completo; es, más bien, una condición humana universal que
+                    debemos aceptar. Nos lanzamos frenéticamente hacia una
+                    búsqueda constante de placer, ignorando que la verdadera
+                    transformación solo ocurre al hacernos conscientes de este
+                    vacío y confrontarlo. Es en ese proceso de reconocimiento de
+                    nuestra propia vulnerabilidad y la fragilidad de nuestra
+                    existencia donde se nos revela lo verdaderamente esencial,
+                    donde reside la auténtica riqueza —en lo simple, en aquello
+                    que tantas veces pasamos por alto.
+                  </p>
+                  <p className="m-bottom subtitle">
+                    Si logramos cumplir el deseo, el disfrute es siempre
+                    efímero; si no lo alcanzamos, la frustración se apodera de
+                    nosotros.Horror Vacui os invita a un viaje introspectivo, a
+                    cuestionaros sobre vuestros propios vacíos y a reconocer lo
+                    que realmente importa en vuestra existencia.Los objetos que
+                    utilizo en mis obras — llaves, botones, telas, monedas,
+                    diarios, juguetes de la infancia — son fragmentos de la vida
+                    cotidiana, piezas que componen nuestra historia, que nos
+                    definen, pero que nunca logran llenar ese hueco infinito.
+                    Por el contrario, los espacios en blanco del lienzo actúan
+                    como espejos de esa insatisfacción inexorable. Esta
+                    interacción constante entre lo representado y lo ausente;
+                    esa tensión entre lo que se muestra y lo que falta, busca
+                    invitaros tácitamente a llenarlos de algo propio, reflejando
+                    la misma compulsión por llenar el vacío interior que intento
+                    poner en evidencia. Horror Vacui pretende iluminar aquello
+                    que no solemos ver: nuestra propia vulnerabilidad, ese vacío
+                    inherente que nos define. El objetivo artístico de esta
+                    serie es que el espectador se sienta confrontado, reflexivo,
+                    inquieto, pero también liberado al aceptar que el vacío no
+                    es un mal a combatir, sino una condición de la vida que, al
+                    reconocerlo, nos acerca a la esencia de la existencia.
+                  </p>
+                </div>
+              )}
+
               <div className="m-bottom flex flex-wrap justify-between">
                 {dataItem.obras?.map((obraData, index) => (
                   <Card dataObra={obraData} isObra={true} key={index} />

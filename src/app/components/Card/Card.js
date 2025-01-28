@@ -13,7 +13,7 @@ const Card = ({ data, isObra, dataObra }) => {
       {!isObra && (
         <div className={styles.cardImage}>
           <Image
-            src={data.img ? `/images/expo/${data.img}` : "/images/expo-1.jpg"}
+            src={data.img ? `/images/expo/${data.img}` : "/images/expo/default.jpg"}
             alt="exposition Image"
             width={500}
             height={500}

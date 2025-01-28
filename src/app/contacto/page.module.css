@@ -1,8 +1,10 @@
 .heroSection1 {
   background-color: white;
+  margin-top: 20vh;
 }
 
-.heroSection1 input, .heroSection1 textarea{
+.heroSection1 input,
+.heroSection1 textarea {
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -13,10 +15,14 @@
 
 @media (max-width: 800px) {
   .contactForm {
-    width: 80% !important;
+    width: 100% !important;
   }
 
   .formButton {
     margin-top: 2em;
+  }
+
+  .responsiveSection {
+    display: none;
   }
 }

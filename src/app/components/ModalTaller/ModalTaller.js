@@ -50,11 +50,11 @@ const ModalTaller = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <p className={`subtitle ${stylesModal.textContact}`}>¿Te interesa participar de una clase?</p>
+            <p className={`subtitle ${stylesModal.textContact}`}>Reserva tu plaza</p>
             <a
               className={`button gap-1 button-wpp ${stylesModal.textContactButton}`}
               target="blank_"
-              href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20interesa%20asistir%20a%20una%20clase%20del%20taller"
+              href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Quisiera%20recibir%20más%20información"
             >
               <AiOutlineWhatsApp className={styles.price} />
               Contactar

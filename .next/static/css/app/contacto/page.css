@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   overflow: hidden;
 }
 
@@ -164,9 +163,11 @@
   \****************************************************************************************************************************************************************************************************************************************************************************/
 .page_heroSection1__kSnen {
   background-color: white;
+  margin-top: 20vh;
 }
 
-.page_heroSection1__kSnen input, .page_heroSection1__kSnen textarea{
+.page_heroSection1__kSnen input,
+.page_heroSection1__kSnen textarea {
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -177,11 +178,15 @@
 
 @media (max-width: 800px) {
   .page_contactForm__yEYTq {
-    width: 80% !important;
+    width: 100% !important;
   }
 
   .page_formButton__TNqAN {
     margin-top: 2em;
+  }
+
+  .page_responsiveSection__DWnV6 {
+    display: none;
   }
 }
 
