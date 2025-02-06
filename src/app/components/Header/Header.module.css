@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  color: black !important;
+  color: white !important;
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
@@ -16,7 +16,7 @@
 .activeLink {
   display: block;
   content: "";
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px white;
   transform: scaleX(1);
   opacity: 1;
 }
@@ -28,8 +28,12 @@
 
 .scrolled {
   background-color: white;
-  color: black;
+  color: black !important;
   .buttonHeader:after {
+    border-bottom: solid 1px black;
+  }
+
+  .activeLink {
     border-bottom: solid 1px black;
   }
 }
@@ -47,7 +51,7 @@
 .buttonHeader:after {
   display: block;
   content: "";
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px white;
   transform: scaleX(0);
   opacity: 0;
   transition: all 500ms ease-in-out;

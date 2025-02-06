@@ -27,6 +27,7 @@ main {
   --shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.4);
   --padding-section: 2vw 5vw;
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 17px;
 }
 
 img,
@@ -41,11 +42,11 @@ video:hover {
 }
 
 .paddingSection {
-  padding: 3vw 8vw;
+  padding: 3vw 5vw;
 }
 
 .paddingBody {
-  padding: 0 8vw 3vw;
+  padding: 0 5vw 3vw;
 }
 
 html,
@@ -112,8 +113,8 @@ video::-webkit-media-controls-panel {
 
 .button.secondary {
   background-color: rgba(255, 255, 255, 0) !important;
-  color: rgb(0, 0, 0);
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
 }
 
 .button-wpp {

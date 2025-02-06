@@ -63,7 +63,7 @@
 
 .divData,
 .dataLocation p {
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
 @media (max-width: 800px) {
@@ -75,4 +75,8 @@
   .card:nth-child(3) {
     display: none;
   }
+}
+
+.imgObras{
+  width: 90vw !important;
 }

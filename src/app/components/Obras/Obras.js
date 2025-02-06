@@ -57,7 +57,9 @@ const Obras = () => {
         {data.map((dataItem, index) => (
           <AnimateEntrance key={index}>
             <div>
-              <div className={`flex items-center m-bottom gap-4 ${styles.titleDiv}`}>
+              <div
+                className={`flex items-center m-bottom gap-4 ${styles.titleDiv}`}
+              >
                 <h2 className="title flex">
                   {dataItem.titulo}{" "}
                   <p className="subtitle ml-2">({dataItem.ano})</p>
@@ -71,43 +73,32 @@ const Obras = () => {
               {dataItem.titulo === "Horror Vacui" && (
                 <div>
                   <p className="m-bottom subtitle">
-                    Horror Vacui refleja la esencia más profunda de la sociedad
-                    contemporánea: la compulsión inherente de la condición
-                    humana a llenar ese vacío que persiste en nuestra búsqueda
-                    existencial. Así, nos empeñamos en alcanzar objetivos
-                    materiales, emocionales o profesionales, intentando colmar
-                    nuestras vidas de intensas actividades y objetos banales.
-                    Sin embargo, el vacío no es algo que podamos superar por
-                    completo; es, más bien, una condición humana universal que
-                    debemos aceptar. Nos lanzamos frenéticamente hacia una
-                    búsqueda constante de placer, ignorando que la verdadera
-                    transformación solo ocurre al hacernos conscientes de este
-                    vacío y confrontarlo. Es en ese proceso de reconocimiento de
-                    nuestra propia vulnerabilidad y la fragilidad de nuestra
-                    existencia donde se nos revela lo verdaderamente esencial,
-                    donde reside la auténtica riqueza —en lo simple, en aquello
-                    que tantas veces pasamos por alto.
+                    Mi última serie refleja la esencia más profunda de la
+                    sociedad contemporánea: la compulsión inherente de la
+                    condición humana a llenar el vacío que persiste en nuestra
+                    búsqueda existencial.
                   </p>
                   <p className="m-bottom subtitle">
-                    Si logramos cumplir el deseo, el disfrute es siempre
-                    efímero; si no lo alcanzamos, la frustración se apodera de
-                    nosotros.Horror Vacui os invita a un viaje introspectivo, a
-                    cuestionaros sobre vuestros propios vacíos y a reconocer lo
-                    que realmente importa en vuestra existencia.Los objetos que
-                    utilizo en mis obras — llaves, botones, telas, monedas,
-                    diarios, juguetes de la infancia — son fragmentos de la vida
-                    cotidiana, piezas que componen nuestra historia, que nos
+                    Colmamos nuestras vidas de actividades y objetos banales,
+                    sin embargo, el vacío no es algo que podamos superar por
+                    completo; es, más bien, una condición humana universal que
+                    debemos aceptar. En nuestra frenética búsqueda de placer,
+                    olvidamos que la verdadera transformación llega al reconocer
+                    y confrontar ese vacío. Al aceptar nuestra vulnerabilidad,
+                    descubrimos que la auténtica riqueza reside en lo simple.
+                  </p>
+
+                  <p className="subtitle mb-10">
+                    Los objetos que utilizo en mis obras son fragmentos de la
+                    vida cotidiana, piezas que componen nuestra historia y nos
                     definen, pero que nunca logran llenar ese hueco infinito.
-                    Por el contrario, los espacios en blanco del lienzo actúan
-                    como espejos de esa insatisfacción inexorable. Esta
-                    interacción constante entre lo representado y lo ausente;
-                    esa tensión entre lo que se muestra y lo que falta, busca
-                    invitaros tácitamente a llenarlos de algo propio, reflejando
-                    la misma compulsión por llenar el vacío interior que intento
-                    poner en evidencia. Horror Vacui pretende iluminar aquello
-                    que no solemos ver: nuestra propia vulnerabilidad, ese vacío
-                    inherente que nos define. El objetivo artístico de esta
-                    serie es que el espectador se sienta confrontado, reflexivo,
+                    Los espacios en blanco del lienzo, por el contrario, actúan
+                    como espejos de esa insatisfacción inexorable. Si logramos
+                    cumplir el deseo, el disfrute es siempre efímero; si no lo
+                    alcanzamos, la frustración se apodera de nosotros. Horror
+                    Vacui os invita a un viaje introspectivo, a cuestionaros
+                    sobre vuestros propios vacíos. El objetivo de esta serie es
+                    que el espectador se sienta confrontado, reflexivo,
                     inquieto, pero también liberado al aceptar que el vacío no
                     es un mal a combatir, sino una condición de la vida que, al
                     reconocerlo, nos acerca a la esencia de la existencia.

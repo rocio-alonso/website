@@ -2,13 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Hook para obtener la ruta actual
+import { usePathname } from "next/navigation";
 
 import "@/app/globals.css";
 import styles from "@/app/components/Header/Header.module.css";
 
 const Navbar = ({ responsive, onClick }) => {
-  const pathname = usePathname(); // Ruta actual
+  const pathname = usePathname();
 
   return (
     <div

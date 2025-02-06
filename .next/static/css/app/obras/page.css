@@ -544,6 +544,9 @@ video {
 .mb-1 {
   margin-bottom: 0.25rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -738,6 +741,7 @@ main {
   --shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.4);
   --padding-section: 2vw 5vw;
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 17px;
 }
 
 img,
@@ -752,11 +756,11 @@ video:hover {
 }
 
 .paddingSection {
-  padding: 3vw 8vw;
+  padding: 3vw 5vw;
 }
 
 .paddingBody {
-  padding: 0 8vw 3vw;
+  padding: 0 5vw 3vw;
 }
 
 html,
@@ -823,8 +827,8 @@ video::-webkit-media-controls-panel {
 
 .button.secondary {
   background-color: rgba(255, 255, 255, 0) !important;
-  color: rgb(0, 0, 0);
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
 }
 
 .button-wpp {
@@ -993,7 +997,7 @@ video::-webkit-media-controls-panel {
 
 .Card_divData__M4ggs,
 .Card_dataLocation__Gzlut p {
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
 @media (max-width: 800px) {
@@ -1007,6 +1011,9 @@ video::-webkit-media-controls-panel {
   }
 }
 
+.Card_imgObras__yksZj{
+  width: 90vw !important;
+}
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/obras/page.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
@@ -1029,7 +1036,7 @@ video::-webkit-media-controls-panel {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/images/imagenes/hero-mis-obras-2.jpg");
+    background-image: url("/images/background-image-2.png");
     filter: saturate(0.7);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1045,6 +1052,7 @@ video::-webkit-media-controls-panel {
     width: 100%;
     height: 100%;
     z-index: 1;
+    background-color: rgba(0, 0, 0, .1);
   }
 
   .page_titleDiv__GbSqz svg{
@@ -1092,4 +1100,8 @@ video::-webkit-media-controls-panel {
     height: 80%;
     width: auto;
     margin: 0 auto;
+  }
+
+  .page_obrasMain__lj8oW img{
+    width: 45vw;
   }

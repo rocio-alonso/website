@@ -8,12 +8,15 @@ import styles from "@/app/components/Card/Card.module.css";
 import { GoLocation } from "react-icons/go";
 
 const Card = ({ data, isObra, dataObra }) => {
+  console.log(dataObra);
   return (
     <div className={styles.card}>
       {!isObra && (
         <div className={styles.cardImage}>
           <Image
-            src={data.img ? `/images/expo/${data.img}` : "/images/expo/default.jpg"}
+            src={
+              data.img ? `/images/expo/${data.img}` : "/images/expo/default.jpg"
+            }
             alt="exposition Image"
             width={500}
             height={500}
@@ -31,7 +34,7 @@ const Card = ({ data, isObra, dataObra }) => {
       )}
 
       {!isObra ? (
-        <div className={styles.cardText}>
+        <div className={`${styles.cardText}`}>
           <h2 className="subtitle w-4/5">{data.lugar}</h2>
 
           <div className={`flex w-full ${styles.divData}`}>
@@ -47,10 +50,16 @@ const Card = ({ data, isObra, dataObra }) => {
           <div>
             <h2 className="title">{dataObra.titulo}</h2>
             <p className="subtitle thin">{dataObra.medidas}</p>
+            {dataObra.stock !== "1" && (
+              <p className="subtitle thin">Sin stock</p>
+            )}
           </div>
-          <Link className="button" href="mailto:rocioalonsoart@gmail.com">
-            Consultar
-          </Link>
+
+          {dataObra.stock === "1" && (
+            <Link className="button" href="mailto:rocioalonsoart@gmail.com">
+              Consultar
+            </Link>
+          )}
         </div>
       )}
     </div>
