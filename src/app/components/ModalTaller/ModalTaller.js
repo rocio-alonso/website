@@ -35,7 +35,7 @@ const ModalTaller = () => {
         >
           <div>
             <h2 className={`title flex m-bottom`}>
-              Aranceles <p className={`ml-1 subtitle`}>(Matrícula gratis)</p>
+              Tarifas <p className={`ml-1 subtitle`}>(Matrícula gratis)</p>
             </h2>
             <div className="flex flex-row gap-12">
               <div className={stylesModal.arancelBox}>

@@ -1,88 +1,62 @@
 .hero {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/images/background-image-2.png");
-    filter: saturate(0.7);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 0;
-  }
-  
-  .hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, .1);
-  }
+  width: 100vw;
+  height: 18vh;
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
 
-  .titleDiv svg{
-    margin-left: var(--margin);
-  }
+.titleDiv svg {
+  margin-left: var(--margin);
+}
 
-  .obrasMain img{
-    filter: none !important;
-  }
+.obrasMain img {
+  filter: none !important;
+}
 
-  .fullscreenOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  
-  .fullscreenContent {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 80%;
-    height: 95vh;
-    overflow-y: auto;
-    text-align: center;
-  }
-  
-  .closeButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .obraImgFull{
-    height: 80%;
-    width: auto;
-    margin: 0 auto;
-  }
+.fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
 
-  .obrasMain img{
-    width: 45vw;
-  }
+.fullscreenContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  height: 95vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.closeButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.obraImgFull {
+  height: 80%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.obrasMain img {
+  width: 45vw;
+}

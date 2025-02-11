@@ -1,5 +1,9 @@
 {
-  "/api/getProducts/route": "app/api/getProducts/route.js",
-  "/page": "app/page.js",
-  "/obras/page": "app/obras/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/contacto/page": "app/contacto/page.js",
+  "/obras/page": "app/obras/page.js",
+  "/sobre-mi/page": "app/sobre-mi/page.js",
+  "/taller/page": "app/taller/page.js",
+  "/expos/page": "app/expos/page.js",
+  "/page": "app/page.js"
 }

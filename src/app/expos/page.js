@@ -9,8 +9,7 @@ const page = async () => {
   const data = response.products[3].exposiciones;
   return (
     <main>
-      <div className={`${styles.hero} ${styles2.heroText}`}>
-        <h2 className="text-5xl thin z-10 text-white paddingSection">Exposiciones</h2>
+      <div className={`${styles2.heroText}`}>
       </div>
 
       <ExposData data={data} />

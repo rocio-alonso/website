@@ -61,7 +61,7 @@ const HeroSlider2 = () => {
 
       <div className={`${styles.heroText} paddingSection`}>
         <h2 className="text-6xl thin">
-          Horror Vacui: <p className="subtitle">La belleza de lo ausente</p>
+          Horror Vacui: <p className="subtitle thin">La belleza de lo ausente</p>
         </h2>
         <div className="flex">
           <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>

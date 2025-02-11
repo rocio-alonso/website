@@ -507,9 +507,6 @@ video {
 .right-0 {
   right: 0px;
 }
-.z-10 {
-  z-index: 10;
-}
 .z-50 {
   z-index: 50;
 }
@@ -602,6 +599,15 @@ video {
 .w-screen {
   width: 100vw;
 }
+.w-9 {
+  width: 2.25rem;
+}
+.w-64 {
+  width: 16rem;
+}
+.w-80 {
+  width: 20rem;
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -668,21 +674,20 @@ video {
 .align-middle {
   vertical-align: middle;
 }
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -1014,94 +1019,73 @@ video::-webkit-media-controls-panel {
 .Card_imgObras__yksZj{
   width: 90vw !important;
 }
+
+.Card_fullCard__r_zyo{
+  width: 45vw;
+}
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/obras/page.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
 .page_hero__Uttf5 {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .page_hero__Uttf5::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/images/background-image-2.png");
-    filter: saturate(0.7);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 0;
-  }
-  
-  .page_hero__Uttf5::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, .1);
-  }
+  width: 100vw;
+  height: 18vh;
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
 
-  .page_titleDiv__GbSqz svg{
-    margin-left: var(--margin);
-  }
+.page_titleDiv__GbSqz svg {
+  margin-left: var(--margin);
+}
 
-  .page_obrasMain__lj8oW img{
-    filter: none !important;
-  }
+.page_obrasMain__lj8oW img {
+  filter: none !important;
+}
 
-  .page_fullscreenOverlay__oCfqE {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  
-  .page_fullscreenContent__haiOn {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 80%;
-    height: 95vh;
-    overflow-y: auto;
-    text-align: center;
-  }
-  
-  .page_closeButton__KUMuG {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .page_obraImgFull__WDOpQ{
-    height: 80%;
-    width: auto;
-    margin: 0 auto;
-  }
+.page_fullscreenOverlay__oCfqE {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
 
-  .page_obrasMain__lj8oW img{
-    width: 45vw;
-  }
+.page_fullscreenContent__haiOn {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  height: 95vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.page_closeButton__KUMuG {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page_obraImgFull__WDOpQ {
+  height: 80%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.page_obrasMain__lj8oW img {
+  width: 45vw;
+}
+

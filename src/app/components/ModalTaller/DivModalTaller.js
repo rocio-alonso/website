@@ -6,11 +6,11 @@ import stylesModal from "@/app/components/ModalTaller/ModalTaller.module.css";
 const DivModalTaller = () => {
   return (
     <div
-      className={`paddingSection justify-between flex ${styles.divModalChild}`}
+      className={`paddingSection justify-between flex w-full ${styles.divModalChild}`}
     >
       <div>
         <h2 className={`title flex m-bottom`}>
-          Aranceles <p className={`ml-1 subtitle`}>(Matrícula gratis)</p>
+          Tarifas <p className={`ml-1 subtitle`}>(Matrícula gratis)</p>
         </h2>
         <div className="flex flex-row gap-12">
           <div className={stylesModal.arancelBox}>

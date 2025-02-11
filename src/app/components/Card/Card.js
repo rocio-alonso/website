@@ -10,13 +10,11 @@ import { GoLocation } from "react-icons/go";
 const Card = ({ data, isObra, dataObra }) => {
   console.log(dataObra);
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${isObra && dataObra.titulo === "Encierro del Troglodita" ? styles.fullCard : ''}`}>
       {!isObra && (
         <div className={styles.cardImage}>
           <Image
-            src={
-              data.img ? `/images/expo/${data.img}` : "/images/expo/default.jpg"
-            }
+            src={data.img ? `/images/expo/${data.img}` : "/images/expo/default.jpg"}
             alt="exposition Image"
             width={500}
             height={500}
@@ -38,10 +36,10 @@ const Card = ({ data, isObra, dataObra }) => {
           <h2 className="subtitle w-4/5">{data.lugar}</h2>
 
           <div className={`flex w-full ${styles.divData}`}>
-            <p className={`${styles.dataBox} subtitle`}>{data.ano}</p>/
-            <p className={`flex subtitle ${styles.dataLocation}`}>
-              <GoLocation />
-              {data.ubicacion}
+            <p className={`${styles.dataBox} subtitle thin text-base`}>
+              <em>
+                {data.ano} - {data.ubicacion}
+              </em>
             </p>
           </div>
         </div>

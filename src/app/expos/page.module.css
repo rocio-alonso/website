@@ -7,3 +7,15 @@
   width: 100vw;
   z-index: 100;
 }
+
+.heroText {
+  width: 100vw;
+  height: 18vh;
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}

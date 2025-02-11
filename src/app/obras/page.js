@@ -10,7 +10,6 @@ const page = async () => {
         <div
           className={`z-50 paddingSection w-full h-full flex justify-center items-center text-black`}
         >
-          <h2 className="text-7xl thin text-white">Mis obras</h2>
         </div>
       </div>
 

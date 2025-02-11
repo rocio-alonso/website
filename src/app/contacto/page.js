@@ -34,7 +34,6 @@ const ContactPage = () => {
         <div className={`${stylesForm.responsiveSection}`}>
           <div className="text-start justify-right">
             <p className="title m-bottom">Contacto</p>
-            <p className="subtitle m-bottom">Rocio Alonso</p>
 
             <div className="subtitle flex flex-col float-left justify-start">
               <a

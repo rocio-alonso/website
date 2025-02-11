@@ -16,7 +16,6 @@ const page = () => {
     <main>
       <div className={styles.hero}>
         <div className={`z-50 w-full text-white flex justify-center`}>
-          <h2 className="text-7xl thin">Sobre mi</h2>
         </div>
 
         <div className={`flex z-50 text-white gap bottom-0 absolute paddingSection text-lg ${styles.navbarBottom}`}>
