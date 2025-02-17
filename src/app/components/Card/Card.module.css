@@ -94,7 +94,7 @@
   }
 
   .card img {
-    width: 100vw;
+    width: 100vw !important;
   }
 
   .cardObra .cardText {
