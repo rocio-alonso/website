@@ -56,7 +56,7 @@ const Header = () => {
         />
 
         <Link href="/" className={`flex items-center ${styles.imgLogo}`}>
-          {isScrolled ? (
+          {isScrolled || menuOpen ? (
             <Image
               src="/logoBlack.svg"
               height={100}

@@ -5,14 +5,35 @@
   width: 25vw;
   height: fit-content;
   transition: all ease 0.5s !important;
+  font-size: 1.1em;
 }
 
 .Card_card__Tuw2S:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
 }
 
 .Card_card__Tuw2S:hover > .Card_cardText__IFyLM {
-  padding: calc(var(--margin)*2) calc(var(--margin)*2);
+  padding: calc(var(--margin)*2) 0 calc(var(--margin)*2) calc(var(--margin)*1.5);
+}
+
+.Card_cardObra__YJ_mq{
+  width: 27vw;
+  font-size: 1em;
+}
+
+.Card_cardObra__YJ_mq:hover > .Card_cardText__IFyLM {
+  padding: calc(var(--margin)*2) calc(var(--margin)*1.5);
+}
+
+.Card_card__Tuw2S:hover > .Card_cardText__IFyLM h2{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Card_card__Tuw2S .Card_cardText__IFyLM div{
+  width: 100%;
 }
 
 .Card_card__Tuw2S h2 {
@@ -688,15 +709,6 @@ video {
 .w-screen {
   width: 100vw;
 }
-.w-9 {
-  width: 2.25rem;
-}
-.w-64 {
-  width: 16rem;
-}
-.w-80 {
-  width: 20rem;
-}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -763,12 +775,13 @@ video {
 .align-middle {
   vertical-align: middle;
 }
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .text-6xl {
   font-size: 3.75rem;
@@ -785,6 +798,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .font-thin {
   font-weight: 100;
@@ -810,8 +827,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
-
 * {
   margin: 0;
   padding: 0;
@@ -829,13 +844,30 @@ main {
   --secondary-color: #fff;
   --success-color: #3fbd3f;
   --font-size: 1em;
-  --margin: 1em;
+  --margin: 1.5em;
   --border: 10px;
   --height: 40px;
   --shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.4);
   --padding-section: 2vw 5vw;
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   font-size: 17px;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  src: url('/fonts/neue-haas/NeueHaasDisplayLight.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  src: url('/fonts/neue-haas/NeueHaasDisplayXXThin.ttf') format('ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body{
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 }
 
 img,
@@ -864,15 +896,19 @@ body {
 }
 
 .title {
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.1em;
 }
 
 .subtitle {
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   font-size: 1em;
+}
+
+.title-section{
+  font-size: 1.5em;
 }
 
 .m-bottom {
@@ -1304,7 +1340,7 @@ video::-webkit-media-controls-panel {
 }
 
 .Header_headerImg__UWAg1 {
-  width: 70%;
+  width: 75%;
   height: auto;
 }
 

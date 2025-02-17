@@ -2,14 +2,35 @@
   width: 25vw;
   height: fit-content;
   transition: all ease 0.5s !important;
+  font-size: 1.1em;
 }
 
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
 }
 
 .card:hover > .cardText {
-  padding: calc(var(--margin)*2) calc(var(--margin)*2);
+  padding: calc(var(--margin)*2) 0 calc(var(--margin)*2) calc(var(--margin)*1.5);
+}
+
+.cardObra{
+  width: 27vw;
+  font-size: 1em;
+}
+
+.cardObra:hover > .cardText {
+  padding: calc(var(--margin)*2) calc(var(--margin)*1.5);
+}
+
+.card:hover > .cardText h2{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card .cardText div{
+  width: 100%;
 }
 
 .card h2 {

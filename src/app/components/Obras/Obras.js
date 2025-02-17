@@ -64,10 +64,6 @@ const Obras = () => {
                   {dataItem.titulo}{" "}
                   <p className="subtitle ml-2">({dataItem.ano})</p>
                 </h2>
-                <BsFullscreen
-                  className="cursor-pointer"
-                  onClick={() => handleFullscreen(dataItem.obras)}
-                />
               </div>
 
               {dataItem.titulo === "Horror Vacui" && (

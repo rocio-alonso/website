@@ -26,7 +26,7 @@ const HeroSlider2 = () => {
         });
         setOpacity(1);
       }, 1000);
-    }, 10000);
+    }, 6000);
 
     return () => clearInterval(changeImageInterval);
   }, [currentImage, images]);
@@ -60,8 +60,8 @@ const HeroSlider2 = () => {
       </div>
 
       <div className={`${styles.heroText} paddingSection`}>
-        <h2 className="text-6xl thin">
-          Horror Vacui: <p className="subtitle thin">La belleza de lo ausente</p>
+        <h2 className="text-5xl">
+          Horror Vacui <p className="subtitle thin">La belleza de lo ausente</p>
         </h2>
         <div className="flex">
           <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>

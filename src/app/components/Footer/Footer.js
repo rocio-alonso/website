@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="">
         <Link href="/" className={`${styles.imgLogo}`}>
           <Image
-            src="/logoBlack.svg"
+            src="/logoWhite.svg"
             height={100}
             width={100}
             alt="Rocio Alonso Logo"

@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
-
 * {
   margin: 0;
   padding: 0;
@@ -21,13 +19,30 @@ main {
   --secondary-color: #fff;
   --success-color: #3fbd3f;
   --font-size: 1em;
-  --margin: 1em;
+  --margin: 1.5em;
   --border: 10px;
   --height: 40px;
   --shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.4);
   --padding-section: 2vw 5vw;
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   font-size: 17px;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  src: url('/fonts/neue-haas/NeueHaasDisplayLight.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  src: url('/fonts/neue-haas/NeueHaasDisplayXXThin.ttf') format('ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body{
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 }
 
 img,
@@ -56,15 +71,19 @@ body {
 }
 
 .title {
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.1em;
 }
 
 .subtitle {
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   font-size: 1em;
+}
+
+.title-section{
+  font-size: 1.5em;
 }
 
 .m-bottom {

@@ -10,7 +10,7 @@ import { GoLocation } from "react-icons/go";
 const Card = ({ data, isObra, dataObra }) => {
   console.log(dataObra);
   return (
-    <div className={`${styles.card} ${isObra && dataObra.titulo === "Encierro del Troglodita" ? styles.fullCard : ''}`}>
+    <div className={`${styles.card} ${isObra && dataObra.titulo === "Encierro del Troglodita" ? styles.fullCard : ''} ${isObra && styles.cardObra}`}>
       {!isObra && (
         <div className={styles.cardImage}>
           <Image
@@ -47,9 +47,9 @@ const Card = ({ data, isObra, dataObra }) => {
         <div className={`flex items-center justify-between ${styles.cardText}`}>
           <div>
             <h2 className="title">{dataObra.titulo}</h2>
-            <p className="subtitle thin">{dataObra.medidas}</p>
+            <p className="subtitle thin m-bottom">{dataObra.medidas}</p>
             {dataObra.stock !== "1" && (
-              <p className="subtitle thin">Sin stock</p>
+              <p className="subtitle thin text-center">SOLD OUT</p>
             )}
           </div>
 
