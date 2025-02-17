@@ -12,24 +12,25 @@
 }
 
 .card:hover > .cardText {
-  padding: calc(var(--margin)*2) 0 calc(var(--margin)*2) calc(var(--margin)*1.5);
+  padding: calc(var(--margin) * 2) 0 calc(var(--margin) * 2)
+    calc(var(--margin) * 1.5);
 }
 
-.cardObra{
+.cardObra {
   width: 27vw;
   font-size: 1em;
 }
 
 .cardObra:hover > .cardText {
-  padding: calc(var(--margin)*2) calc(var(--margin)*1.5);
+  padding: calc(var(--margin) * 2) calc(var(--margin) * 1.5);
 }
 
-.card:hover > .cardText h2{
+.card:hover > .cardText h2 {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.card .cardText div{
+.card .cardText div {
   width: 100%;
 }
 
@@ -39,7 +40,7 @@
 
 .cardText {
   transition: all ease 0.5s !important;
-  padding: calc(var(--margin)*2) var(--margin);
+  padding: calc(var(--margin) * 2) var(--margin);
 }
 
 .cardImage {
@@ -92,16 +93,25 @@
     width: 100%;
   }
 
+  .card img {
+    width: 100vw;
+  }
+
+  .cardObra .cardText {
+    margin: 0 !important;
+    padding: calc(var(--margin)* 2) 5px;
+  }
+
   .card:nth-child(2),
   .card:nth-child(3) {
     display: none;
   }
 }
 
-.imgObras{
+.imgObras {
   width: 90vw !important;
 }
 
-.fullCard{
+.fullCard {
   width: 45vw;
 }

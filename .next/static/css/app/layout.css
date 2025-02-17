@@ -15,24 +15,25 @@
 }
 
 .Card_card__Tuw2S:hover > .Card_cardText__IFyLM {
-  padding: calc(var(--margin)*2) 0 calc(var(--margin)*2) calc(var(--margin)*1.5);
+  padding: calc(var(--margin) * 2) 0 calc(var(--margin) * 2)
+    calc(var(--margin) * 1.5);
 }
 
-.Card_cardObra__YJ_mq{
+.Card_cardObra__YJ_mq {
   width: 27vw;
   font-size: 1em;
 }
 
 .Card_cardObra__YJ_mq:hover > .Card_cardText__IFyLM {
-  padding: calc(var(--margin)*2) calc(var(--margin)*1.5);
+  padding: calc(var(--margin) * 2) calc(var(--margin) * 1.5);
 }
 
-.Card_card__Tuw2S:hover > .Card_cardText__IFyLM h2{
+.Card_card__Tuw2S:hover > .Card_cardText__IFyLM h2 {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.Card_card__Tuw2S .Card_cardText__IFyLM div{
+.Card_card__Tuw2S .Card_cardText__IFyLM div {
   width: 100%;
 }
 
@@ -42,7 +43,7 @@
 
 .Card_cardText__IFyLM {
   transition: all ease 0.5s !important;
-  padding: calc(var(--margin)*2) var(--margin);
+  padding: calc(var(--margin) * 2) var(--margin);
 }
 
 .Card_cardImage__PhPFO {
@@ -95,19 +96,29 @@
     width: 100%;
   }
 
+  .Card_card__Tuw2S img {
+    width: 100vw;
+  }
+
+  .Card_cardObra__YJ_mq .Card_cardText__IFyLM {
+    margin: 0 !important;
+    padding: calc(var(--margin)* 2) 5px;
+  }
+
   .Card_card__Tuw2S:nth-child(2),
   .Card_card__Tuw2S:nth-child(3) {
     display: none;
   }
 }
 
-.Card_imgObras__yksZj{
+.Card_imgObras__yksZj {
   width: 90vw !important;
 }
 
-.Card_fullCard__r_zyo{
+.Card_fullCard__r_zyo {
   width: 45vw;
 }
+
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/Footer/Footer.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
@@ -826,10 +837,6 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
 .font-thin {
   font-weight: 100;
 }
@@ -871,7 +878,7 @@ main {
   --secondary-color: #fff;
   --success-color: #3fbd3f;
   --font-size: 1em;
-  --margin: 1.5em;
+  --margin: 1em;
   --border: 10px;
   --height: 40px;
   --shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.4);

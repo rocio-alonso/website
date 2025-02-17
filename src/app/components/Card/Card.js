@@ -10,7 +10,7 @@ import { GoLocation } from "react-icons/go";
 const Card = ({ data, isObra, dataObra }) => {
   console.log(dataObra);
   return (
-    <div className={`${styles.card} ${isObra && dataObra.titulo === "Encierro del Troglodita" ? styles.fullCard : ''} ${isObra && styles.cardObra}`}>
+    <div className={`${styles.card} ${isObra && dataObra.titulo === "Encierro del Troglodita" ? styles.fullCard : ''} ${isObra && styles.cardObra} ${isObra && "m-bottom"} `}>
       {!isObra && (
         <div className={styles.cardImage}>
           <Image
