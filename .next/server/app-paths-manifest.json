@@ -1,6 +1,6 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/api/getProducts/route": "app/api/getProducts/route.js",
-  "/page": "app/page.js",
-  "/obras/page": "app/obras/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/obras/page": "app/obras/page.js",
+  "/page": "app/page.js"
 }

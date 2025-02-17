@@ -14,7 +14,7 @@ const Footer = () => {
     <footer
       className={`w-full paddingSection flex justify-between ${styles.footerSection}`}
     >
-      <div className="">
+      <div className="w-1/2">
         <Link href="/" className={`${styles.imgLogo}`}>
           <Image
             src="/logoWhite.svg"
