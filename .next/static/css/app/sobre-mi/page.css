@@ -823,15 +823,6 @@ video {
 .font-thin {
   font-weight: 100;
 }
-.font-bold {
-  font-weight: 700;
-}
-.font-extrabold {
-  font-weight: 800;
-}
-.font-black {
-  font-weight: 900;
-}
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1135,7 +1126,7 @@ video::-webkit-media-controls-panel {
   background-image: url("/images/imagenes/hero-mis-obras.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -350px; 
+  background-position: -350px;
   z-index: 0;
 }
 
@@ -1182,6 +1173,10 @@ video::-webkit-media-controls-panel {
 
   .page_navbarBottom__xfHsl{
     display: none;
+  }
+
+  .page_hero__wjdj1::before {
+    background-position: -450px;
   }
 }
 

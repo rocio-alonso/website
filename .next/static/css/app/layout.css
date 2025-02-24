@@ -857,15 +857,6 @@ video {
 .font-thin {
   font-weight: 100;
 }
-.font-bold {
-  font-weight: 700;
-}
-.font-extrabold {
-  font-weight: 800;
-}
-.font-black {
-  font-weight: 900;
-}
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
