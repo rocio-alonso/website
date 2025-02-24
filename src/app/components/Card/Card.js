@@ -32,13 +32,14 @@ const Card = ({ data, isObra, dataObra }) => {
       )}
 
       {!isObra ? (
-        <div className={`${styles.cardText}`}>
-          <h2 className="subtitle w-4/5">{data.lugar}</h2>
+        <div className={`${styles.cardText} text-center`}>
+          <p className="subtitle thin text-sm m-bottom">{data.ano}</p>
+          <h2 className="title text-center">{data.lugar}</h2>
 
-          <div className={`flex w-full ${styles.divData}`}>
-            <p className={`${styles.dataBox} subtitle thin text-base`}>
-              <em>
-                {data.ano} - {data.ubicacion}
+          <div className={`${styles.divData} flex text-center justify-center`}>
+            <p className={`${styles.dataBox} subtitle thin text-center`}>
+              <em className="text-center">
+                {data.ubicacion}
               </em>
             </p>
           </div>

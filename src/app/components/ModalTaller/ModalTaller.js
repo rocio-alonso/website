@@ -12,7 +12,7 @@ const ModalTaller = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowModal(true);
-    }, 10000);
+    }, 8000);
 
     return () => clearTimeout(timer);
   }, []);

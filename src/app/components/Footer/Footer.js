@@ -14,21 +14,11 @@ const Footer = () => {
     <footer
       className={`w-full paddingSection flex justify-between ${styles.footerSection}`}
     >
-      <div className="w-1/2">
-        <Link href="/" className={`${styles.imgLogo}`}>
-          <Image
-            src="/logoWhite.svg"
-            height={100}
-            width={100}
-            alt="Rocio Alonso Logo"
-            className={`${styles.headerImg}`}
-          />
-        </Link>
-
+      <div className="">
         <a
           href="https://www.instagram.com/rocioalonsoarte/"
           target="_blank"
-          className={`flex gap align-center button ${styles.imgLogo} mt-4`}
+          className={`flex gap align-center ${styles.imgLogo}`}
         >
           <PiInstagramLogoLight className="text-xl" />
           <p className="subtitle">rocioalonsoarte</p>
@@ -37,7 +27,7 @@ const Footer = () => {
         <a
           href="https://www.instagram.com/tallermozzafiato/"
           target="_blank"
-          className={`flex gap align-center button ${styles.imgLogo} mt-4`}
+          className={`flex gap align-center  ${styles.imgLogo} mt-4`}
         >
           <PiInstagramLogoLight className="text-xl" />
           <p className="subtitle">tallermozzafiato</p>
@@ -46,7 +36,7 @@ const Footer = () => {
         <a
           href="mailto:rocioalonsoart@gmail.com"
           target="_blank"
-          className={`flex gap align-center button ${styles.imgLogo} mt-4`}
+          className={`flex gap align-center  ${styles.imgLogo} mt-4`}
         >
           <CiMail className="text-xl" />
           <p className="subtitle">rocioalonsoart@gmail.com</p>
@@ -66,7 +56,7 @@ const Footer = () => {
           <a
             href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20quisiera%20recibir%20más%20información"
             target="_blank"
-            className={`gap align-center button m-bottom`}
+            className={`flex gap items-center m-bottom justify-end`}
           >
             <FiPhone />
             <p className="subtitle">+34 677 37 49 70</p>

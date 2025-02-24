@@ -20,9 +20,9 @@ const ContactPage = () => {
         <div className={`z-50 w-full text-white flex justify-center`}></div>
       </div>
       <div
-        className={`w-screen flex gap-20 paddingSection ${stylesForm.heroSection1}`}
+        className={`flex flex-wrap gap-20 paddingSection ${stylesForm.heroSection1}`}
       >
-        <div className={`w-1/4 ${stylesForm.responsiveSection}`}>
+        <div className={`${stylesForm.imgContact}`}>
           <Image
             src={"/images/imagenes/contact.jpg"}
             alt={`Property image`}
@@ -31,7 +31,7 @@ const ContactPage = () => {
           />
         </div>
 
-        <div className={`${stylesForm.responsiveSection}`}>
+        <div className={`${stylesForm.contactText}`}>
           <div className="text-start justify-right">
             <p className="title m-bottom">Contacto</p>
 

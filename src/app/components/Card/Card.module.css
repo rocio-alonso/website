@@ -7,13 +7,12 @@
 
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  background-color: rgba(0, 0, 0, 0.09);
+  background-color: rgba(206, 206, 206, 0.09);
   border-radius: 5px;
 }
 
 .card:hover > .cardText {
-  padding: calc(var(--margin) * 2) 0 calc(var(--margin) * 2)
-    calc(var(--margin) * 1.5);
+  padding: calc(var(--margin) * 2.2) calc(var(--margin)) calc(var(--margin) * 2) calc(var(--margin));
 }
 
 .cardObra {
@@ -74,7 +73,6 @@
 .divData {
   gap: calc(var(--margin));
   align-items: baseline;
-  flex-wrap: wrap;
 }
 
 .dataLocation {
@@ -91,6 +89,20 @@
 @media (max-width: 800px) {
   .card {
     width: 100%;
+    align-items: center;
+  }
+
+  .card p, .card h2 {
+    font-size: 1.2em;
+  }
+
+  .card p{
+    font-weight: 100;
+  }
+
+  .card a{
+    width: auto;
+    padding: 0 10vw;
   }
 
   .card img {
@@ -102,9 +114,8 @@
     padding: calc(var(--margin)* 2) 5px;
   }
 
-  .card:nth-child(2),
-  .card:nth-child(3) {
-    display: none;
+  .fullCard {
+    width: 100vw !important;
   }
 }
 

@@ -17,12 +17,12 @@ const page = () => {
       <section className={styles.hero}>
         <div className={`${styles.heroText} paddingSection text-white`}>
           <h2 className="text-6xl thin">Nuestro espacio</h2>
-          <p className={`w-1/3 font-thin m-bottom`}>
+          <p className={`w-2/3 font-thin m-bottom`}>
             Nuestras clases personalizadas están diseñadas para ofrecerte el
             conocimiento y la orientación que necesitas para ganar autonomía en
             tus decisiones creativas.
           </p>
-          <p className={`w-1/3 font-thin m-bottom ${styles.responsiveParagraph}`}>
+          <p className={`w-2/3 font-thin m-bottom ${styles.responsiveParagraph}`}>
             Te acompañamos en cada paso para que explores y desarrolles una
             visión artística propia, disfrutando del proceso creativo y de
             experimentar en cada proyecto

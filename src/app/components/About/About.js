@@ -19,10 +19,11 @@ const About = async () => {
             width="250"
             height="100"
             controls
-            preload="none"
             autoPlay
             loop
             muted
+            preload="auto"
+            playsInline
           >
             <source src="/images/reels/reel-1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -31,9 +32,10 @@ const About = async () => {
 
         <div className={`${styles.aboutMeText} ${AboutStyles.aboutMetext}`}>
           <p className="ultralight">
-            Mi pasión por el <b>arte</b> nace del deseo de encontrar belleza en lo
-            cotidiano. Cada <b>obra</b> es una exploración de lo que puede surgir
-            cuando nos tomamos el tiempo para mirar <b>más allá de lo superficial</b>.
+            Mi pasión por el <b>arte</b> nace del deseo de encontrar belleza en
+            lo cotidiano. Cada <b>obra</b> es una exploración de lo que puede
+            surgir cuando nos tomamos el tiempo para mirar{" "}
+            <b>más allá de lo superficial</b>.
           </p>
           <p className="ultralight">
             Mi <b>enfoque artístico</b> se basa en la capacidad de transformar{" "}
@@ -50,21 +52,6 @@ const About = async () => {
           <Link className="button" href={"/sobre-mi"}>
             Sobre mi
           </Link>
-        </div>
-
-        <div className={`${styles.aboutMeVideo} ${AboutStyles.aboutMeVideo}`}>
-          <video
-            width="250"
-            height="240"
-            controls
-            preload="none"
-            autoPlay
-            loop
-            muted
-          >
-            <source src="/images/reels/reel-2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
         </div>
       </section>
     </AnimateEntrance>

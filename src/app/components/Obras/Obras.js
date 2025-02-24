@@ -64,7 +64,7 @@ const Obras = () => {
             </div>
 
             {dataItem.titulo === "Horror Vacui" && (
-              <div>
+              <div className="">
                 <p className="m-bottom subtitle">
                   Mi última serie refleja la esencia más profunda de la sociedad
                   contemporánea: la compulsión inherente de la condición humana

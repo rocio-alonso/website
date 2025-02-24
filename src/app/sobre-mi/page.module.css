@@ -20,7 +20,7 @@
   background-image: url("/images/imagenes/hero-mis-obras.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -350px; 
   z-index: 0;
 }
 

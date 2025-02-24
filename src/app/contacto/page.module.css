@@ -1,6 +1,6 @@
 .hero {
   width: 100vw;
-  height: 18vh;
+  height: 25vh;
   background-color: #cccccc;
   display: flex;
   justify-content: center;
@@ -46,4 +46,22 @@
   .responsiveSection {
     display: none;
   }
+
+  .heroSection1 {
+    flex-direction: column-reverse;
+    gap: 10vw;
+  }
+
+  .imgContact {
+    width: 100% !important;
+    order: 1;
+  }
+
+  .contactText {
+    order: 2;
+  }
+}
+
+.imgContact {
+  width: 25%;
 }
