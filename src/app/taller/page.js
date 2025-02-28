@@ -13,7 +13,6 @@ import DivModalTaller from "../components/ModalTaller/DivModalTaller";
 const page = () => {
   return (
     <main>
-      <ModalTaller />
       <section className={styles.hero}>
         <div className={`${styles.heroText} paddingSection text-white`}>
           <h2 className="text-6xl thin">Nuestro espacio</h2>
@@ -22,12 +21,16 @@ const page = () => {
             conocimiento y la orientación que necesitas para ganar autonomía en
             tus decisiones creativas.
           </p>
-          <p className={`w-2/3 font-thin m-bottom ${styles.responsiveParagraph}`}>
+          <p
+            className={`w-2/3 font-thin m-bottom ${styles.responsiveParagraph}`}
+          >
             Te acompañamos en cada paso para que explores y desarrolles una
             visión artística propia, disfrutando del proceso creativo y de
             experimentar en cada proyecto
           </p>
-          <Link className="button" href={"/taller/#mainSection"}>Conoce más</Link>
+          <Link className="button" href={"/taller/#mainSection"}>
+            Conoce más
+          </Link>
         </div>
       </section>
 
@@ -132,10 +135,8 @@ const page = () => {
       <section className="paddingBody">
         <Grid />
       </section>
-      
-      <section className="paddingBody">
-        <DivModalTaller />
-      </section>
+
+      <ModalTaller />
     </main>
   );
 };

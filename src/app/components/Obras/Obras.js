@@ -2,28 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
-import { BsFullscreen } from "react-icons/bs";
 import styles from "@/app/obras/page.module.css";
-import Image from "next/image";
-import AnimateEntrance from "../AnimateEntrance/AnimateEntrance";
 
 const Obras = () => {
   const [data, setDataObras] = useState([]);
-  const [selectedItem, setSelectedItem] = useState(null);
 
-  const [currentPage, setCurrentPage] = useState(0);
-  const [totalPages, setTotalPages] = useState();
+  const [fullScreenData, setFullScreenData] = useState(null);
 
-  const handlePrevious = () => {
-    if (currentPage > 0) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
-  const handleNext = () => {
-    if (currentPage < totalPages - 1) {
-      setCurrentPage(currentPage + 1);
-    }
+  const handleFullScreen = (dataFullScreen) => {
+    setFullScreenData(dataFullScreen);
+    console.log(fullScreenData);
   };
 
   useEffect(() => {
@@ -39,15 +27,6 @@ const Obras = () => {
 
     fetchFiles();
   }, []);
-
-  const handleFullscreen = (dataobras) => {
-    setSelectedItem(dataobras);
-    setTotalPages(dataobras.length);
-  };
-
-  const closeFullscreen = () => {
-    setSelectedItem(null);
-  };
 
   return (
     <div>
@@ -65,13 +44,13 @@ const Obras = () => {
 
             {dataItem.titulo === "Horror Vacui" && (
               <div className="">
-                <p className="m-bottom subtitle">
+                <p className="mb-8 subtitle">
                   Mi última serie refleja la esencia más profunda de la sociedad
                   contemporánea: la compulsión inherente de la condición humana
                   a llenar el vacío que persiste en nuestra búsqueda
                   existencial.
                 </p>
-                <p className="m-bottom subtitle">
+                <p className="mb-8 subtitle">
                   Colmamos nuestras vidas de actividades y objetos banales, sin
                   embargo, el vacío no es algo que podamos superar por completo;
                   es, más bien, una condición humana universal que debemos
@@ -101,61 +80,17 @@ const Obras = () => {
 
             <div className="m-bottom flex flex-wrap justify-between">
               {dataItem.obras?.map((obraData, index) => (
-                <Card dataObra={obraData} isObra={true} key={index} />
+                <Card
+                  dataObra={obraData}
+                  isObra={true}
+                  key={index}
+                  onClick={() => {handleFullScreen(obraData)}}
+                />
               ))}
             </div>
           </div>
         ))}
       </section>
-
-      {selectedItem && (
-        <div className={`${styles.fullscreenOverlay}`}>
-          <div
-            className={`${styles.fullscreenContent}`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="w-full flex m-bottom justify-end">
-              <button className={``} onClick={closeFullscreen}>
-                X
-              </button>
-            </div>
-
-            <Image
-              src={`/images/obras${selectedItem[currentPage].img}`}
-              alt="Exterior view of Asociación Dante Alighieri"
-              width={500}
-              height={500}
-              className={`m-bottom saturate-100 ${styles.obraImgFull}`}
-            />
-
-            <h2>{selectedItem[currentPage].titulo}</h2>
-            <section className="carrousellHandler flex items-center mt-4">
-              <button
-                className="button"
-                onClick={handlePrevious}
-                disabled={currentPage === 0}
-              >
-                &#60;
-              </button>
-              <div className="dots flex align-middle mx-2">
-                {Array.from({ length: totalPages }).map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={`dot ${currentPage === idx ? "selected" : ""}`}
-                  ></div>
-                ))}
-              </div>
-              <button
-                className="button"
-                onClick={handleNext}
-                disabled={currentPage === totalPages - 1}
-              >
-                &#62;
-              </button>
-            </section>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

@@ -12,13 +12,49 @@ const ModalTaller = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowModal(true);
-    }, 8000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
   if (!showModal) {
-    return null;
+    return (
+      <section className="paddingBody w-full">
+        <div
+          className={`paddingSection justify-between flex ${styles.divModalChild}`}
+        >
+          <div>
+            <h2 className={`title flex m-bottom`}>
+              Tarifas <p className={`ml-1 subtitle`}>(Matrícula gratis)</p>
+            </h2>
+            <div className="flex flex-row gap-12">
+              <div className={stylesModal.arancelBox}>
+                <h3 className={`flex subtitle`}>1 Clase semanal</h3>
+                <p className={`${styles.price}`}>€80/mes</p>
+              </div>
+              <div className={stylesModal.arancelBox}>
+                <h3 className={`flex subtitle`}>2 Clases semanales</h3>
+                <p className={`${styles.price}`}>€140/mes</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <p className={`subtitle ${stylesModal.textContact}`}>
+              Reserva tu plaza
+            </p>
+            <a
+              className={`button gap-1 button-wpp ${stylesModal.textContactButton}`}
+              target="blank_"
+              href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Quisiera%20recibir%20más%20información"
+            >
+              <AiOutlineWhatsApp className={styles.price} />
+              Contactar
+            </a>
+          </div>
+        </div>
+      </section>
+    );
   }
 
   return (
@@ -50,7 +86,9 @@ const ModalTaller = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <p className={`subtitle ${stylesModal.textContact}`}>Reserva tu plaza</p>
+            <p className={`subtitle ${stylesModal.textContact}`}>
+              Reserva tu plaza
+            </p>
             <a
               className={`button gap-1 button-wpp ${stylesModal.textContactButton}`}
               target="blank_"

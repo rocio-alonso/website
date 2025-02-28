@@ -44,14 +44,6 @@ const ExposicionesData = ({ data }) => {
 
   return (
     <div className={`cardsExpo flex flex-col w-full ${styles.divExpo}`}>
-      <AnimateEntrance key={currentPage}>
-        <div className={`flex flex-wrap justify-between ${styles.divCards}`}>
-          {mobileData.slice(startIndex, endIndex).map((dataItem, index) => (
-            <Card key={startIndex + index} data={dataItem} />
-          ))}
-        </div>
-      </AnimateEntrance>
-
       <section className="paddingBody carrousellHandler flex items-center mt-4">
         <button
           className="button"
@@ -77,8 +69,18 @@ const ExposicionesData = ({ data }) => {
         </button>
       </section>
 
+      <AnimateEntrance key={currentPage}>
+        <div className={`flex flex-wrap justify-between m-bottom ${styles.divCards}`}>
+          {mobileData.slice(startIndex, endIndex).map((dataItem, index) => (
+            <Card key={startIndex + index} data={dataItem} />
+          ))}
+        </div>
+      </AnimateEntrance>
+
       <div className="w-full flex justify-center">
-        <Link href='/expos' className="button mt-2">Ver más</Link>
+        <Link href="/expos" className="button mt-2">
+          Ver más
+        </Link>
       </div>
     </div>
   );

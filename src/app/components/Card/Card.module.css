@@ -1,5 +1,5 @@
 .card {
-  width: 25vw;
+  width: 26vw;
   height: fit-content;
   transition: all ease 0.5s !important;
   font-size: 1.1em;
@@ -12,7 +12,8 @@
 }
 
 .card:hover > .cardText {
-  padding: calc(var(--margin) * 2.2) calc(var(--margin)) calc(var(--margin) * 2) calc(var(--margin));
+  padding: calc(var(--margin) * 2.2) calc(var(--margin)) calc(var(--margin) * 2)
+    calc(var(--margin));
 }
 
 .cardObra {
@@ -21,9 +22,11 @@
 }
 
 .cardObra:hover > .cardText {
-  padding: calc(var(--margin) * 2) calc(var(--margin) * 1.5);
+  padding: calc(var(--margin) * 2.2) calc(var(--margin)) calc(var(--margin) * 2)
+    calc(var(--margin));
 }
 
+.card:hover > .cardText a:first-child,
 .card:hover > .cardText h2 {
   text-decoration: underline;
   cursor: pointer;
@@ -33,7 +36,7 @@
   width: 100%;
 }
 
-.card h2 {
+.card a:first-child {
   font-weight: 500;
 }
 
@@ -45,10 +48,10 @@
 .cardImage {
   position: relative;
   overflow: hidden;
-  height: 35vh;
+  height: 37vh;
 }
 
-.cardImage img {
+.cardImage img{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -56,10 +59,23 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: all 0.3s ease; /* Smooth scaling */
+  transition: all 1.2s ease-in-out;
 }
 
-.cardImage img:hover {
+.obraCardImg {
+  overflow: hidden;
+  position: relative;
+}
+
+.obraImg {
+  transition: transform 1.2s ease-in-out;
+}
+
+.card:hover > .obraCardImg .obraImg {
+  transform: scale(1.1);
+}
+
+.card:hover > .cardImage img {
   width: 110%;
   height: 110%;
 }
@@ -75,15 +91,18 @@
   align-items: baseline;
 }
 
+.lugarData {
+  letter-spacing: 1px !important;
+}
+
 .dataLocation {
   align-items: center;
   gap: calc(var(--margin) / 2);
   align-items: baseline;
 }
 
-.divData,
-.dataLocation p {
-  font-size: 1em;
+.divData p{
+  letter-spacing: 1.2px;
 }
 
 @media (max-width: 800px) {
@@ -92,15 +111,20 @@
     align-items: center;
   }
 
-  .card p, .card h2 {
+  .cardSection{
+    width: 100%;
+  }
+
+  .card p,
+  .card a:first-child {
     font-size: 1.2em;
   }
 
-  .card p{
+  .card p {
     font-weight: 100;
   }
 
-  .card a{
+  .card a:nth-child(2) {
     width: auto;
     padding: 0 10vw;
   }
@@ -111,11 +135,11 @@
 
   .cardObra .cardText {
     margin: 0 !important;
-    padding: calc(var(--margin)* 2) 5px;
+    padding: calc(var(--margin) * 2) 5px;
   }
 
   .fullCard {
-    width: 100vw !important;
+    width: 100% !important;
   }
 }
 

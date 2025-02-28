@@ -24,7 +24,7 @@ main {
   --height: 40px;
   --shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.4);
   --padding-section: 2vw 5vw;
-  font-size: 18px;
+  font-size: 19px;
   letter-spacing: 0.01em;
 }
 
@@ -183,11 +183,9 @@ video::-webkit-media-controls-panel {
 }
 
 .carrousellHandler {
-  gap: calc(var(--margin));
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
-  margin-top: var(--margin);
 }
 
 .dots {

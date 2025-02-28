@@ -1,7 +1,7 @@
 .hero {
   width: 100vw;
-  height: 25vh;
-  background-color: #cccccc;
+  height: 24vh;
+  background-color: #bcbcbc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,11 +54,11 @@
 
   .imgContact {
     width: 100% !important;
-    order: 1;
+    order: 2;
   }
 
   .contactText {
-    order: 2;
+    order: 1;
   }
 }
 
