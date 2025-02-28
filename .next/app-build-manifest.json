@@ -28,24 +28,6 @@
       "static/chunks/main-app.js",
       "static/css/app/fullScreen/page.css",
       "static/chunks/app/fullScreen/page.js"
-    ],
-    "/expos/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/expos/page.css",
-      "static/chunks/app/expos/page.js"
-    ],
-    "/contacto/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contacto/page.css",
-      "static/chunks/app/contacto/page.js"
-    ],
-    "/taller/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/taller/page.css",
-      "static/chunks/app/taller/page.js"
     ]
   }
 }

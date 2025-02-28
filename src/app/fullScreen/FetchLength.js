@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 import FetchQuery from "./FetchQuery";
@@ -11,7 +11,7 @@ import styles from "@/app/fullScreen/page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const FetchLength = (data) => {
+const FetchLengthClient = (data) => {
   const searchParams = useSearchParams();
   const img = searchParams.get("img");
   const titulo = searchParams.get("title");
@@ -75,5 +75,14 @@ const FetchLength = (data) => {
     <FetchQuery data={coleccion} number={numberIndex} formattedTitle={titleColeccion} />
   );
 };
+
+const FetchLength = ({ data }) => {
+  return (
+    <Suspense fallback={<div>Cargando...</div>}>
+      <FetchLengthClient data={data} />
+    </Suspense>
+  );
+};
+
 
 export default FetchLength;

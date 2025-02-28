@@ -1,10 +1,6 @@
 {
   "/api/getProducts/route": "app/api/getProducts/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/fullScreen/page": "app/fullScreen/page.js",
-  "/expos/page": "app/expos/page.js",
-  "/contacto/page": "app/contacto/page.js",
-  "/taller/page": "app/taller/page.js",
-  "/page": "app/page.js",
-  "/obras/page": "app/obras/page.js"
+  "/obras/page": "app/obras/page.js",
+  "/fullScreen/page": "app/fullScreen/page.js"
 }
