@@ -34,11 +34,11 @@ const Obras = () => {
         {data.map((dataItem, index) => (
           <div key={index}>
             <div
-              className={`flex items-center m-bottom gap-4 ${styles.titleDiv}`}
+              className={`flex items-center mb-8 gap-4 ${styles.titleDiv}`}
             >
-              <h2 className="title flex title-section">
+              <h2 className="title title-section">
                 {dataItem.titulo}{" "}
-                <p className="subtitle ml-2">({dataItem.ano})</p>
+                <p className="subtitle thin text-lg">{dataItem.ano}</p>
               </h2>
             </div>
 
@@ -60,7 +60,7 @@ const Obras = () => {
                   descubrimos que la auténtica riqueza reside en lo simple.
                 </p>
 
-                <p className="subtitle mb-10">
+                <p className="subtitle mb-8">
                   Los objetos que utilizo en mis obras son fragmentos de la vida
                   cotidiana, piezas que componen nuestra historia y nos definen,
                   pero que nunca logran llenar ese hueco infinito. Los espacios

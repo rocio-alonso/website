@@ -60,3 +60,9 @@
 .obrasMain img {
   width: 45vw;
 }
+
+@media (max-width: 800px) {
+  .hero {
+    height: 17vh !important;
+  }
+}

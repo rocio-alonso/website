@@ -93,6 +93,7 @@
 
 .lugarData {
   letter-spacing: 1px !important;
+  font-size: .85em;
 }
 
 .dataLocation {
@@ -109,6 +110,10 @@
   .card {
     width: 100%;
     align-items: center;
+  }
+
+  .lugarData{
+    font-size: 1em !important;
   }
 
   .cardSection{

@@ -30,36 +30,26 @@ const PremiosData = ({ data }) => {
     <div className={`cardsExpo flex flex-col w-full ${styles.divExpo}`}>
       <h2 className="title m-bottom">Reconocimientos</h2>
       <AnimateEntrance key={currentPage}>
-      <div className={`flex flex-wrap justify-between ${styles.divCards}`}>
-        {data.slice(startIndex, endIndex).map((dataItem, index) => (
-          <div key={index} className={`m-bottom ${stylesAbout.cardPremio}`}>
-            {dataItem.evento && (
-              <h2 className="title flex">{dataItem.evento}</h2>
-            )}
-
-            <div
-              className={`flex w-full ${cardStyles.divData} ${cardStyles.dataBox}`}
-            >
-              {dataItem.ano && <p className={`subtitle`}>{dataItem.ano}</p>}
-              {dataItem.ano && dataItem.obra && "/"}
-
-              {dataItem.obra && (
-                <p className={`flex subtitle ${cardStyles.dataLocation}`}>
-                  Obra: {dataItem.obra}
-                </p>
+        <div className={`flex flex-wrap justify-between ${styles.divCards}`}>
+          {data.slice(startIndex, endIndex).map((dataItem, index) => (
+            <div key={index} className={`m-bottom ${stylesAbout.cardPremio}`}>
+              {dataItem.evento && (
+                <h2 className="title flex">{dataItem.evento}</h2>
               )}
-              {dataItem.ubicacion && "/"}
 
-              {dataItem.ubicacion && (
-                <p className={`flex subtitle ${cardStyles.dataLocation}`}>
-                  <GoLocation />
+              <div
+                className={`w-full ${cardStyles.divData} ${cardStyles.dataBox}`}
+              >
+                <p className="subtitle thin mb-1">
+                  {dataItem.ano}{dataItem.ano ? "," : ""} {dataItem.obra}
+                </p>
+                <p className="subtitle thin flex items-center gap-2">
                   {dataItem.ubicacion}
                 </p>
-              )}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </AnimateEntrance>
       <section className="carrousellHandler flex items-center mt-4">
         <button

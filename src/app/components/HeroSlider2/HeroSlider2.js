@@ -45,8 +45,8 @@ const HeroSlider2 = () => {
             <Image
               src={currentImage}
               alt="Hero Slider"
-              width={1920}
-              height={1080}
+              width={800}
+              height={800}
               style={{
                 width: "100%",
                 height: "100%",
@@ -61,9 +61,9 @@ const HeroSlider2 = () => {
 
       <div className={`${styles.heroText} paddingSection`}>
         <h2 className="text-5xl title">
-          Horror Vacui <p className="subtitle ultralight">La belleza de lo ausente</p>
+          Horror Vacui <p className="subtitle ultralight mt-3">La belleza de lo ausente</p>
         </h2>
-        <div className="flex">
+        <div className="flex mt-1">
           <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>
             Conoce mi obra
           </Link>

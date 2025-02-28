@@ -1,8 +1,12 @@
-import React from "react";
+"use client"
+
+import { useState } from "react";
 import Image from "next/image";
 import styles from "@/app/page.module.css";
 
 const Grid = () => {
+  const [loading, setLoading] = useState(true);
+
   return (
     <div>
       <div className={styles.parent}>
@@ -27,13 +31,14 @@ const Grid = () => {
             width="250"
             height="100"
             controls
-            preload="none"
+            preload="auto"
             autoPlay
             loop
             muted
+            playsInline
+            onLoadedData={() => setLoading(false)}
+            src="/images/grid-mozzafiato/reel-4.mp4"
           >
-            <source src="/images/grid-mozzafiato/reel-4.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
         </div>
         <div className="col-start-2 row-start-2">
@@ -49,13 +54,14 @@ const Grid = () => {
             width="250"
             height="100"
             controls
-            preload="none"
+            preload="auto"
             autoPlay
             loop
             muted
+            playsInline
+            onLoadedData={() => setLoading(false)}
+            src="/images/grid-mozzafiato/reel-2.mp4"
           >
-            <source src="/images/grid-mozzafiato/reel-2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
         </div>
         <div className="col-span-2 col-start-2 row-start-3">

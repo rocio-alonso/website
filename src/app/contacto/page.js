@@ -33,22 +33,23 @@ const ContactPage = () => {
 
         <div className={`${stylesForm.contactText}`}>
           <div className="text-start justify-right">
-            <p className="title m-bottom">Contacto</p>
-
             <div className="subtitle flex flex-col float-left justify-start">
+              <p className="title mb-2">Teléfono</p>
               <a
                 href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20quisiera%20recibir%20más%20información"
                 target="_blank"
-                className={`gap align-center button`}
+                className={`gap align-center flex items-center`}
               >
                 <FiPhone />
                 <p className="subtitle">+34 677 37 49 70</p>
               </a>
+              
+              <p className="title mb-2 mt-6">Redes</p>
 
               <a
                 href="https://www.instagram.com/rocioalonsoarte/"
                 target="_blank"
-                className={`flex gap align-center button ${styles.imgLogo} mt-4`}
+                className={`flex gap items-center ${styles.imgLogo}`}
               >
                 <PiInstagramLogoLight className="text-xl" />
                 <p className="subtitle">rocioalonsoarte</p>
@@ -57,20 +58,24 @@ const ContactPage = () => {
               <a
                 href="https://www.instagram.com/tallermozzafiato/"
                 target="_blank"
-                className={`flex gap align-center button ${styles.imgLogo} mt-4`}
+                className={`gap flex items-center ${styles.imgLogo} mt-6`}
               >
                 <PiInstagramLogoLight className="text-xl" />
                 <p className="subtitle">tallermozzafiato</p>
               </a>
 
+              <p className="title mb-2 mt-5">Mail</p>
+
               <a
                 href="mailto:rocioalonsoart@gmail.com"
                 target="_blank"
-                className={`flex gap align-center button m-bottom ${styles.imgLogo} mt-4`}
+                className={`gap flex items-center m-bottom ${styles.imgLogo}`}
               >
                 <CiMail className="text-xl" />
                 <p className="subtitle">rocioalonsoart@gmail.com</p>
               </a>
+
+              <p className="title mb-2 mt-6">Ubicación</p>
 
               <div className="flex float-left">
                 <CiLocationOn className="text-xl mb-1" />
@@ -120,7 +125,7 @@ const ContactPage = () => {
 
           {/* Botón de Enviar */}
           <button
-            className={`${stylesForm.formButton} button`}
+            className={`${stylesForm.formButton} `}
             type="submit"
             disabled={state.submitting}
           >

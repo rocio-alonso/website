@@ -1,33 +1,46 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
-import { getAllProductsDB } from "@/app/actions";
 
-import "@/app/globals.css";
+import { useState } from "react";
 import styles from "@/app/page.module.css";
 import AboutStyles from "@/app/components/About/About.module.css";
+import Image from "next/image";
 
 import AnimateEntrance from "@/app/components/AnimateEntrance/AnimateEntrance";
 
-const About = async () => {
+const About = () => {
+  const [loading, setLoading] = useState(true);
+
   return (
     <AnimateEntrance>
       <section
         className={`${styles.aboutMe} ${AboutStyles.aboutMe} paddingSection`}
       >
         <div className={`${styles.aboutMeVideo} ${AboutStyles.aboutMeVideo}`}>
-          <video
-            width="250"
-            height="100"
-            controls
-            autoPlay
-            loop
-            muted
-            preload="auto"
-            playsInline
-          >
-            <source src="/images/reels/reel-1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {!loading && (
+            <Image
+              src={"/images/about.jpg"}
+              alt={`Property image`}
+              width={1000}
+              height={500}
+            />
+          )}
+          {loading && (
+            <video
+              width="250"
+              height="100"
+              controls
+              autoPlay
+              loop
+              muted
+              preload="auto"
+              playsInline
+              onLoadedData={() => setLoading(false)}
+              src={"/images/reels/reel-1.mp4"}
+            ></video>
+          )}
         </div>
 
         <div className={`${styles.aboutMeText} ${AboutStyles.aboutMetext}`}>

@@ -33,13 +33,24 @@ const Card = ({ data, isObra, dataObra }) => {
 
         {isObra && (
           <div className={styles.obraCardImg}>
-            <Image
-              src={`/images/obras${dataObra.img}`}
-              alt="exposition Image"
-              width={500}
-              height={500}
-              className={styles.obraImg}
-            />
+            <Link
+              href={{
+                pathname: "./fullScreen",
+                query: {
+                  img: `${dataObra.img}`,
+                  title: `${dataObra.titulo}`,
+                  medidas: `${dataObra.medidas} `,
+                },
+              }}
+            >
+              <Image
+                src={`/images/obras${dataObra.img}`}
+                alt="exposition Image"
+                width={500}
+                height={500}
+                className={styles.obraImg}
+              />
+            </Link>
           </div>
         )}
 
@@ -53,14 +64,14 @@ const Card = ({ data, isObra, dataObra }) => {
             </p>
 
             <div
-              className={`${styles.divData} flex text-center thin justify-center`}
+              className={`${styles.divData} flex text-center text-xs thin justify-center`}
             >
               <p className="subtitle thin text-xs">{data.ano}</p>
             </div>
           </div>
         ) : (
           <div
-            className={`flex items-center justify-between ${styles.cardText}`}
+            className={`flex items-center justify-between text-lg ${styles.cardText}`}
           >
             <div>
               <Link
@@ -76,7 +87,10 @@ const Card = ({ data, isObra, dataObra }) => {
               >
                 {dataObra.titulo}
               </Link>
-              <p className="subtitle thin m-bottom">{dataObra.medidas}</p>
+
+              <p className="subtitle text-sm thin m-bottom mt-1">
+                {dataObra.medidas}
+              </p>
               {dataObra.stock !== "1" ? (
                 <p className="subtitle thin text-center">SOLD OUT</p>
               ) : (

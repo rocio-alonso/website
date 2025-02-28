@@ -96,6 +96,7 @@
 
 .Card_lugarData__v_R3E {
   letter-spacing: 1px !important;
+  font-size: .85em;
 }
 
 .Card_dataLocation__Gzlut {
@@ -112,6 +113,10 @@
   .Card_card__Tuw2S {
     width: 100%;
     align-items: center;
+  }
+
+  .Card_lugarData__v_R3E{
+    font-size: 1em !important;
   }
 
   .Card_cardSection__kTcnD{
@@ -734,6 +739,9 @@ video {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -746,11 +754,23 @@ video {
 .ml-2 {
   margin-left: 0.5rem;
 }
+.mt-1 {
+  margin-top: 0.25rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
+.mt-3 {
+  margin-top: 0.75rem;
+}
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .flex {
   display: flex;
@@ -846,6 +866,9 @@ video {
 .gap-4 {
   gap: 1rem;
 }
+.border-l {
+  border-left-width: 1px;
+}
 .p-3 {
   padding: 0.75rem;
 }
@@ -887,6 +910,10 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -993,11 +1020,11 @@ video:hover {
 }
 
 .paddingSection {
-  padding: 4vw 5vw;
+  padding: 4vw 4vw;
 }
 
 .paddingBody {
-  padding: 0 5vw 4vw;
+  padding: 0 4vw 4vw;
 }
 
 html,
@@ -1079,9 +1106,16 @@ video::-webkit-media-controls-panel {
 
 .ultralight {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf");
-    font-weight: 100;
-    font-style: normal;
+  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+.thin{
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf");
+  font-weight: 100 !important;
+  font-style: normal;
 }
 
 .dot {
