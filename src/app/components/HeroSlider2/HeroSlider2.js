@@ -6,11 +6,14 @@ import Link from "next/link";
 import AnimateSlider from "../AnimateEntrance/AnimateSlider";
 
 const HeroSlider2 = () => {
-  const images = useMemo(() => [
-    "/images/imagenes/esta-si-3.JPG",
-    "/images/imagenes/esta-si.JPG",
-    "/images/imagenes/esta-si-2.JPG"
-  ], []);
+  const images = useMemo(
+    () => [
+      "/images/imagenes/esta-si-3.JPG",
+      "/images/imagenes/esta-si.JPG",
+      "/images/imagenes/esta-si-2.JPG",
+    ],
+    []
+  );
 
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [opacity, setOpacity] = useState(1);
@@ -35,13 +38,7 @@ const HeroSlider2 = () => {
     <section className="w-full h-full">
       <div className={styles.heroSection1}>
         <AnimateSlider key={currentImage}>
-          <div
-            style={{
-              height: "100vh",
-              width: "100%",
-              overflow: "hidden",
-            }}
-          >
+          <div className="w-full h-screen overflow-hidden">
             <Image
               src={currentImage}
               alt="Hero Slider"
@@ -49,7 +46,7 @@ const HeroSlider2 = () => {
               height={800}
               style={{
                 width: "100%",
-                height: "100%",
+                height: "100vh",
                 objectFit: "cover",
                 opacity: opacity,
                 transition: "opacity 1s ease-in-out",
@@ -61,7 +58,8 @@ const HeroSlider2 = () => {
 
       <div className={`${styles.heroText} paddingSection`}>
         <h2 className="text-5xl title">
-          Horror Vacui <p className="subtitle ultralight mt-3">La belleza de lo ausente</p>
+          Horror Vacui{" "}
+          <p className="subtitle ultralight mt-3">La belleza de lo ausente</p>
         </h2>
         <div className="flex mt-1">
           <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>

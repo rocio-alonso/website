@@ -149,6 +149,14 @@
   .Card_fullCard__r_zyo {
     width: 100% !important;
   }
+
+  .Card_dataMedidas__zetbk{
+    font-size: 1em !important;
+  }
+
+  .Card_cardText__IFyLM{
+    padding-top: 1.3em !important;
+  }
 }
 
 .Card_imgObras__yksZj {
@@ -788,6 +796,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-screen {
+  height: 100vh;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -866,8 +877,8 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.border-l {
-  border-left-width: 1px;
+.overflow-hidden {
+  overflow: hidden;
 }
 .p-3 {
   padding: 0.75rem;

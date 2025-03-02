@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 .page_heroSection1__iN3Ot::before {
@@ -31,7 +32,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page_heroText__g5S3T h2 {
@@ -44,7 +45,7 @@
   display: flex;
   align-items: baseline;
   position: absolute;
-  bottom: 1vh;
+  bottom: 3.5vh;
   flex-direction: column;
   width: 100vw;
   z-index: 100;
@@ -73,10 +74,9 @@
   margin-left: 3vw;
 }
 
-.page_aboutMeText__T1LyT p{
+.page_aboutMeText__T1LyT p {
   margin-bottom: 2vw;
   text-justify: auto;
-
 }
 
 .page_aboutMeVideo__Fj_h1 {
@@ -111,15 +111,15 @@
 }
 
 @media (max-width: 800px) {
-  .page_heroText__g5S3T{
-    font-size: .85em !important;
+  .page_heroText__g5S3T {
+    font-size: 0.85em !important;
     margin-bottom: 2.5em;
   }
 
-  .page_heroText__g5S3T h2:first-child{
-    margin-bottom: .5em;
+  .page_heroText__g5S3T h2:first-child {
+    margin-bottom: 0.5em;
   }
-  
+
   .page_heroText__g5S3T div a {
     width: 50%;
   }
@@ -166,6 +166,11 @@
     margin: 0;
     order: 1;
     margin-bottom: var(--margin);
+    margin-top: 2em;
+  }
+
+  .page_tallerText__APr5j h2 {
+    text-align: center;
   }
 
   .page_gridTaller__Bdf33 {
@@ -339,6 +344,14 @@
 
   .Card_fullCard__r_zyo {
     width: 100% !important;
+  }
+
+  .Card_dataMedidas__zetbk{
+    font-size: 1em !important;
+  }
+
+  .Card_cardText__IFyLM{
+    padding-top: 1.3em !important;
   }
 }
 
@@ -945,6 +958,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-screen {
+  height: 100vh;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -1023,8 +1039,8 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.border-l {
-  border-left-width: 1px;
+.overflow-hidden {
+  overflow: hidden;
 }
 .p-3 {
   padding: 0.75rem;

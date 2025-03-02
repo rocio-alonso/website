@@ -146,6 +146,14 @@
   .fullCard {
     width: 100% !important;
   }
+
+  .dataMedidas{
+    font-size: 1em !important;
+  }
+
+  .cardText{
+    padding-top: 1.3em !important;
+  }
 }
 
 .imgObras {

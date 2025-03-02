@@ -88,11 +88,11 @@ const Card = ({ data, isObra, dataObra }) => {
                 {dataObra.titulo}
               </Link>
 
-              <p className="subtitle text-sm thin m-bottom mt-1">
+              <p className={`${styles.dataMedidas} subtitle text-sm thin m-bottom mt-5`}>
                 {dataObra.medidas}
               </p>
               {dataObra.stock !== "1" ? (
-                <p className="subtitle thin text-center">SOLD OUT</p>
+                <p className="subtitle thin text-center">SOLD</p>
               ) : (
                 <Link className="button" href="mailto:rocioalonsoart@gmail.com">
                   Consultar
