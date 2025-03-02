@@ -149,49 +149,49 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
           )}
 
           <div>
-              {coleccion && (
-                <>
-                  <p
-                    className={`${styles.titleColeccion} subtitle thin text-xs mb-3`}
-                  >
-                    {formattedTitle}
-                  </p>
-                  <p className="title text-3xl mb-3">{coleccion.titulo}</p>
-                  <p className="subtitle thin text-xl m-bottom">
-                    {coleccion.medidas}
-                  </p>
-                </>
-              )}
-
-              <div
-                className={`${styles.buttonHandlerDiv} flex items-center gap-10 m-bottom justify-center`}
-              >
-                <Link
-                  className={`${styles.buttonConsultar} button`}
-                  href="mailto:rocioalonsoart@gmail.com"
+            {coleccion && (
+              <>
+                <p
+                  className={`${styles.titleColeccion} subtitle thin text-xs mb-3`}
                 >
-                  Consultar
-                </Link>
+                  {formattedTitle}
+                </p>
+                <p className="title text-3xl mb-3">{coleccion.titulo}</p>
+                <p className="subtitle thin text-xl m-bottom">
+                  {coleccion.medidas}
+                </p>
+              </>
+            )}
 
-                <section className="gap-10 carrousellHandler flex items-center justify-center mt-4 text-center">
-                  <button
-                    className="button"
-                    onClick={handlePrevious}
-                    disabled={index === 0}
-                  >
-                    &#60;
-                  </button>
-                  {data !== null && (
-                    <p className={`${styles.buttonHandler} subtitle thin`}>
-                      {index + 1} / {data.length}
-                    </p>
-                  )}
-                  <button className="button" onClick={handleNext}>
-                    &#62;
-                  </button>
-                </section>
-              </div>
+            <div
+              className={`${styles.buttonHandlerDiv} flex items-center gap-10 m-bottom justify-center`}
+            >
+              <Link
+                className={`${styles.buttonConsultar} button`}
+                href="mailto:rocioalonsoart@gmail.com"
+              >
+                Consultar
+              </Link>
+
+              <section className="gap-10 carrousellHandler flex items-center justify-center mt-4 text-center">
+                <button
+                  className="button"
+                  onClick={handlePrevious}
+                  disabled={index === 0}
+                >
+                  &#60;
+                </button>
+                {data !== null && (
+                  <p className={`${styles.buttonHandler} subtitle thin`}>
+                    {index + 1} / {data.length}
+                  </p>
+                )}
+                <button className="button" onClick={handleNext}>
+                  &#62;
+                </button>
+              </section>
             </div>
+          </div>
         </div>
       )}
     </div>

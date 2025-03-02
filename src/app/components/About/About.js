@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "@/app/page.module.css";
 import AboutStyles from "@/app/components/About/About.module.css";
 import Image from "next/image";
@@ -13,21 +12,20 @@ import AnimateEntrance from "@/app/components/AnimateEntrance/AnimateEntrance";
 const About = () => {
   const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false); // Si el video no carga en 5 seg, forzar la imagen
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <AnimateEntrance>
       <section
         className={`${styles.aboutMe} ${AboutStyles.aboutMe} paddingSection`}
       >
         <div className={`${styles.aboutMeVideo} ${AboutStyles.aboutMeVideo}`}>
-          {!loading && (
-            <Image
-              src={"/images/about.jpg"}
-              alt={`Property image`}
-              width={1000}
-              height={500}
-            />
-          )}
-          {loading && (
+          {loading ? (
             <video
               width="250"
               height="100"
@@ -38,8 +36,16 @@ const About = () => {
               preload="auto"
               playsInline
               onLoadedData={() => setLoading(false)}
-              src={"/images/reels/reel-1.mp4"}
+              src="/images/reels/reel-1.mp4"
             ></video>
+          ) : (
+            <Image
+              src="/images/about.jpg"
+              alt="Property image"
+              width={1000}
+              height={500}
+              priority
+            />
           )}
         </div>
 

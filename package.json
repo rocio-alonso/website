@@ -12,6 +12,7 @@
     "@formspree/react": "^2.5.1",
     "@material-tailwind/react": "^2.1.10",
     "@react-spring/web": "^9.7.5",
+    "@vercel/blob": "^0.27.2",
     "axios": "^1.7.8",
     "formik": "^2.4.6",
     "hero-slider": "^3.2.1",
