@@ -6,7 +6,7 @@ import Link from "next/link";
 import AnimateSlider from "../AnimateEntrance/AnimateSlider";
 
 const HeroSlider2 = () => {
-  const images = useMemo(
+  const desktopImages = useMemo(
     () => [
       "/images/imagenes/esta-si-3.JPG",
       "/images/imagenes/esta-si.JPG",
@@ -15,32 +15,52 @@ const HeroSlider2 = () => {
     []
   );
 
-  const [currentImage, setCurrentImage] = useState(images[0]);
+  const mobileImages = useMemo(
+    () => [
+      "/images/imagenes/responsive-bg/hero-responsive-bg-1.JPG",
+      "/images/imagenes/responsive-bg/hero-responsive-bg-3.JPG",
+      "/images/imagenes/responsive-bg/hero-responsive-bg-2.JPG",
+    ],
+    []
+  );
+
+  const [isMobile, setIsMobile] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
-    const changeImageInterval = setInterval(() => {
+    // Detectar tamaño de pantalla
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768); // Cambia el breakpoint según necesites
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  const images = isMobile ? mobileImages : desktopImages;
+
+  useEffect(() => {
+    const changeImage = () => {
       setOpacity(0);
       setTimeout(() => {
-        setCurrentImage((prevImage) => {
-          const currentIndex = images.indexOf(prevImage);
-          const nextIndex = (currentIndex + 1) % images.length;
-          return images[nextIndex];
-        });
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         setOpacity(1);
       }, 1000);
-    }, 6000);
+    };
 
-    return () => clearInterval(changeImageInterval);
-  }, [currentImage, images]);
+    const interval = setInterval(changeImage, 6000);
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
     <section className="w-full h-full">
       <div className={styles.heroSection1}>
-        <AnimateSlider key={currentImage}>
+        <AnimateSlider key={images[currentIndex]}>
           <div className="w-full h-screen overflow-hidden">
             <Image
-              src={currentImage}
+              src={images[currentIndex]}
               alt="Hero Slider"
               width={800}
               height={800}

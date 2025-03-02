@@ -23,7 +23,7 @@ const page = () => {
             <ul className="flex">
               <li className={stylesHeader.buttonHeader}>
                 <Link
-                  className="subtitle text-xl bold"
+                  className="subtitle bold"
                   href={"/sobre-mi/#aboutSection"}
                 >
                   Biografía

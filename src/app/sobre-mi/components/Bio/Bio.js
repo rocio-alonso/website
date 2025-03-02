@@ -37,7 +37,7 @@ const Bio = () => {
         <div className={`w-3/4 ${styles.textAbout}`}>
           <div>
             <div className={styles.textBio}>
-              <h2 className="title m-bottom">Biografía</h2>
+              <h2 className="title m-bottom text-2xl">Biografía</h2>
               <p className="m-bottom subtitle">
                 Comencé mi recorrido artístico a la temprana edad de 4 años,
                 explorando inicialmente la escultura y, posteriormente, el
@@ -60,7 +60,7 @@ const Bio = () => {
                 guiado a más de 100 alumnos en su desarrollo artístico.
               </p>
               <AnimateEntrance>
-                <h2 className="title m-bottom">Actualidad</h2>
+                <h2 className="title m-bottom text-2xl">Actualidad</h2>
                 <p className="m-bottom subtitle">
                   En 2024, me he radicado en Barcelona, donde estoy trabajando
                   en mi última serie titulada Horror Vacui, que explora la

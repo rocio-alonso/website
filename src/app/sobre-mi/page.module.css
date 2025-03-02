@@ -66,6 +66,7 @@
   }
 
   .hero::before {
-    background-position: -400px;
+    background-image: url("/images/imagenes/responsive-bg/hero-responsive-bg-1.JPG") !important;
   }
+
 }
