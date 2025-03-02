@@ -12,13 +12,6 @@ import AnimateEntrance from "@/app/components/AnimateEntrance/AnimateEntrance";
 const About = () => {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false); // Si el video no carga en 5 seg, forzar la imagen
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <AnimateEntrance>
       <section
