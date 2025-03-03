@@ -63,7 +63,7 @@ main {
   font-style: normal;
 }
 
-body {
+* {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
 }
 
@@ -214,6 +214,10 @@ video::-webkit-media-controls-panel {
 
   .paddingSection {
     padding: 6vw 8vw !important;
+  }
+
+  .paddingBody{
+    padding: 4vw 8vw !important;
   }
 
   .button {

@@ -105,25 +105,40 @@
   margin-left: calc(var(--margin) * 2);
 }
 
+.heroText h2{
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
 .heroText p{
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 800px) {
   .heroText {
     font-size: 1em !important;
-    bottom: 5vh;
+    bottom: 9vh;
   }
 
   .heroText h2{
     margin-bottom: 1vh;
   }
   
-  .heroText p{
+  .heroText h2{
     font-size: 1.8rem;
+    line-height: 1;
+  }
+  
+  .heroText p{
+    font-size: 1.7rem;
+    line-height: 1;
+  }
+  .heroText p{
+    font-weight: lighter;
   }
 
   .heroText div a {
+    font-size: .8em;
     width: 50%;
   }
 

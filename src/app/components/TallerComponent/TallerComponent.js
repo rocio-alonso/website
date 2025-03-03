@@ -15,7 +15,7 @@ const TallerComponent = () => {
               <Grid />
             </div>
             <div className={`${styles.tallerText} w-2/4`}>
-              <h2 className={`title m-bottom title-section`}>Taller Mozzafiato</h2>
+              <h2 className={`title m-bottom title-section`} translate="no">Taller Mozzafiato</h2>
               <p className="subtitle m-bottom">
                 Somos un espacio de arte especializado en dibujo y pintura,
                 ubicado en el corazón del barrio de El Guinardó, Barcelona. En

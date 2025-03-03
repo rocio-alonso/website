@@ -102,10 +102,6 @@
   align-items: baseline;
 }
 
-.divData p{
-  letter-spacing: 1.2px;
-}
-
 @media (max-width: 800px) {
   .card {
     width: 100%;

@@ -6,6 +6,12 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
     "/obras/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -17,11 +23,23 @@
       "static/chunks/main-app.js",
       "static/chunks/app/api/getProducts/route.js"
     ],
-    "/page": [
+    "/expos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/expos/page.css",
+      "static/chunks/app/expos/page.js"
+    ],
+    "/sobre-mi/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/sobre-mi/page.css",
+      "static/chunks/app/sobre-mi/page.js"
+    ],
+    "/taller/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/taller/page.css",
+      "static/chunks/app/taller/page.js"
     ]
   }
 }

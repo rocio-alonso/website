@@ -108,25 +108,35 @@
   margin-left: calc(var(--margin) * 2);
 }
 
+.page_heroText__g5S3T h2{
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
 .page_heroText__g5S3T p{
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 800px) {
   .page_heroText__g5S3T {
     font-size: 1em !important;
-    bottom: 5vh;
+    bottom: 9vh;
   }
 
   .page_heroText__g5S3T h2{
     margin-bottom: 1vh;
+    font-size: 1.8rem;
+    line-height: 1;
   }
   
   .page_heroText__g5S3T p{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    line-height: 1;
+    font-weight: lighter;
   }
 
   .page_heroText__g5S3T div a {
+    font-size: .8em;
     width: 50%;
   }
 
@@ -300,10 +310,6 @@
   align-items: center;
   gap: calc(var(--margin) / 2);
   align-items: baseline;
-}
-
-.Card_divData__M4ggs p{
-  letter-spacing: 1.2px;
 }
 
 @media (max-width: 800px) {
@@ -1069,14 +1075,6 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -1103,6 +1101,9 @@ video {
 }
 .font-thin {
   font-weight: 100;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 .text-black {
   --tw-text-opacity: 1;
@@ -1182,7 +1183,7 @@ main {
   font-style: normal;
 }
 
-body {
+* {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
 }
 
@@ -1333,6 +1334,10 @@ video::-webkit-media-controls-panel {
 
   .paddingSection {
     padding: 6vw 8vw !important;
+  }
+
+  .paddingBody{
+    padding: 4vw 8vw !important;
   }
 
   .button {

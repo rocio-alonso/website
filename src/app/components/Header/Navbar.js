@@ -31,7 +31,13 @@ const Navbar = ({ responsive, onClick }) => {
             }`}
             onClick={onClick}
           >
-            <Link className="subtitle" href={link.href}>
+            <Link
+              className="subtitle"
+              href={link.href}
+              {...(link.label === "Taller Mozzafiato"
+                ? { translate: "no" }
+                : {})}
+            >
               {link.label}
             </Link>
           </li>

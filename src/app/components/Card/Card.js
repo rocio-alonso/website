@@ -66,7 +66,7 @@ const Card = ({ data, isObra, dataObra }) => {
             <div
               className={`${styles.divData} flex text-center text-xs thin justify-center`}
             >
-              <p className="subtitle thin text-xs">{data.ano}</p>
+              <p className="subtitle thin text-xs tracking-widest">{data.ano}</p>
             </div>
           </div>
         ) : (

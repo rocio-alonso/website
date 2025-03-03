@@ -105,10 +105,6 @@
   align-items: baseline;
 }
 
-.Card_divData__M4ggs p{
-  letter-spacing: 1.2px;
-}
-
 @media (max-width: 800px) {
   .Card_card__Tuw2S {
     width: 100%;
@@ -906,14 +902,6 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -940,6 +928,9 @@ video {
 }
 .font-thin {
   font-weight: 100;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 .text-black {
   --tw-text-opacity: 1;
@@ -1019,7 +1010,7 @@ main {
   font-style: normal;
 }
 
-body {
+* {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
 }
 
@@ -1170,6 +1161,10 @@ video::-webkit-media-controls-panel {
 
   .paddingSection {
     padding: 6vw 8vw !important;
+  }
+
+  .paddingBody{
+    padding: 4vw 8vw !important;
   }
 
   .button {
