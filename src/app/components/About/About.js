@@ -18,23 +18,13 @@ const About = () => {
         className={`${styles.aboutMe} ${AboutStyles.aboutMe} paddingSection`}
       >
         <div className={`${styles.aboutMeVideo} ${AboutStyles.aboutMeVideo}`}>
-          {loading ? (
-            <Image
+        <Image
               width="1050"
               height="100"
               onLoadedData={() => setLoading(false)}
               src="/images/reels/reel-1.gif"
               alt="gif"
             ></Image>
-          ) : (
-            <Image
-              src="/images/about.jpg"
-              alt="Property image"
-              width={1000}
-              height={500}
-              priority
-            />
-          )}
         </div>
 
         <div className={`${styles.aboutMeText} ${AboutStyles.aboutMetext}`}>
