@@ -119,7 +119,7 @@ const page = () => {
 
       <section className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}>
         <div className={`w-1/2 ${styles.divTallerDetails}`}>
-          <h2 className={`title mb-20 thin title-big text-center`}>Explora materiales y técnicas</h2>
+          <h2 className={`title mb-20 title-big text-center`}>Explora materiales y técnicas</h2>
           <p className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}>
             Tendrás la oportunidad de conocer una amplia variedad de materiales
             y descubrir sus usos y posibilidades. Además, podrás experimentar

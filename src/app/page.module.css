@@ -146,13 +146,13 @@
   line-height: 1;
 }
 
-.divTallerDetailsCenter{
+.divTallerDetailsCenter {
   margin: 0 auto;
   width: 50% !important;
 }
 
 @media (max-width: 800px) {
-  .divTallerDetailsCenter p{
+  .divTallerDetailsCenter p {
     width: 60% !important;
   }
 

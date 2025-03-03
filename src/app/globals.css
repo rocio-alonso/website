@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +37,7 @@ main {
   font-style: normal;
 }
 
-.title-big{
+.title-big {
   font-size: 43px !important;
 }
 
@@ -48,20 +47,20 @@ main {
   font-style: normal;
 }
 
-.text{
+.text {
   text-align: justify;
   padding: 0 3vw !important;
 }
 
-.text a{
+.text a {
   margin: 0 auto !important;
 }
 
-.bolder1{
+.bolder1 {
   font-weight: 400 !important;
 }
 
-.bolder{
+.bolder {
   font-weight: 400;
   font-size: 24px;
 }
@@ -167,14 +166,14 @@ video::-webkit-media-controls-panel {
 }
 
 .ultralight {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-weight: 100;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 300;
   font-style: normal;
 }
 
 .thin {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-weight: 100 !important;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -213,7 +212,7 @@ video::-webkit-media-controls-panel {
     font-size: 16px;
   }
 
-  .text{
+  .text {
     padding: 0px 0px !important;
   }
 
@@ -241,13 +240,13 @@ video::-webkit-media-controls-panel {
 
   .title {
     font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
   }
 
   .subtitle {
     font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
   }
 }
