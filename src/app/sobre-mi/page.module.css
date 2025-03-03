@@ -20,6 +20,7 @@
   background-image: url("/images/imagenes/esta-si.JPG");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0px;
   z-index: 0;
 }
 

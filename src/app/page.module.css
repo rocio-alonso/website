@@ -143,12 +143,12 @@
 
 @media (max-width: 800px) {
   .heroSection1{
-    height: 95vh;
+    height: 93vh;
   }
 
   .heroText {
     font-size: 1em !important;
-    bottom: 5vh;
+    bottom: 7vh;
   }
 
   .heroText h2{

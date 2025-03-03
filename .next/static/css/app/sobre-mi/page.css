@@ -1192,6 +1192,7 @@ video::-webkit-media-controls-panel {
   background-image: url("/images/imagenes/esta-si.JPG");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0px;
   z-index: 0;
 }
 
@@ -1391,12 +1392,12 @@ video::-webkit-media-controls-panel {
 
 @media (max-width: 800px) {
   .page_heroSection1__iN3Ot{
-    height: 95vh;
+    height: 93vh;
   }
 
   .page_heroText__g5S3T {
     font-size: 1em !important;
-    bottom: 5vh;
+    bottom: 7vh;
   }
 
   .page_heroText__g5S3T h2{
