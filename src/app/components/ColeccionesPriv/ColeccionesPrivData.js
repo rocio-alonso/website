@@ -26,18 +26,18 @@ const ColeccionesPrivData = ({ data }) => {
   const startIndex = currentPage * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
   return (
-    <div className={`cardsExpo flex flex-col w-full ${styles.divExpo}`}>
-      <h2 className="title m-bottom">Colecciones privadas</h2>
+    <div className={`cardsExpo flex flex-col w-full text-center ${styles.divExpo}`}>
+      <h2 className="title m-bottom title-section text-center title-big">Colecciones privadas</h2>
       <AnimateEntrance key={currentPage}>
       <div className={`flex flex-wrap justify-between ${styles.divCards}`}>
         {data.slice(startIndex, endIndex).map((dataItem, index) => (
           <div key={index} className={`m-bottom ${stylesAbout.cardPremio}`}>
             {dataItem.nombre && (
-              <h2 className="title flex">{dataItem.nombre}</h2>
+              <h2 className="title text-center font-bold bolder">{dataItem.nombre}</h2>
             )}
 
             <div
-              className={`flex w-full ${cardStyles.divData} ${cardStyles.dataBox}`}
+              className={`w-full ${cardStyles.divData} ${cardStyles.dataBox}`}
             >
               {dataItem.detalle && <p className={`subtitle`}>{dataItem.detalle}</p>}
             </div>

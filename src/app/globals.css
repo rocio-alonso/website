@@ -38,8 +38,12 @@ main {
 .title {
   font-family: neue-haas-unica, sans-serif;
   src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
+}
+
+.title-big{
+  font-size: 43px !important;
 }
 
 .subtitle {
@@ -47,6 +51,15 @@ main {
   src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
   font-weight: 100;
   font-style: normal;
+}
+
+.bolder1{
+  font-weight: 400 !important;
+}
+
+.bolder{
+  font-weight: 400;
+  font-size: 24px;
 }
 
 * {
@@ -207,7 +220,8 @@ video::-webkit-media-controls-panel {
   }
 
   .button {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .dots {

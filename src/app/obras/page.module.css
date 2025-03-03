@@ -11,7 +11,31 @@
 }
 
 .titleDiv svg {
-  margin-left: var(--margin);
+  margin: 0 auto;
+}
+
+.titleDiv{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+
+.titleDiv h2{
+  font-size: 43px;
+}
+
+.titleDiv p{
+  margin-top: 2vh;
+}
+
+.bodyDiv{
+  padding: 0 25vw !important;
+  margin-bottom: 15vh !important;
+}
+
+.bodyDiv p{
+  text-align: justify;
 }
 
 .obrasMain img {
@@ -61,6 +85,10 @@
   width: 100%;
 }
 
+.obrasDiv:first-child {
+  display: flex !important;
+}
+
 .obrasDiv {
   column-count: 3;
 }
@@ -68,7 +96,7 @@
 .obrasDiv section {
   display: inline-block;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 60px;
 }
 
 
@@ -79,5 +107,9 @@
 
   .obrasDiv {
     column-count: 1;
+  }
+
+  .bodyDiv{
+    padding: 0 5vw !important;
   }
 }

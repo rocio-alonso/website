@@ -34,6 +34,10 @@
   margin-top: 2em;
 }
 
+.contactText{
+  font-size: 18px !important;
+}
+
 @media (max-width: 800px) {
   .hero {
     height: 17vh !important;
@@ -56,7 +60,7 @@
   }
 
   .imgContact {
-    width: 90% !important;
+    width: 100% !important;
     order: 2;
   }
 

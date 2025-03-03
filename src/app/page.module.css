@@ -220,4 +220,9 @@
   .gridTaller {
     order: 2;
   }
+
+  .tallerButton{
+    margin-top: 3em !important;
+    margin-bottom: 2em !important;
+  }
 }

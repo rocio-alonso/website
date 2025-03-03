@@ -534,6 +534,9 @@ video {
 .float-left {
   float: left;
 }
+.m-auto {
+  margin: auto;
+}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -546,6 +549,9 @@ video {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
@@ -567,6 +573,9 @@ video {
 }
 .mt-2 {
   margin-top: 0.5rem;
+}
+.mt-20 {
+  margin-top: 5rem;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -727,6 +736,9 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.font-bold {
+  font-weight: 700;
+}
 .font-thin {
   font-weight: 100;
 }
@@ -786,8 +798,12 @@ main {
 .title {
   font-family: neue-haas-unica, sans-serif;
   src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
+}
+
+.title-big{
+  font-size: 43px !important;
 }
 
 .subtitle {
@@ -795,6 +811,15 @@ main {
   src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
   font-weight: 100;
   font-style: normal;
+}
+
+.bolder1{
+  font-weight: 400 !important;
+}
+
+.bolder{
+  font-weight: 400;
+  font-size: 24px;
 }
 
 * {
@@ -955,7 +980,8 @@ video::-webkit-media-controls-panel {
   }
 
   .button {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .dots {
@@ -1024,18 +1050,16 @@ video::-webkit-media-controls-panel {
 }
 
 .Card_cardObra__YJ_mq {
-  width: 27vw;
+  width: 25vw;
   font-size: 1em;
 }
 
 .Card_cardObra__YJ_mq:hover > .Card_cardText__IFyLM {
-  padding: calc(var(--margin) * 2.2) calc(var(--margin)) calc(var(--margin) * 2)
-    calc(var(--margin));
+  padding: calc(var(--margin) * 2.1) 3px;
 }
 
 .Card_card__Tuw2S:hover > .Card_cardText__IFyLM a:first-child,
 .Card_card__Tuw2S:hover > .Card_cardText__IFyLM h2 {
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -1049,7 +1073,7 @@ video::-webkit-media-controls-panel {
 
 .Card_cardText__IFyLM {
   transition: all ease 0.5s !important;
-  padding: calc(var(--margin) * 2) var(--margin);
+  padding: calc(var(--margin) * 2) 3px;
 }
 
 .Card_cardImage__PhPFO {
@@ -1095,6 +1119,7 @@ video::-webkit-media-controls-panel {
 
 .Card_divData__M4ggs {
   gap: calc(var(--margin));
+  margin-top: 2.6em;
   align-items: baseline;
 }
 
@@ -1107,6 +1132,28 @@ video::-webkit-media-controls-panel {
   align-items: center;
   gap: calc(var(--margin) / 2);
   align-items: baseline;
+}
+
+.Card_dataMedidas__zetbk{
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.Card_cardText__IFyLM a:first-child{
+  font-size: 24px;
+}
+
+.Card_cardText__IFyLM{
+  padding: calc(var(--margin)*1.5) 0 !important;
+}
+
+.Card_cardText__IFyLM h2, .Card_lugarData__v_R3E{
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.Card_danteDiv__VEwHs{
+  margin-top: 250px;
 }
 
 @media (max-width: 800px) {
@@ -1163,10 +1210,6 @@ video::-webkit-media-controls-panel {
   width: 90vw !important;
 }
 
-.Card_fullCard__r_zyo {
-  width: 50vw;
-}
-
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/obras/page.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
@@ -1183,7 +1226,31 @@ video::-webkit-media-controls-panel {
 }
 
 .page_titleDiv__GbSqz svg {
-  margin-left: var(--margin);
+  margin: 0 auto;
+}
+
+.page_titleDiv__GbSqz{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+
+.page_titleDiv__GbSqz h2{
+  font-size: 43px;
+}
+
+.page_titleDiv__GbSqz p{
+  margin-top: 2vh;
+}
+
+.page_bodyDiv__oSVqF{
+  padding: 0 25vw !important;
+  margin-bottom: 15vh !important;
+}
+
+.page_bodyDiv__oSVqF p{
+  text-align: justify;
 }
 
 .page_obrasMain__lj8oW img {
@@ -1233,6 +1300,10 @@ video::-webkit-media-controls-panel {
   width: 100%;
 }
 
+.page_obrasDiv__0q14m:first-child {
+  display: flex !important;
+}
+
 .page_obrasDiv__0q14m {
   column-count: 3;
 }
@@ -1240,7 +1311,7 @@ video::-webkit-media-controls-panel {
 .page_obrasDiv__0q14m section {
   display: inline-block;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 60px;
 }
 
 
@@ -1251,6 +1322,10 @@ video::-webkit-media-controls-panel {
 
   .page_obrasDiv__0q14m {
     column-count: 1;
+  }
+
+  .page_bodyDiv__oSVqF{
+    padding: 0 5vw !important;
   }
 }
 

@@ -34,7 +34,7 @@ const ContactPage = () => {
         <div className={`${stylesForm.contactText}`}>
           <div className="text-start justify-right">
             <div className="subtitle flex flex-col float-left justify-start">
-              <p className="title mb-2">Teléfono</p>
+              <p className="title mb-2 bolder1">Teléfono</p>
               <a
                 href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20quisiera%20recibir%20más%20información"
                 target="_blank"
@@ -44,7 +44,7 @@ const ContactPage = () => {
                 <p className="subtitle">+34 677 37 49 70</p>
               </a>
               
-              <p className="title mb-2 mt-6">Redes</p>
+              <p className="title mb-2 mt-6 bolder1">Redes</p>
 
               <a
                 href="https://www.instagram.com/rocioalonsoarte/"
@@ -64,7 +64,7 @@ const ContactPage = () => {
                 <p className="subtitle">tallermozzafiato</p>
               </a>
 
-              <p className="title mb-2 mt-5">Mail</p>
+              <p className="title mb-2 mt-5 bolder1">Mail</p>
 
               <a
                 href="mailto:rocioalonsoart@gmail.com"
@@ -75,7 +75,7 @@ const ContactPage = () => {
                 <p className="subtitle">rocioalonsoart@gmail.com</p>
               </a>
 
-              <p className="title mb-2 mt-6">Ubicación</p>
+              <p className="title mb-2 mt-6 bolder1">Ubicación</p>
 
               <div className="flex float-left">
                 <CiLocationOn className="text-xl mb-1" />
@@ -89,7 +89,7 @@ const ContactPage = () => {
           onSubmit={handleSubmit}
           className={`${stylesForm.contactForm} z-50 text-black flex flex-col gap-2 w-1/4`}
         >
-          <label htmlFor="name" className="subtitle">
+          <label htmlFor="name" className="subtitle bolder1">
             Nombre
           </label>
           <input
@@ -101,7 +101,7 @@ const ContactPage = () => {
           <ValidationError prefix="Name" field="name" errors={state.errors} />
 
           {/* Campo de Email */}
-          <label htmlFor="email" className="subtitle">
+          <label htmlFor="email" className="subtitle bolder1">
             Email
           </label>
           <input
@@ -113,7 +113,7 @@ const ContactPage = () => {
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 
           {/* Campo de Mensaje */}
-          <label htmlFor="message" className="subtitle">
+          <label htmlFor="message" className="subtitle bolder1">
             Mensaje
           </label>
           <textarea id="message" name="message" className="p-3 text-black" />

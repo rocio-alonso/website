@@ -7,14 +7,27 @@ import "@/app/globals.css";
 import styles from "@/app/components/Card/Card.module.css";
 
 const Card = ({ data, isObra, dataObra }) => {
+  const dataObraString = String(dataObra?.medidas);
+  const dataObraMedidas = dataObraString.split(",");
+  console.log(dataObraMedidas);
+
   return (
-    <section className={`${styles.cardSection}`}>
+    <section
+      className={`${styles.cardSection} ${
+        isObra && dataObra.titulo === "Dante" ? styles.danteDiv : ""
+      }
+      
+      ${
+        isObra && dataObra.titulo === "El acusado" ? styles.danteDiv : ""
+      }`}
+    >
       <div
         className={`${styles.card} ${
           isObra && dataObra.titulo === "Encierro del Troglodita"
             ? styles.fullCard
             : ""
-        } ${isObra && styles.cardObra} ${isObra && "m-bottom"} `}
+        } 
+        ${isObra && styles.cardObra} ${isObra && "m-bottom"} `}
       >
         {!isObra && (
           <div className={styles.cardImage}>
@@ -66,7 +79,9 @@ const Card = ({ data, isObra, dataObra }) => {
             <div
               className={`${styles.divData} flex text-center text-xs thin justify-center`}
             >
-              <p className="subtitle thin text-xs tracking-widest">{data.ano}</p>
+              <p className="subtitle thin text-xs tracking-widest">
+                {data.ano}
+              </p>
             </div>
           </div>
         ) : (
@@ -75,7 +90,7 @@ const Card = ({ data, isObra, dataObra }) => {
           >
             <div>
               <Link
-                className="title"
+                className="title thin"
                 href={{
                   pathname: "./fullScreen",
                   query: {
@@ -88,14 +103,25 @@ const Card = ({ data, isObra, dataObra }) => {
                 {dataObra.titulo}
               </Link>
 
-              <p className={`${styles.dataMedidas} subtitle text-sm thin m-bottom mt-5`}>
-                {dataObra.medidas}
+              <p className={`${styles.dataMedidas} subtitle text-sm thin`}>
+                {dataObraMedidas[0]}
+              </p>
+
+              <p
+                className={`${styles.dataMedidas} subtitle text-sm thin m-bottom`}
+              >
+                {dataObraMedidas[1]}
               </p>
               {dataObra.stock !== "1" ? (
-                <p className="subtitle thin text-center" translate="no">SOLD</p>
+                <p className="subtitle thin text-center text-sm" translate="no">
+                  SOLD
+                </p>
               ) : (
-                <Link className="button" href="mailto:rocioalonsoart@gmail.com">
-                  Consultar
+                <Link
+                  className="m-auto thin flex w-full justify-center text-sm items-center"
+                  href="mailto:rocioalonsoart@gmail.com"
+                >
+                  CONSULTAR
                 </Link>
               )}
             </div>

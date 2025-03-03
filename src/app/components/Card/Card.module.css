@@ -17,18 +17,16 @@
 }
 
 .cardObra {
-  width: 27vw;
+  width: 25vw;
   font-size: 1em;
 }
 
 .cardObra:hover > .cardText {
-  padding: calc(var(--margin) * 2.2) calc(var(--margin)) calc(var(--margin) * 2)
-    calc(var(--margin));
+  padding: calc(var(--margin) * 2.1) 3px;
 }
 
 .card:hover > .cardText a:first-child,
 .card:hover > .cardText h2 {
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -42,7 +40,7 @@
 
 .cardText {
   transition: all ease 0.5s !important;
-  padding: calc(var(--margin) * 2) var(--margin);
+  padding: calc(var(--margin) * 2) 3px;
 }
 
 .cardImage {
@@ -88,6 +86,7 @@
 
 .divData {
   gap: calc(var(--margin));
+  margin-top: 2.6em;
   align-items: baseline;
 }
 
@@ -100,6 +99,28 @@
   align-items: center;
   gap: calc(var(--margin) / 2);
   align-items: baseline;
+}
+
+.dataMedidas{
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.cardText a:first-child{
+  font-size: 24px;
+}
+
+.cardText{
+  padding: calc(var(--margin)*1.5) 0 !important;
+}
+
+.cardText h2, .lugarData{
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.danteDiv{
+  margin-top: 250px;
 }
 
 @media (max-width: 800px) {
@@ -154,8 +175,4 @@
 
 .imgObras {
   width: 90vw !important;
-}
-
-.fullCard {
-  width: 50vw;
 }

@@ -105,9 +105,9 @@
 }
 
 @media (max-width: 800px) {
-
   .responsiveParagraph{
     display: none;
+    text-align: justify;
   }
 
   .divModalChild{

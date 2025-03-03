@@ -21,7 +21,19 @@ const Obras = () => {
         const data2 = await response.json();
         const obras = data2.response.products[4].obras;
 
-        [obras[0].obras[1], obras[0].obras[2]] = [obras[0].obras[2], obras[0].obras[1]];
+        [obras[1].obras[5], obras[1].obras[2]] = [
+          obras[1].obras[2],
+          obras[1].obras[5],
+        ];
+
+        [obras[3].obras[1], obras[3].obras[4]] = [
+          obras[3].obras[4],
+          obras[3].obras[1],
+        ];
+
+        console.log(obras);
+        console.log(obras[3].obras[4]);
+
         setDataObras(obras);
       } catch (error) {
         console.error("An error occurred while fetching files.", error);
@@ -36,17 +48,17 @@ const Obras = () => {
       <section className={`paddingSection ${styles.obrasMain}`}>
         {data.map((dataItem, index) => (
           <div key={index}>
-            <div
-              className={`flex items-center mb-8 gap-4 ${styles.titleDiv}`}
-            >
-              <h2 className="title title-section" translate="no">
+            <div className={`flex items-center mb-8 gap-4 ${styles.titleDiv}`}>
+              <h2 className="title title-section thin" translate="no">
                 {dataItem.titulo}{" "}
-                <p className="subtitle thin text-lg">{dataItem.ano}</p>
+                {dataItem.titulo !== "Horror Vacui" && <p className="mb-20 subtitle thin text-base">{dataItem.ano}</p>}
               </h2>
+              
             </div>
 
             {dataItem.titulo === "Horror Vacui" && (
-              <div className="">
+              <div className={styles.bodyDiv}>
+                <p className="mb-20 subtitle thin text-base">{dataItem.ano}</p>
                 <p className="mb-8 subtitle">
                   Mi última serie refleja la esencia más profunda de la sociedad
                   contemporánea: la compulsión inherente de la condición humana
@@ -87,7 +99,9 @@ const Obras = () => {
                   dataObra={obraData}
                   isObra={true}
                   key={index}
-                  onClick={() => {handleFullScreen(obraData)}}
+                  onClick={() => {
+                    handleFullScreen(obraData);
+                  }}
                 />
               ))}
             </div>

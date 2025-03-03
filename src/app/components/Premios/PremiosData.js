@@ -27,23 +27,23 @@ const PremiosData = ({ data }) => {
   const startIndex = currentPage * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
   return (
-    <div className={`cardsExpo flex flex-col w-full ${styles.divExpo}`}>
-      <h2 className="title m-bottom">Reconocimientos</h2>
+    <div className={`cardsExpo flex flex-col w-full text-center ${styles.divExpo}`}>
+      <h2 className="title m-bottom title-section text-center title-big">Reconocimientos</h2>
       <AnimateEntrance key={currentPage}>
         <div className={`flex flex-wrap justify-between ${styles.divCards}`}>
           {data.slice(startIndex, endIndex).map((dataItem, index) => (
             <div key={index} className={`m-bottom ${stylesAbout.cardPremio}`}>
               {dataItem.evento && (
-                <h2 className="title flex">{dataItem.evento}</h2>
+                <h2 className="title flex bolder">{dataItem.evento}</h2>
               )}
 
               <div
                 className={`w-full ${cardStyles.divData} ${cardStyles.dataBox}`}
               >
-                <p className="subtitle thin mb-1">
+                <p className="subtitle thin mb-1 text-center">
                   {dataItem.ano}{dataItem.ano ? "," : ""} {dataItem.obra}
                 </p>
-                <p className="subtitle thin flex items-center gap-2">
+                <p className="subtitle thin items-center text-center gap-2">
                   {dataItem.ubicacion}
                 </p>
               </div>
