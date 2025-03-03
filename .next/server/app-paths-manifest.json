@@ -1,6 +1,3 @@
 {
-  "/sobre-mi/page": "app/sobre-mi/page.js",
-  "/obras/page": "app/obras/page.js",
-  "/page": "app/page.js",
-  "/fullScreen/page": "app/fullScreen/page.js"
+  "/page": "app/page.js"
 }
