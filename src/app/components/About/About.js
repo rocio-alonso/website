@@ -19,18 +19,13 @@ const About = () => {
       >
         <div className={`${styles.aboutMeVideo} ${AboutStyles.aboutMeVideo}`}>
           {loading ? (
-            <video
-              width="250"
+            <Image
+              width="1050"
               height="100"
-              controls
-              autoPlay
-              loop
-              muted
-              preload="auto"
-              playsInline
               onLoadedData={() => setLoading(false)}
-              src="/images/reels/reel-1.mp4"
-            ></video>
+              src="/images/reels/reel-1.gif"
+              alt="gif"
+            ></Image>
           ) : (
             <Image
               src="/images/about.jpg"

@@ -68,7 +68,7 @@
   display: flex;
   align-items: baseline;
   position: absolute;
-  bottom: 3vh;
+  bottom: 0;
   flex-direction: column;
   width: 100vw;
   z-index: 100;
@@ -145,9 +145,13 @@
 }
 
 @media (max-width: 800px) {
+  .page_heroSection1__iN3Ot{
+    height: 95vh;
+  }
+
   .page_heroText__g5S3T {
     font-size: 1em !important;
-    bottom: 9vh;
+    bottom: 5vh;
   }
 
   .page_heroText__g5S3T h2{
@@ -1178,24 +1182,26 @@ main {
 }
 
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
+  font-family: neue-haas-unica, sans-serif;
   src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
 }
 
 .title {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
+  font-family: neue-haas-unica, sans-serif;
+  src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
   font-weight: 400;
   font-style: normal;
 }
 
 .subtitle {
   font-family: neue-haas-unica, sans-serif;
+  src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
   font-weight: 100;
   font-style: normal;
 }
 
 * {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
+  font-family: neue-haas-unica, sans-serif;
 }
 
 img,

@@ -65,7 +65,7 @@
   display: flex;
   align-items: baseline;
   position: absolute;
-  bottom: 3vh;
+  bottom: 0;
   flex-direction: column;
   width: 100vw;
   z-index: 100;
@@ -142,9 +142,13 @@
 }
 
 @media (max-width: 800px) {
+  .heroSection1{
+    height: 95vh;
+  }
+
   .heroText {
     font-size: 1em !important;
-    bottom: 9vh;
+    bottom: 5vh;
   }
 
   .heroText h2{
