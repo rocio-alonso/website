@@ -77,8 +77,8 @@ const HeroSlider2 = () => {
       </div>
 
       <div className={`${styles.heroText} paddingSection`}>
-        <h2 className="text-5xl title mb-2" translate="no">Horror Vacui </h2>
-        <p className="text-4xl subtitle ultralight thin mb-5">
+        <h2 className="text-5xl title" translate="no">Horror Vacui </h2>
+        <p className="subtitle ultralight thin mb-5">
           La belleza de lo ausente
         </p>
         <div className="flex mt-1">

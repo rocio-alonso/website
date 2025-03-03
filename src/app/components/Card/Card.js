@@ -92,7 +92,7 @@ const Card = ({ data, isObra, dataObra }) => {
                 {dataObra.medidas}
               </p>
               {dataObra.stock !== "1" ? (
-                <p className="subtitle thin text-center">SOLD</p>
+                <p className="subtitle thin text-center" translate="no">SOLD</p>
               ) : (
                 <Link className="button" href="mailto:rocioalonsoart@gmail.com">
                   Consultar

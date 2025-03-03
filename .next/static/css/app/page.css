@@ -108,10 +108,22 @@
   margin-left: calc(var(--margin) * 2);
 }
 
+.page_heroText__g5S3T p{
+  font-size: 2rem;
+}
+
 @media (max-width: 800px) {
   .page_heroText__g5S3T {
-    font-size: 0.9em !important;
+    font-size: 1em !important;
     bottom: 5vh;
+  }
+
+  .page_heroText__g5S3T h2{
+    margin-bottom: 1vh;
+  }
+  
+  .page_heroText__g5S3T p{
+    font-size: 1.8rem;
   }
 
   .page_heroText__g5S3T div a {
@@ -1061,6 +1073,10 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -1084,10 +1100,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .font-thin {
   font-weight: 100;
