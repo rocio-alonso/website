@@ -976,36 +976,36 @@ main {
 }
 
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf");
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
+  src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf") !important;
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf");
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
+  src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf") !important;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf");
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
+  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf") !important;
   font-weight: 100;
   font-style: normal;
 }
 
 .title {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf");
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
+  src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf") !important;
   font-weight: 400;
   font-style: normal;
 }
 
 .subtitle {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf");
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
+  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf") !important;
   font-weight: 100;
   font-style: normal;
 }
@@ -1016,13 +1016,13 @@ main {
 
 img,
 video {
-  filter: saturate(0.65); /* Reduce saturation */
-  transition: filter 0.3s ease; /* Smooth transition on hover */
+  filter: saturate(0.65);
+  transition: filter 0.3s ease;
 }
 
 img:hover,
 video:hover {
-  filter: saturate(1); /* Restore full saturation on hover */
+  filter: saturate(1);
 }
 
 .paddingSection {
