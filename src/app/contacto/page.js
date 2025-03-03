@@ -20,7 +20,7 @@ const ContactPage = () => {
         <div className={`z-50 w-full text-white flex justify-center`}></div>
       </div>
       <div
-        className={`flex flex-wrap gap-20 paddingSection ${stylesForm.heroSection1}`}
+        className={`flex gap-20 paddingSection ${stylesForm.heroSection1}`}
       >
         <div className={`${stylesForm.imgContact}`}>
           <Image
@@ -44,7 +44,7 @@ const ContactPage = () => {
                 <p className="subtitle">+34 677 37 49 70</p>
               </a>
               
-              <p className="title mb-2 mt-6 bolder1">Redes</p>
+              <p className="title mb-2 mt-5 bolder1">Redes</p>
 
               <a
                 href="https://www.instagram.com/rocioalonsoarte/"
@@ -58,7 +58,7 @@ const ContactPage = () => {
               <a
                 href="https://www.instagram.com/tallermozzafiato/"
                 target="_blank"
-                className={`gap flex items-center ${styles.imgLogo} mt-6`}
+                className={`gap flex items-center ${styles.imgLogo} mt-5`}
               >
                 <PiInstagramLogoLight className="text-xl" />
                 <p className="subtitle">tallermozzafiato</p>
@@ -75,7 +75,7 @@ const ContactPage = () => {
                 <p className="subtitle">rocioalonsoart@gmail.com</p>
               </a>
 
-              <p className="title mb-2 mt-6 bolder1">Ubicación</p>
+              <p className="title mb-2 mt-5 bolder1">Ubicación</p>
 
               <div className="flex float-left">
                 <CiLocationOn className="text-xl mb-1" />
@@ -100,7 +100,6 @@ const ContactPage = () => {
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
 
-          {/* Campo de Email */}
           <label htmlFor="email" className="subtitle bolder1">
             Email
           </label>
@@ -112,7 +111,6 @@ const ContactPage = () => {
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-          {/* Campo de Mensaje */}
           <label htmlFor="message" className="subtitle bolder1">
             Mensaje
           </label>
@@ -123,7 +121,6 @@ const ContactPage = () => {
             errors={state.errors}
           />
 
-          {/* Botón de Enviar */}
           <button
             className={`${stylesForm.formButton} `}
             type="submit"

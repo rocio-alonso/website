@@ -70,5 +70,10 @@
 }
 
 .imgContact {
-  width: 40%;
+  width: 50%;
+  margin-right: 2em;
+}
+
+.imgContact img{
+  width: 100%;
 }

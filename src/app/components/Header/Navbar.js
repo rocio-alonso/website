@@ -16,7 +16,7 @@ const Navbar = ({ responsive, onClick }) => {
         responsive ? styles.headerDivResponsive : styles.headerDiv
       }`}
     >
-      <ul className={`${responsive ? "" : "flex"} thin`}>
+      <ul className={`${responsive ? "" : "flex"}`}>
         {[
           { href: "/", label: "Inicio" },
           { href: "/obras", label: "Mis obras" },

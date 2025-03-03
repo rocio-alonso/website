@@ -25,13 +25,14 @@ const MaterialsDetailsData = ({ data }) => {
   return (
     <div className={`flex align-center justify-center flex-col paddingSection`}>
       <AnimateEntrance key={currentPage}>
-        <div className={`flex align-center justify-center gap-4 ${styles.sectionDetail}`}>
+        <div className={`flex align-center mb-7 justify-center gap-4 ${styles.sectionDetail}`}>
           {currentData.map((item, index) => (
             <CardDetail data={item} key={index} />
           ))}
         </div>
       </AnimateEntrance>
-      <section className="carrousellHandler flex items-center mt-4">
+
+      <section className="carrousellHandler flex items-center mt-5">
         <button
           className="button"
           onClick={handlePrevious}

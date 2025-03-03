@@ -18,20 +18,6 @@ const Bio = () => {
             height={500}
             className="mb-20"
           />
-
-          <video
-            width="250"
-            height="100"
-            controls
-            preload="none"
-            autoPlay
-            loop
-            muted
-            className="w-full"
-          >
-            <source src="/images/reels/reel-3.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
         </div>
 
         <div className={`w-3/4 ${styles.textAbout}`}>
@@ -39,7 +25,7 @@ const Bio = () => {
             <div className={styles.textBio}>
               <h2 className="title text-2xl mb-10">Biografía</h2>
               <p className="subtitle mt-20">Buenos Aires, 1992</p>
-              
+
               <p className="m-bottom subtitle mt-20">
                 Comencé mi recorrido artístico a la temprana edad de 4 años,
                 explorando inicialmente la escultura y, posteriormente, el
@@ -50,7 +36,7 @@ const Bio = () => {
                 Nacional de las Artes (UNA) en Argentina. Además, soy Abogada
                 graduada en la Universidad de Derecho de Buenos Aires (UBA)
               </p>
-              <p className="m-bottom subtitle">
+              <p className="subtitle">
                 En el ámbito educativo, he sido docente de Lenguaje Visual,
                 Pintura e Historia del Arte en la Universidad Nacional de las
                 Artes. También he impartido clases de Dibujo, Pintura y
@@ -61,8 +47,17 @@ const Bio = () => {
                 Mozzafiato, un atelier dedicado al dibujo y la pintura, he
                 guiado a más de 100 alumnos en su desarrollo artístico.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="paddingBody w-full flex">
+        <div className={`w-3/4 ${styles.textAbout}`}>
+          <div>
+            <div className={styles.textBio}>
               <AnimateEntrance>
-                <h2 className="title text-2xl mt-20 mb-10">Actualidad</h2>
+                <h2 className="title text-2xl mt-10 mb-10">Actualidad</h2>
                 <p className="m-bottom subtitle">
                   En 2024, me he radicado en Barcelona, donde estoy trabajando
                   en mi última serie titulada Horror Vacui, que explora la
@@ -82,7 +77,7 @@ const Bio = () => {
                   logran satisfacer nuestras búsquedas más profundas.
                 </p>
 
-                <p className="m-bottom subtitle">
+                <p className="subtitle">
                   Mi trabajo busca revelar el vacío inherente a la fragilidad de
                   nuestra existencia y la compulsión humana por llenarlo. Creo
                   que lo esencial es donde reside la verdadera riqueza,
@@ -94,12 +89,30 @@ const Bio = () => {
                   experiencia.
                 </p>
 
-                <Link className="subtitle bold button" href={"/obras"}>
-                  Descubre Horror Vacui
-                </Link>
+                <div className={`flex w-full justify-center`}>
+                  <Link className="subtitle bold button" href={"/obras"}>
+                    Descubre Horror Vacui
+                  </Link>
+                </div>
               </AnimateEntrance>
             </div>
           </div>
+        </div>
+
+        <div className={`${styles.imageAbout} w-1/4`}>
+          <video
+            width="250"
+            height="100"
+            controls
+            preload="none"
+            autoPlay
+            loop
+            muted
+            className="w-full"
+          >
+            <source src="/images/reels/reel-3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
     </AnimateEntrance>

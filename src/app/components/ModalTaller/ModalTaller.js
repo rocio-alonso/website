@@ -60,11 +60,11 @@ const ModalTaller = () => {
   return (
     <div className={`${styles.divModal}`}>
       <AnimateEntrance>
-        <div className="absolute right-0 p-5">
-          <IoCloseOutline
-            className="size-6 button cursor-pointer"
+        <div className="absolute right-0 p-6">
+          <p
+            className="size-6 button cursor-pointer subtitle thin"
             onClick={() => setShowModal(false)}
-          />
+          >X</p>
         </div>
         <div
           className={`paddingSection justify-between flex ${styles.divModalChild} ${stylesModal.divModalChild}`}

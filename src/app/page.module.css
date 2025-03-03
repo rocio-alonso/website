@@ -130,19 +130,33 @@
   margin-left: calc(var(--margin) * 2);
 }
 
-.heroText h2{
+.tallerText a {
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.heroText h2 {
   font-size: 50px;
   line-height: 1;
   margin-bottom: 1.5vh;
 }
 
-.heroText p{
+.heroText p {
   font-size: 50px;
   line-height: 1;
 }
 
+.divTallerDetailsCenter{
+  margin: 0 auto;
+  width: 50% !important;
+}
+
 @media (max-width: 800px) {
-  .heroSection1{
+  .divTallerDetailsCenter p{
+    width: 60% !important;
+  }
+
+  .heroSection1 {
     height: 100vh;
   }
 
@@ -151,25 +165,25 @@
     bottom: 0;
   }
 
-  .heroText h2{
+  .heroText h2 {
     margin-bottom: 1vh;
   }
-  
-  .heroText h2{
+
+  .heroText h2 {
     font-size: 1.8rem;
     line-height: 1;
   }
-  
-  .heroText p{
+
+  .heroText p {
     font-size: 1.7rem;
     line-height: 1;
   }
-  .heroText p{
+  .heroText p {
     font-weight: lighter;
   }
 
   .heroText div a {
-    font-size: .8em;
+    font-size: 0.8em;
     width: 50%;
   }
 
@@ -221,7 +235,11 @@
     order: 2;
   }
 
-  .tallerButton{
+  .buttonHeader {
+    margin-right: 1em !important;
+  }
+
+  .tallerButton {
     margin-top: 3em !important;
     margin-bottom: 2em !important;
   }

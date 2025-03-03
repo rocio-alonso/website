@@ -63,7 +63,31 @@
   padding: var(--margin);
 }
 
+.imageAbout:nth-child(1){
+  margin-left: 10vw;
+}
+
+.imageAbout:nth-child(2){
+  margin-right: 10vw;
+}
+
+.textBio{
+  margin: 0 auto;
+}
+
+.textBio a{
+  margin-right: 10vw;
+}
+
 @media (max-width: 800px) {
+  .textAbout p, .textBio h2{
+    padding: 0 !important;
+  }
+
+  .textBio a{
+    margin: 0 auto !important;
+  }
+
   .imageAbout {
     display: none;
   }

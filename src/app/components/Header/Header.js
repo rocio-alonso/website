@@ -46,7 +46,7 @@ const Header = () => {
   return (
     <section>
       <section
-        className={`${styles.header} ${
+        className={`${styles.header} subtitle ${
           isScrolled ? styles.scrolled : ""
         } paddingSection`}
       >

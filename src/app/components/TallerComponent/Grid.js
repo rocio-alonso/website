@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -27,19 +27,12 @@ const Grid = () => {
           />
         </div>
         <div className="row-span-2">
-          <video
-            width="250"
-            height="100"
-            controls
-            preload="auto"
-            autoPlay
-            loop
-            muted
-            playsInline
-            onLoadedData={() => setLoading(false)}
-            src="/images/grid-mozzafiato/reel-4.mp4"
-          >
-          </video>
+          <Image
+            src={"/images/grid-mozzafiato/reel-4.gif"}
+            alt={`Property image`}
+            width={500}
+            height={500}
+          />
         </div>
         <div className="col-start-2 row-start-2">
           <Image
@@ -50,19 +43,12 @@ const Grid = () => {
           />
         </div>
         <div className="row-span-2 col-start-1 row-start-2">
-          <video
-            width="250"
-            height="100"
-            controls
-            preload="auto"
-            autoPlay
-            loop
-            muted
-            playsInline
-            onLoadedData={() => setLoading(false)}
-            src="/images/grid-mozzafiato/reel-2.mp4"
-          >
-          </video>
+        <Image
+            src={"/images/grid-mozzafiato/reel-2.gif"}
+            alt={`Property image`}
+            width={500}
+            height={500}
+          />
         </div>
         <div className="col-span-2 col-start-2 row-start-3">
           <Image

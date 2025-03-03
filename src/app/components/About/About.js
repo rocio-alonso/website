@@ -27,19 +27,19 @@ const About = () => {
             ></Image>
         </div>
 
-        <div className={`${styles.aboutMeText} ${AboutStyles.aboutMetext}`}>
-          <p className="ultralight">
+        <div className={`${styles.aboutMeText} ${AboutStyles.aboutMetext} text`}>
+          <p className="ultralight text">
             Mi pasión por el <b>arte</b> nace del deseo de encontrar belleza en
             lo cotidiano. Cada <b>obra</b> es una exploración de lo que puede
             surgir cuando nos tomamos el tiempo para mirar{" "}
             <b>más allá de lo superficial</b>.
           </p>
-          <p className="ultralight">
+          <p className="ultralight text">
             Mi <b>enfoque artístico</b> se basa en la capacidad de transformar{" "}
             <b>materiales triviales</b> en estructuras visualmente atractivas y
             complejas, revelando su potencial estético y emotivo.
           </p>
-          <p className="ultralight">
+          <p className="ultralight text">
             Mi trayectoria ha sido enriquecida por mentorías con reconocidos
             artistas como Ernesto Allí, Héctor Destefanis y Norberto Iera, y me
             he formado en la <b>Universidad Nacional de las Artes </b>(UNA,

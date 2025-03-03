@@ -1,7 +1,9 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
-*, ::before, ::after {
+@import url("https://use.typekit.net/mqv6hso.css");
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -55,7 +57,7 @@
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -107,9 +109,13 @@
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
-}/*
+}
+
+/*
 ! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -424,6 +430,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
+
 dialog {
   padding: 0;
 }
@@ -459,6 +466,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -492,283 +500,293 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
-.absolute {
+.absolute{
   position: absolute;
 }
-.relative {
+.relative{
   position: relative;
 }
-.bottom-0 {
+.bottom-0{
   bottom: 0px;
 }
-.right-0 {
+.right-0{
   right: 0px;
 }
-.z-50 {
+.z-50{
   z-index: 50;
 }
-.col-span-2 {
+.col-span-2{
   grid-column: span 2 / span 2;
 }
-.col-start-1 {
+.col-start-1{
   grid-column-start: 1;
 }
-.col-start-2 {
+.col-start-2{
   grid-column-start: 2;
 }
-.row-span-2 {
+.row-span-2{
   grid-row: span 2 / span 2;
 }
-.row-start-2 {
+.row-start-2{
   grid-row-start: 2;
 }
-.row-start-3 {
+.row-start-3{
   grid-row-start: 3;
 }
-.float-right {
+.float-right{
   float: right;
 }
-.float-left {
+.float-left{
   float: left;
 }
-.m-auto {
+.m-auto{
   margin: auto;
 }
-.mx-2 {
+.mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.mb-1 {
+.mb-1{
   margin-bottom: 0.25rem;
 }
-.mb-10 {
+.mb-10{
   margin-bottom: 2.5rem;
 }
-.mb-2 {
+.mb-2{
   margin-bottom: 0.5rem;
 }
-.mb-20 {
+.mb-20{
   margin-bottom: 5rem;
 }
-.mb-3 {
+.mb-3{
   margin-bottom: 0.75rem;
 }
-.mb-5 {
+.mb-5{
   margin-bottom: 1.25rem;
 }
-.mb-8 {
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+.mb-8{
   margin-bottom: 2rem;
 }
-.ml-1 {
+.ml-1{
   margin-left: 0.25rem;
 }
-.ml-2 {
+.ml-2{
   margin-left: 0.5rem;
 }
-.mt-1 {
+.mt-1{
   margin-top: 0.25rem;
 }
-.mt-2 {
+.mt-10{
+  margin-top: 2.5rem;
+}
+.mt-2{
   margin-top: 0.5rem;
 }
-.mt-20 {
+.mt-20{
   margin-top: 5rem;
 }
-.mt-4 {
+.mt-4{
   margin-top: 1rem;
 }
-.mt-5 {
+.mt-5{
   margin-top: 1.25rem;
 }
-.mt-6 {
-  margin-top: 1.5rem;
-}
-.flex {
+.flex{
   display: flex;
 }
-.hidden {
+.hidden{
   display: none;
 }
-.size-6 {
+.size-6{
   width: 1.5rem;
   height: 1.5rem;
 }
-.h-8 {
+.h-8{
   height: 2rem;
 }
-.h-full {
+.h-full{
   height: 100%;
 }
-.h-screen {
+.h-screen{
   height: 100vh;
 }
-.w-1\/2 {
+.w-1\/2{
   width: 50%;
 }
-.w-1\/3 {
+.w-1\/3{
   width: 33.333333%;
 }
-.w-1\/4 {
+.w-1\/4{
   width: 25%;
 }
-.w-2\/3 {
+.w-2\/3{
   width: 66.666667%;
 }
-.w-2\/4 {
+.w-2\/4{
   width: 50%;
 }
-.w-24 {
+.w-24{
   width: 6rem;
 }
-.w-3\/4 {
+.w-3\/4{
   width: 75%;
 }
-.w-4\/5 {
+.w-3\/5{
+  width: 60%;
+}
+.w-4\/5{
   width: 80%;
 }
-.w-full {
+.w-full{
   width: 100%;
 }
-.transform {
+.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.cursor-pointer {
+.cursor-pointer{
   cursor: pointer;
 }
-.resize {
+.resize{
   resize: both;
 }
-.flex-row {
+.flex-row{
   flex-direction: row;
 }
-.flex-col {
+.flex-col{
   flex-direction: column;
 }
-.flex-wrap {
+.flex-wrap{
   flex-wrap: wrap;
 }
-.items-center {
+.items-center{
   align-items: center;
 }
-.justify-start {
+.justify-start{
   justify-content: flex-start;
 }
-.justify-end {
+.justify-end{
   justify-content: flex-end;
 }
-.justify-center {
+.justify-center{
   justify-content: center;
 }
-.justify-between {
+.justify-between{
   justify-content: space-between;
 }
-.gap-1 {
+.gap-1{
   gap: 0.25rem;
 }
-.gap-10 {
+.gap-10{
   gap: 2.5rem;
 }
-.gap-12 {
+.gap-12{
   gap: 3rem;
 }
-.gap-2 {
+.gap-2{
   gap: 0.5rem;
 }
-.gap-20 {
+.gap-20{
   gap: 5rem;
 }
-.gap-4 {
+.gap-4{
   gap: 1rem;
 }
-.overflow-hidden {
+.overflow-hidden{
   overflow: hidden;
 }
-.p-3 {
+.p-3{
   padding: 0.75rem;
 }
-.p-5 {
-  padding: 1.25rem;
+.p-6{
+  padding: 1.5rem;
 }
-.text-center {
+.text-center{
   text-align: center;
 }
-.text-start {
+.text-justify{
+  text-align: justify;
+}
+.text-start{
   text-align: start;
 }
-.text-end {
+.text-end{
   text-align: end;
 }
-.align-middle {
+.align-middle{
   vertical-align: middle;
 }
-.text-2xl {
+.text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-3xl {
+.text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-6xl {
+.text-6xl{
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-base {
+.text-base{
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.text-lg {
+.text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-sm {
+.text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-xl {
+.text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-xs {
+.text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.font-bold {
+.font-bold{
   font-weight: 700;
 }
-.font-thin {
+.font-thin{
   font-weight: 100;
 }
-.tracking-widest {
+.tracking-widest{
   letter-spacing: 0.1em;
 }
-.text-black {
+.text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.text-white {
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.transition {
+.transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.ease-in-out {
+.ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@import url("https://use.typekit.net/mqv6hso.css");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "neue-haas-unica", sans-serif;
 }
 
 main {
@@ -790,15 +808,9 @@ main {
   letter-spacing: 0.01em;
 }
 
-@font-face {
-  font-family: neue-haas-unica, sans-serif;
-  src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
-}
-
 .title {
-  font-family: neue-haas-unica, sans-serif;
-  src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
-  font-weight: 100;
+  font-family: "neue-haas-unica", sans-serif !important;
+  font-weight: 400 !important;
   font-style: normal;
 }
 
@@ -807,10 +819,18 @@ main {
 }
 
 .subtitle {
-  font-family: neue-haas-unica, sans-serif;
-  src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
-  font-weight: 100;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 300;
   font-style: normal;
+}
+
+.text{
+  text-align: justify;
+  padding: 0 3vw !important;
+}
+
+.text a{
+  margin: 0 auto !important;
 }
 
 .bolder1{
@@ -820,10 +840,6 @@ main {
 .bolder{
   font-weight: 400;
   font-size: 24px;
-}
-
-* {
-  font-family: neue-haas-unica, sans-serif;
 }
 
 img,
@@ -874,10 +890,13 @@ video::-webkit-media-controls-panel {
   padding: calc(var(--margin) / 2) var(--margin);
   width: fit-content;
   height: 2.5em;
-  font-weight: 500;
   justify-content: center;
   text-decoration: none;
   transition: all 250ms;
+
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .button:hover,
@@ -924,14 +943,12 @@ video::-webkit-media-controls-panel {
 
 .ultralight {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf");
   font-weight: 100;
   font-style: normal;
 }
 
 .thin {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf");
   font-weight: 100 !important;
   font-style: normal;
 }
@@ -971,6 +988,10 @@ video::-webkit-media-controls-panel {
     font-size: 16px;
   }
 
+  .text{
+    padding: 0px 0px !important;
+  }
+
   .paddingSection {
     padding: 6vw 8vw !important;
   }
@@ -980,7 +1001,7 @@ video::-webkit-media-controls-panel {
   }
 
   .button {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -995,14 +1016,12 @@ video::-webkit-media-controls-panel {
 
   .title {
     font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf");
     font-weight: 400;
     font-style: normal;
   }
 
   .subtitle {
     font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf");
     font-weight: 100;
     font-style: normal;
   }
@@ -1036,6 +1055,9 @@ video::-webkit-media-controls-panel {
   height: fit-content;
   transition: all ease 0.5s !important;
   font-size: 1.1em;
+
+  font-family: "neue-haas-unica", sans-serif;
+  font-style: normal;
 }
 
 .Card_card__Tuw2S:hover {
@@ -1257,6 +1279,11 @@ video::-webkit-media-controls-panel {
   filter: none !important;
 }
 
+.page_horroDiv__pEmI4{
+  display: flex;
+  justify-content: space-between;
+}
+
 .page_fullscreenOverlay__oCfqE {
   position: fixed;
   top: 0;
@@ -1300,18 +1327,17 @@ video::-webkit-media-controls-panel {
   width: 100%;
 }
 
-.page_obrasDiv__0q14m:first-child {
-  display: flex !important;
-}
-
 .page_obrasDiv__0q14m {
   column-count: 3;
+  width: 100%;
 }
 
 .page_obrasDiv__0q14m section {
   display: inline-block;
-  width: 100%;
   margin-bottom: 60px;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 2em;
 }
 
 
@@ -1320,8 +1346,16 @@ video::-webkit-media-controls-panel {
     height: 17vh !important;
   }
 
+  .page_obrasDiv__0q14m section {
+    margin-left: 0px;
+  }
+
   .page_obrasDiv__0q14m {
     column-count: 1;
+  }
+
+  .page_horroDiv__pEmI4{
+    display: inline;
   }
 
   .page_bodyDiv__oSVqF{

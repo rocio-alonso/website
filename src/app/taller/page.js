@@ -16,13 +16,13 @@ const page = () => {
       <section className={styles.hero}>
         <div className={`${styles.heroText} paddingSection text-white`}>
           <h2 className="text-6xl thin">Nuestro espacio</h2>
-          <p className={`w-2/3 font-thin m-bottom`}>
+          <p className={`w-3/5 font-thin m-bottom text-justify`}>
             Nuestras clases personalizadas están diseñadas para ofrecerte el
             conocimiento y la orientación que necesitas para ganar autonomía en
             tus decisiones creativas.
           </p>
           <p
-            className={`w-2/3 font-thin m-bottom ${styles.responsiveParagraph}`}
+            className={`w-3/5 font-thin m-bottom text-justify ${styles.responsiveParagraph}`}
           >
             Te acompañamos en cada paso para que explores y desarrolles una
             visión artística propia, disfrutando del proceso creativo y de
@@ -34,10 +34,19 @@ const page = () => {
         </div>
       </section>
 
+      <div className={`paddingSection ${styles.divTallerDetails} ${styles.divTallerDetailsCenter} mt-10`}>
+          <h2 className={`title mb-20 title-big text-center`} translate="no">Taller Mozzafiato</h2>
+          <p className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3`}>
+            Si no puedes asistir a una clase, te pedimos que nos avises con al
+            menos 48 horas de antelación. De esta manera, podremos reprogramar
+            tu clase para otro horario disponible dentro del mismo mes.
+          </p>
+      </div>
+
       <section className="paddingSection flex flex-wrap">
         <div className={`${styles.divTallerDetails} w-1/3`} id="mainSection">
-          <h2 className={`title m-bottom`}>Recuperación de clases</h2>
-          <p className="m-bottom font-thin w-4/5">
+          <h2 className={`title mb-10 title-big text-center`}>Recuperación de clases</h2>
+          <p className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}>
             Si no puedes asistir a una clase, te pedimos que nos avises con al
             menos 48 horas de antelación. De esta manera, podremos reprogramar
             tu clase para otro horario disponible dentro del mismo mes.
@@ -45,7 +54,7 @@ const page = () => {
         </div>
 
         <div className={`${styles.divTallerDetails} w-1/3 m-bottom`}>
-          <h2 className={`title m-bottom`}>Modalidad del taller</h2>
+          <h2 className={`title mb-20 title-big`}>Modalidad del taller</h2>
           <div className={`${styles.modalidadesDiv} flex font-thin`}>
             <div className={`flex ${styles.modalidadDiv}`}>
               <CiClock1 className={`${styles.icon}`} />
@@ -69,8 +78,8 @@ const page = () => {
           </div>
         </div>
 
-        <div className={`${styles.divTallerDetails} w-1/3`}>
-          <h2 className={`title m-bottom`}>Horarios</h2>
+        <div className={`${styles.divTallerDetails}`}>
+          <h2 className={`title mb-20 title-big text-center`}>Horarios</h2>
           <div className={`${styles.horariosDiv} gap`}>
             <div className={`flex m-bottom gap`}>
               <div className={`flex ${styles.modalidadDiv}`}>
@@ -108,16 +117,16 @@ const page = () => {
         </div>
       </section>
 
-      <section className={`paddingBody flex ${styles.sectionTallerDetails}`}>
+      <section className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}>
         <div className={`w-1/2 ${styles.divTallerDetails}`}>
-          <h2 className={`title m-bottom`}>Explora materiales y técnicas</h2>
-          <p className="m-bottom font-thin w-4/5">
+          <h2 className={`title mb-20 thin title-big text-center`}>Explora materiales y técnicas</h2>
+          <p className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}>
             Tendrás la oportunidad de conocer una amplia variedad de materiales
             y descubrir sus usos y posibilidades. Además, podrás experimentar
-            con técnicas mixtas, collage, monotipia y mucho más.
+            con técnicas mixtas, collage y mucho más.
           </p>
 
-          <p className="m-bottom font-thin w-4/5">
+          <p className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}>
             Cada alumno trabaja con el material y la técnica que prefiera,
             profundizando en sus intereses para desarrollar no solo sus
             habilidades técnicas y el oficio de las artes visuales, sino también

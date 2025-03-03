@@ -23,17 +23,17 @@
       "static/chunks/main-app.js",
       "static/chunks/app/api/getProducts/route.js"
     ],
-    "/taller/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/taller/page.css",
-      "static/chunks/app/taller/page.js"
-    ],
     "/sobre-mi/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/sobre-mi/page.css",
       "static/chunks/app/sobre-mi/page.js"
+    ],
+    "/taller/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/taller/page.css",
+      "static/chunks/app/taller/page.js"
     ],
     "/contacto/page": [
       "static/chunks/webpack.js",

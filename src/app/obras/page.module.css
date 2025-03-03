@@ -42,6 +42,11 @@
   filter: none !important;
 }
 
+.horroDiv{
+  display: flex;
+  justify-content: space-between;
+}
+
 .fullscreenOverlay {
   position: fixed;
   top: 0;
@@ -85,18 +90,17 @@
   width: 100%;
 }
 
-.obrasDiv:first-child {
-  display: flex !important;
-}
-
 .obrasDiv {
   column-count: 3;
+  width: 100%;
 }
 
 .obrasDiv section {
   display: inline-block;
-  width: 100%;
   margin-bottom: 60px;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 2em;
 }
 
 
@@ -105,8 +109,16 @@
     height: 17vh !important;
   }
 
+  .obrasDiv section {
+    margin-left: 0px;
+  }
+
   .obrasDiv {
     column-count: 1;
+  }
+
+  .horroDiv{
+    display: inline;
   }
 
   .bodyDiv{

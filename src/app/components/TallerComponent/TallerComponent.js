@@ -15,24 +15,24 @@ const TallerComponent = () => {
               <Grid />
             </div>
             <div className={`${styles.tallerText} w-2/4`}>
-              <h2 className={`title m-bottom title-section`} translate="no">
+              <h2 className={`title m-bottom title-section title-big text-center`} translate="no">
                 Taller Mozzafiato
               </h2>
-              <p className="subtitle m-bottom">
+              <p className="subtitle m-bottom text">
                 Somos un espacio de arte especializado en dibujo y pintura,
                 ubicado en el corazón del barrio de El Guinardó, Barcelona. En
                 nuestras clases, podrás desarrollar tus habilidades artísticas
                 con un enfoque personalizado y técnicas adaptadas a cada nivel.
               </p>
 
-              <p className="subtitle m-bottom">
+              <p className="subtitle m-bottom text">
                 Buscamos que cada alumno explore su creatividad, se divierta y
                 aprenda en un ambiente relajado y profesional. Ya seas
                 principiante o avanzado, nuestro objetivo es inspirarte a
                 expresar tu visión a través del arte.
               </p>
 
-              <p className="subtitle m-bottom">
+              <p className="subtitle m-bottom text">
                 Puedes comenzar las clases en cualquier momento del año y,
                 además, ¡la matrícula es gratuita! Haz que tus ideas cobren
                 vida. ¡Reserva tu plaza y empieza a crear en Taller Mozzafiato!
