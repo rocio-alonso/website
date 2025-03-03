@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
-  src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf") !important;
+  src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
-  src: url("/fonts/neue-haas/NeueHaasDisplayRoman.ttf") format("ttf") !important;
+  src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
-  src: url("/fonts/neue-haas/NeueHaasDisplayXXThin.ttf") format("ttf") !important;
+  src: url("https://use.typekit.net/mqv6hso.css") format("ttf") !important;
   font-weight: 100;
   font-style: normal;
 }
