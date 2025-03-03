@@ -146,12 +146,12 @@
 
 @media (max-width: 800px) {
   .page_heroSection1__iN3Ot{
-    height: 93vh;
+    height: 100vh;
   }
 
   .page_heroText__g5S3T {
     font-size: 1em !important;
-    bottom: 7vh;
+    bottom: 0;
   }
 
   .page_heroText__g5S3T h2{

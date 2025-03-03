@@ -17,6 +17,12 @@
       "static/chunks/main-app.js",
       "static/css/app/sobre-mi/page.css",
       "static/chunks/app/sobre-mi/page.js"
+    ],
+    "/obras/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/obras/page.css",
+      "static/chunks/app/obras/page.js"
     ]
   }
 }

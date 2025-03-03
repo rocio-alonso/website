@@ -12,7 +12,7 @@ const Bio = () => {
       <section className="paddingSection w-full flex">
         <div className={`${styles.imageAbout} w-1/4`}>
           <Image
-            src="/images/about.jpg"
+            src="/images/imagenes/sobre-mi-img.JPG"
             alt="about me"
             width={500}
             height={500}
