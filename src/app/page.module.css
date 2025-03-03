@@ -35,14 +35,13 @@
 .heroText h2 {
   display: inline-block;
   width: 60%;
-  margin-bottom: calc(var(--margin) / 3);
 }
 
 .heroText {
   display: flex;
   align-items: baseline;
   position: absolute;
-  bottom: 3.5vh;
+  bottom: 3vh;
   flex-direction: column;
   width: 100vw;
   z-index: 100;
@@ -109,12 +108,8 @@
 
 @media (max-width: 800px) {
   .heroText {
-    font-size: 0.85em !important;
-    margin-bottom: 2.5em;
-  }
-
-  .heroText h2:first-child {
-    margin-bottom: 0.5em;
+    font-size: 0.9em !important;
+    bottom: 5vh;
   }
 
   .heroText div a {
@@ -127,11 +122,6 @@
 
   .divExpo {
     justify-content: center !important;
-  }
-
-  .heroText h2 {
-    font-size: 2em;
-    width: 100%;
   }
 
   .aboutMe {

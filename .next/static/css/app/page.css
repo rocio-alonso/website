@@ -38,14 +38,13 @@
 .page_heroText__g5S3T h2 {
   display: inline-block;
   width: 60%;
-  margin-bottom: calc(var(--margin) / 3);
 }
 
 .page_heroText__g5S3T {
   display: flex;
   align-items: baseline;
   position: absolute;
-  bottom: 3.5vh;
+  bottom: 3vh;
   flex-direction: column;
   width: 100vw;
   z-index: 100;
@@ -112,12 +111,8 @@
 
 @media (max-width: 800px) {
   .page_heroText__g5S3T {
-    font-size: 0.85em !important;
-    margin-bottom: 2.5em;
-  }
-
-  .page_heroText__g5S3T h2:first-child {
-    margin-bottom: 0.5em;
+    font-size: 0.9em !important;
+    bottom: 5vh;
   }
 
   .page_heroText__g5S3T div a {
@@ -130,11 +125,6 @@
 
   .page_divExpo__ABgYV {
     justify-content: center !important;
-  }
-
-  .page_heroText__g5S3T h2 {
-    font-size: 2em;
-    width: 100%;
   }
 
   .page_aboutMe__XPGkS {
@@ -360,7 +350,7 @@
 }
 
 .Card_fullCard__r_zyo {
-  width: 45vw;
+  width: 50vw;
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -942,6 +932,12 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .flex {
   display: flex;
 }
@@ -1096,8 +1092,15 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .font-thin {
   font-weight: 100;
+}
+.font-bold {
+  font-weight: 700;
 }
 .text-black {
   --tw-text-opacity: 1;

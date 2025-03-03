@@ -58,11 +58,26 @@
 }
 
 .obrasMain img {
-  width: 45vw;
+  width: 100%;
 }
+
+.obrasDiv {
+  column-count: 3;
+}
+
+.obrasDiv section {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
 
 @media (max-width: 800px) {
   .hero {
     height: 17vh !important;
+  }
+
+  .obrasDiv {
+    column-count: 1;
   }
 }

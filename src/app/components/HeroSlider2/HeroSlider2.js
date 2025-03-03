@@ -17,8 +17,8 @@ const HeroSlider2 = () => {
 
   const mobileImages = useMemo(
     () => [
-      "/images/imagenes/responsive-bg/hero-responsive-bg-1.JPG",
       "/images/imagenes/responsive-bg/hero-responsive-bg-3.JPG",
+      "/images/imagenes/responsive-bg/hero-responsive-bg-1.JPG",
       "/images/imagenes/responsive-bg/hero-responsive-bg-2.JPG",
     ],
     []
@@ -77,10 +77,10 @@ const HeroSlider2 = () => {
       </div>
 
       <div className={`${styles.heroText} paddingSection`}>
-        <h2 className="text-5xl title">
-          Horror Vacui{" "}
-          <p className="subtitle ultralight mt-3">La belleza de lo ausente</p>
-        </h2>
+        <h2 className="text-5xl title mb-2" translate="no">Horror Vacui </h2>
+        <p className="text-4xl subtitle ultralight thin mb-5">
+          La belleza de lo ausente
+        </p>
         <div className="flex mt-1">
           <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>
             Conoce mi obra

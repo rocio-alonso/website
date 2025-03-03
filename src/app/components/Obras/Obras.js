@@ -19,7 +19,10 @@ const Obras = () => {
       try {
         const response = await fetch("/api/getProducts");
         const data2 = await response.json();
-        setDataObras(data2.response.products[4].obras);
+        const obras = data2.response.products[4].obras;
+
+        [obras[0].obras[1], obras[0].obras[2]] = [obras[0].obras[2], obras[0].obras[1]];
+        setDataObras(obras);
       } catch (error) {
         console.error("An error occurred while fetching files.", error);
       }
@@ -36,7 +39,7 @@ const Obras = () => {
             <div
               className={`flex items-center mb-8 gap-4 ${styles.titleDiv}`}
             >
-              <h2 className="title title-section">
+              <h2 className="title title-section" translate="no">
                 {dataItem.titulo}{" "}
                 <p className="subtitle thin text-lg">{dataItem.ano}</p>
               </h2>
@@ -78,7 +81,7 @@ const Obras = () => {
               </div>
             )}
 
-            <div className="m-bottom flex flex-wrap justify-between">
+            <div className={`m-bottom ${styles.obrasDiv}`}>
               {dataItem.obras?.map((obraData, index) => (
                 <Card
                   dataObra={obraData}
