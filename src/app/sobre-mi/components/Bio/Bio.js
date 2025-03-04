@@ -10,7 +10,7 @@ const Bio = () => {
   return (
     <AnimateEntrance>
       <section className="paddingSection w-full flex">
-        <div className={`${styles.imageAbout} w-1/4`}>
+        <div className={`${styles.imageAbout} w-1/4 mt-10`}>
           <Image
             src="/images/imagenes/sobre-mi-img.JPG"
             alt="about me"
@@ -23,7 +23,7 @@ const Bio = () => {
         <div className={`w-3/4 ${styles.textAbout}`}>
           <div>
             <div className={styles.textBio}>
-              <h2 className="title text-2xl mb-10">Biografía</h2>
+              <h2 className="title text-2xl mb-10 mt-20">Biografía</h2>
               <p className="subtitle mt-20">Buenos Aires, 1992</p>
 
               <p className="m-bottom subtitle mt-20">
@@ -57,7 +57,7 @@ const Bio = () => {
           <div>
             <div className={styles.textBio}>
               <AnimateEntrance>
-                <h2 className="title text-2xl mt-10 mb-10">Actualidad</h2>
+                <h2 className="title text-2xl mb-20 mt-10">Actualidad</h2>
                 <p className="m-bottom subtitle">
                   En 2024, me he radicado en Barcelona, donde estoy trabajando
                   en mi última serie titulada Horror Vacui, que explora la

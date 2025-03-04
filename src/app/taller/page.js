@@ -15,18 +15,10 @@ const page = () => {
     <main>
       <section className={styles.hero}>
         <div className={`${styles.heroText} paddingSection text-white`}>
-          <h2 className="text-6xl thin">Nuestro espacio</h2>
-          <p className={`w-3/5 font-thin m-bottom text-justify`}>
-            Nuestras clases personalizadas están diseñadas para ofrecerte el
-            conocimiento y la orientación que necesitas para ganar autonomía en
-            tus decisiones creativas.
-          </p>
-          <p
-            className={`w-3/5 font-thin m-bottom text-justify ${styles.responsiveParagraph}`}
-          >
-            Te acompañamos en cada paso para que explores y desarrolles una
-            visión artística propia, disfrutando del proceso creativo y de
-            experimentar en cada proyecto
+          <h2 className="text-6xl thin title">Nuestro espacio</h2>
+          <p className={`w-1/2 font-thin m-bottom text-justify`}>
+            Acompañamos tu camino artístico para que explores y desarrolles tu
+            estilo propio, disfrutando de la experimentación en cada proyecto.
           </p>
           <Link className="button" href={"/taller/#mainSection"}>
             Conoce más
@@ -34,28 +26,55 @@ const page = () => {
         </div>
       </section>
 
-      <div className={`paddingSection ${styles.divTallerDetails} ${styles.divTallerDetailsCenter} mt-10`}>
-          <h2 className={`title mb-20 title-big text-center`} translate="no">Taller Mozzafiato</h2>
-          <p className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3`}>
-            Si no puedes asistir a una clase, te pedimos que nos avises con al
-            menos 48 horas de antelación. De esta manera, podremos reprogramar
-            tu clase para otro horario disponible dentro del mismo mes.
-          </p>
+      <div
+        className={`paddingSection ${styles.divTallerDetails} ${styles.divTallerDetailsCenter} mt-10`}
+      >
+        <h2 className={`subtitle mb-20 title-big text-center`} translate="no">
+          Taller Mozzafiato
+        </h2>
+        <p
+          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-20`}
+        >
+          En el Taller Mozzafiato ofrecemos un espacio creativo único en
+          Barcelona, donde cada alumno puede explorar y desarrollar su propio
+          estilo artístico. A través de clases personalizadas, acompañamos a los
+          estudiantes en su proceso de aprendizaje, enfocándonos tanto en la
+          técnica como en la expresión personal. Guiamos a artistas de todos los
+          niveles, proporcionándoles las herramientas necesarias para dominar el
+          dibujo y la pintura mientras potencian su creatividad y originalidad.
+        </p>
+
+        <p
+          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-20`}
+        >
+          Nuestra metodología se basa en una enseñanza individualizada, con
+          grupos reducidos para garantizar un enfoque cercano y personalizado.
+          Los alumnos tienen la libertad de explorar diversas técnicas y
+          materiales, desde la composición y el valor tonal hasta la armonía, la
+          forma y la perspectiva. A lo largo de cada clase, trabajan en
+          proyectos propios, recibiendo acompañamiento constante para asegurar
+          su progreso y crecimiento artístico.
+        </p>
+
+        <p
+          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-20`}
+        >
+          En Mozzafiato, cada trazo cuenta. Buscamos que cada persona,
+          independientemente de su nivel, desarrolle autonomía en sus decisiones
+          creativas, cultivando su propio sello artístico en un ambiente
+          motivador y enriquecedor.
+        </p>
       </div>
 
       <section className="paddingSection flex flex-wrap">
-        <div className={`${styles.divTallerDetails} w-1/3`} id="mainSection">
-          <h2 className={`title mb-10 title-big text-center`}>Recuperación de clases</h2>
-          <p className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}>
-            Si no puedes asistir a una clase, te pedimos que nos avises con al
-            menos 48 horas de antelación. De esta manera, podremos reprogramar
-            tu clase para otro horario disponible dentro del mismo mes.
-          </p>
-        </div>
+        <div className={`${styles.divTallerDetails} w-1/3`}>
+          <h2
+            className={`subtitle mb-20 title-big text-center ${styles.titleTallerResponsive}`}
+          >
+            Modalidad del taller
+          </h2>
 
-        <div className={`${styles.divTallerDetails} w-1/3 m-bottom`}>
-          <h2 className={`title mb-20 title-big`}>Modalidad del taller</h2>
-          <div className={`${styles.modalidadesDiv} flex font-thin`}>
+          <div className={`${styles.modalidadesDiv} w-fit font-thin`}>
             <div className={`flex ${styles.modalidadDiv}`}>
               <CiClock1 className={`${styles.icon}`} />
               <p>2 Horas</p>
@@ -78,8 +97,27 @@ const page = () => {
           </div>
         </div>
 
-        <div className={`${styles.divTallerDetails}`}>
-          <h2 className={`title mb-20 title-big text-center`}>Horarios</h2>
+        <div className={`${styles.divTallerDetails} w-1/3`} id="mainSection">
+          <h2
+            className={`subtitle mb-20 title-big text-center ${styles.titleTallerResponsive}`}
+          >
+            Recuperación de clases
+          </h2>
+          <p
+            className={`font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}
+          >
+            Si no puedes asistir a una clase, te pedimos que nos avises con al
+            menos 48 horas de antelación. De esta manera, podremos reprogramar
+            tu clase para otro horario disponible dentro del mismo mes.
+          </p>
+        </div>
+
+        <div className={`${styles.divTallerDetails} w-1/3`}>
+          <h2
+            className={`subtitle mb-20 title-big text-center ${styles.titleTallerResponsive}`}
+          >
+            Horarios
+          </h2>
           <div className={`${styles.horariosDiv} gap`}>
             <div className={`flex m-bottom gap`}>
               <div className={`flex ${styles.modalidadDiv}`}>
@@ -117,16 +155,24 @@ const page = () => {
         </div>
       </section>
 
-      <section className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}>
+      <section
+        className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}
+      >
         <div className={`w-1/2 ${styles.divTallerDetails}`}>
-          <h2 className={`title mb-20 title-big text-center`}>Explora materiales y técnicas</h2>
-          <p className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}>
+          <h2 className={`subtitle mb-20 title-big text-center`}>
+            Explora materiales y técnicas
+          </h2>
+          <p
+            className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}
+          >
             Tendrás la oportunidad de conocer una amplia variedad de materiales
             y descubrir sus usos y posibilidades. Además, podrás experimentar
             con técnicas mixtas, collage y mucho más.
           </p>
 
-          <p className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}>
+          <p
+            className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}
+          >
             Cada alumno trabaja con el material y la técnica que prefiera,
             profundizando en sus intereses para desarrollar no solo sus
             habilidades técnicas y el oficio de las artes visuales, sino también
@@ -141,7 +187,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className="paddingBody">
+      <section className="paddingBody mt-10">
         <Grid />
       </section>
 

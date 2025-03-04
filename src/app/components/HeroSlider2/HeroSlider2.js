@@ -29,9 +29,8 @@ const HeroSlider2 = () => {
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
-    // Detectar tamaño de pantalla
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768); // Cambia el breakpoint según necesites
+      setIsMobile(window.innerWidth < 768);
     };
 
     checkScreenSize();

@@ -69,7 +69,7 @@ const Card = ({ data, isObra, dataObra }) => {
 
         {!isObra ? (
           <div className={`${styles.cardText} text-center`}>
-            <h2 className={`title text-center`}>{data.lugar}</h2>
+            <h2 className={`subtitle text-center`}>{data.lugar}</h2>
             <p
               className={`${styles.lugarData} text-center subtitle thin m-bottom`}
             >

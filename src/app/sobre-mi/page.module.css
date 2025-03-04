@@ -45,8 +45,7 @@
   padding: 0 10vw 0 0 !important;
   width: 100%;
   justify-content: center;
-  display: flex
-;
+  display: flex;
 }
 
 .textAbout p {
@@ -63,28 +62,29 @@
   padding: var(--margin);
 }
 
-.imageAbout:nth-child(1){
+.imageAbout:nth-child(1) {
   margin-left: 10vw;
 }
 
-.imageAbout:nth-child(2){
+.imageAbout:nth-child(2) {
   margin-right: 10vw;
 }
 
-.textBio{
+.textBio {
   margin: 0 auto;
 }
 
-.textBio a{
+.textBio a {
   margin-right: 10vw;
 }
 
 @media (max-width: 800px) {
-  .textAbout p, .textBio h2{
+  .textAbout p,
+  .textBio h2 {
     padding: 0 !important;
   }
 
-  .textBio a{
+  .textBio a {
     margin: 0 auto !important;
   }
 
@@ -101,7 +101,17 @@
     width: 100%;
   }
 
-  .navbarBottom {
+  .navbarBottom ul {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .navbarBottom ul li {
+    margin-bottom: .7em !important;
+  }
+
+  .navbarBottom p {
     display: none;
   }
 

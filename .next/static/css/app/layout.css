@@ -638,11 +638,11 @@ video {
 .w-3\/4{
   width: 75%;
 }
-.w-3\/5{
-  width: 60%;
-}
 .w-4\/5{
   width: 80%;
+}
+.w-fit{
+  width: fit-content;
 }
 .w-full{
   width: 100%;
@@ -809,7 +809,7 @@ main {
 
 .title {
   font-family: "neue-haas-unica", sans-serif !important;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   font-style: normal;
 }
 
@@ -1169,7 +1169,6 @@ video::-webkit-media-controls-panel {
 }
 
 .Card_cardText__IFyLM h2, .Card_lugarData__v_R3E{
-  font-weight: 400;
   font-size: 24px;
 }
 

@@ -59,6 +59,7 @@
 
 .heroText h2 {
   display: inline-block;
+  font-weight: 400 !important;
 }
 
 .heroText {
@@ -157,12 +158,12 @@
   }
 
   .heroSection1 {
-    height: 100vh;
+    height: 85vh;
   }
 
   .heroText {
     font-size: 1em !important;
-    bottom: 0;
+    bottom: 15vh;
   }
 
   .heroText h2 {

@@ -32,7 +32,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero .heroText h2 {
@@ -69,7 +69,7 @@
 }
 
 .modalidadesDiv {
-  flex-wrap: wrap;
+  margin: 0 auto;
   gap: calc(var(--margin) / 2);
 }
 
@@ -100,30 +100,27 @@
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
 }
 
-.price{
+.price {
   color: var(--success-color) !important;
 }
 
-.divTallerDetails:first-child{
-  margin-left: 1em;
+.paragraphSpacing {
+  margin: 5rem auto 0;
 }
 
-.divTallerDetails{
-  margin-left: 2em;
-}
-
-.paragraphSpacing{
-  margin-bottom: 1em !important;
-  margin: 0 auto;
+.horariosDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (max-width: 800px) {
-  .responsiveParagraph{
+  .responsiveParagraph {
     display: none;
     text-align: justify;
   }
 
-  .divModalChild{
+  .divModalChild {
     display: flex;
     flex-wrap: wrap;
   }
@@ -131,6 +128,7 @@
   .divModalChild div {
     width: 100%;
   }
+
   .heroText h2 {
     font-size: 3em;
   }
@@ -140,7 +138,7 @@
     width: 100% !important;
   }
 
-  .sectionTallerDetails{
+  .sectionTallerDetails {
     flex-direction: column;
   }
 
@@ -148,11 +146,15 @@
     width: 100%;
   }
 
-  .divTallerDetails{
+  .divTallerDetails {
     margin-left: 0px !important;
   }
 
-  .divTallerDetails h2{
+  .divTallerDetails h2 {
     font-weight: 100;
+  }
+
+  .titleTallerResponsive {
+    margin-top: 5rem;
   }
 }

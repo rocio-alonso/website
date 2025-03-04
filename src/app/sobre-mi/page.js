@@ -8,17 +8,18 @@ import stylesHeader from "@/app/components/Header/Header.module.css";
 import Exposiciones from "@/app/components/Exposiciones/Exposiciones";
 import Bio from "@/app/sobre-mi/components/Bio/Bio";
 import AnimateEntrance from "../components/AnimateEntrance/AnimateEntrance";
-import Premios from  "@/app/components/Premios/Premios"
+import Premios from "@/app/components/Premios/Premios";
 import ColeccionesPriv from "../components/ColeccionesPriv/ColeccionesPriv";
 
 const page = () => {
   return (
     <main>
       <div className={styles.hero}>
-        <div className={`z-50 w-full text-white flex justify-center`}>
-        </div>
+        <div className={`z-50 w-full text-white flex justify-center`}></div>
 
-        <div className={`flex z-50 text-white gap bottom-0 absolute paddingSection text-lg ${styles.navbarBottom}`}>
+        <div
+          className={`flex z-50 text-white gap bottom-0 absolute paddingSection text-lg ${styles.navbarBottom}`}
+        >
           <AnimateEntrance>
             <ul className="flex">
               <li className={stylesHeader.buttonHeader}>
@@ -29,21 +30,27 @@ const page = () => {
                   Biografía
                 </Link>
               </li>
-              /
+              <p>/</p>
               <li className={stylesHeader.buttonHeader}>
                 <Link className="subtitle bold" href={"/sobre-mi/#expoSection"}>
                   Exposiciones
                 </Link>
               </li>
-              /
+              <p>/</p>
               <li className={stylesHeader.buttonHeader}>
-                <Link className="subtitle bold" href={"/sobre-mi/#premiosSection"}>
+                <Link
+                  className="subtitle bold"
+                  href={"/sobre-mi/#premiosSection"}
+                >
                   Reconocimientos
                 </Link>
               </li>
-              /
+              <p>/</p>
               <li className={stylesHeader.buttonHeader}>
-                <Link className="subtitle bold" href={"/sobre-mi/#coleccionesSection"}>
+                <Link
+                  className="subtitle bold"
+                  href={"/sobre-mi/#coleccionesSection"}
+                >
                   Colecciones privadas
                 </Link>
               </li>
