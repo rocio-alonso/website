@@ -33,9 +33,9 @@ const page = () => {
           Taller Mozzafiato
         </h2>
         <p
-          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-20`}
+          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >
-          En el Taller Mozzafiato ofrecemos un espacio creativo único en
+          Ofrecemos un espacio creativo único en
           Barcelona, donde cada alumno puede explorar y desarrollar su propio
           estilo artístico. A través de clases personalizadas, acompañamos a los
           estudiantes en su proceso de aprendizaje, enfocándonos tanto en la
@@ -45,7 +45,7 @@ const page = () => {
         </p>
 
         <p
-          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-20`}
+          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >
           Nuestra metodología se basa en una enseñanza individualizada, con
           grupos reducidos para garantizar un enfoque cercano y personalizado.
@@ -57,7 +57,7 @@ const page = () => {
         </p>
 
         <p
-          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-20`}
+          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >
           En Mozzafiato, cada trazo cuenta. Buscamos que cada persona,
           independientemente de su nivel, desarrolle autonomía en sus decisiones
@@ -66,7 +66,7 @@ const page = () => {
         </p>
       </div>
 
-      <section className="paddingSection flex flex-wrap">
+      <section className="paddingBody flex flex-wrap mt-5">
         <div className={`${styles.divTallerDetails} w-1/3`}>
           <h2
             className={`subtitle mb-20 title-big text-center ${styles.titleTallerResponsive}`}

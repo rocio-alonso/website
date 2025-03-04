@@ -15,7 +15,7 @@ const TallerComponent = () => {
               <Grid />
             </div>
             <div className={`${styles.tallerText} w-2/4`}>
-              <h2 className={`title m-bottom title-section title-big text-center`} translate="no">
+              <h2 className={`title mb-20 title-section title-big text-center`} translate="no">
                 Taller Mozzafiato
               </h2>
               <p className="subtitle m-bottom text">

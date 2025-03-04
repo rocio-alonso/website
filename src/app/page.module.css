@@ -158,12 +158,12 @@
   }
 
   .heroSection1 {
-    height: 85vh;
+    height: 87vh;
   }
 
   .heroText {
     font-size: 1em !important;
-    bottom: 15vh;
+    bottom: 10vh;
   }
 
   .heroText h2 {

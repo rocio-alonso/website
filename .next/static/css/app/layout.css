@@ -1103,7 +1103,7 @@ video::-webkit-media-controls-panel {
   height: 37vh;
 }
 
-.Card_cardImage__PhPFO img{
+.Card_cardImage__PhPFO img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1136,6 +1136,7 @@ video::-webkit-media-controls-panel {
   width: fit-content;
   padding: 1% 0;
   margin: calc(var(--margin) / 2) 0 0 0;
+  margin: 0 auto;
 }
 
 .Card_divData__M4ggs {
@@ -1146,7 +1147,7 @@ video::-webkit-media-controls-panel {
 
 .Card_lugarData__v_R3E {
   letter-spacing: 1px !important;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 .Card_dataLocation__Gzlut {
@@ -1155,24 +1156,25 @@ video::-webkit-media-controls-panel {
   align-items: baseline;
 }
 
-.Card_dataMedidas__zetbk{
+.Card_dataMedidas__zetbk {
   margin-top: 7px;
   font-size: 14px;
 }
 
-.Card_cardText__IFyLM a:first-child{
+.Card_cardText__IFyLM a:first-child {
   font-size: 24px;
 }
 
-.Card_cardText__IFyLM{
-  padding: calc(var(--margin)*1.5) 0 !important;
+.Card_cardText__IFyLM {
+  padding: calc(var(--margin) * 1.5) 0 !important;
 }
 
-.Card_cardText__IFyLM h2, .Card_lugarData__v_R3E{
+.Card_cardText__IFyLM h2,
+.Card_lugarData__v_R3E {
   font-size: 24px;
 }
 
-.Card_danteDiv__VEwHs{
+.Card_danteDiv__VEwHs {
   margin-top: 250px;
 }
 
@@ -1182,11 +1184,11 @@ video::-webkit-media-controls-panel {
     align-items: center;
   }
 
-  .Card_lugarData__v_R3E{
+  .Card_lugarData__v_R3E {
     font-size: 1em !important;
   }
 
-  .Card_cardSection__kTcnD{
+  .Card_cardSection__kTcnD {
     width: 100%;
   }
 
@@ -1217,11 +1219,11 @@ video::-webkit-media-controls-panel {
     width: 100% !important;
   }
 
-  .Card_dataMedidas__zetbk{
+  .Card_dataMedidas__zetbk {
     font-size: 1em !important;
   }
 
-  .Card_cardText__IFyLM{
+  .Card_cardText__IFyLM {
     padding-top: 1.3em !important;
   }
 }

@@ -31,9 +31,6 @@ const Obras = () => {
           obras[3].obras[1],
         ];
 
-        console.log(obras);
-        console.log(obras[3].obras[4]);
-
         setDataObras(obras);
       } catch (error) {
         console.error("An error occurred while fetching files.", error);

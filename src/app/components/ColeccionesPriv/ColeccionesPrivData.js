@@ -27,7 +27,7 @@ const ColeccionesPrivData = ({ data }) => {
   const endIndex = startIndex + cardsPerPage;
   return (
     <div className={`cardsExpo flex flex-col w-full text-center ${styles.divExpo}`}>
-      <h2 className="title m-bottom title-section text-center title-big">Colecciones privadas</h2>
+      <h2 className="title title-section text-center title-big mt-10 mb-20">Colecciones privadas</h2>
       <AnimateEntrance key={currentPage}>
       <div className={`flex flex-wrap justify-between ${styles.divCards}`}>
         {data.slice(startIndex, endIndex).map((dataItem, index) => (

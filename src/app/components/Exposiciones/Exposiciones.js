@@ -12,7 +12,7 @@ const Exposiciones = async () => {
   return (
     <AnimateEntrance>
       <section className="paddingBody">
-        <h2 className="title m-bottom title-section text-center title-big">Exposiciones</h2>
+        <h2 className="title mt-10 mb-20 title-section text-center title-big">Exposiciones</h2>
         <ExposicionesData data={data} />
       </section>
     </AnimateEntrance>

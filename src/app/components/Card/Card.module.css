@@ -52,7 +52,7 @@
   height: 37vh;
 }
 
-.cardImage img{
+.cardImage img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -85,6 +85,7 @@
   width: fit-content;
   padding: 1% 0;
   margin: calc(var(--margin) / 2) 0 0 0;
+  margin: 0 auto;
 }
 
 .divData {
@@ -95,7 +96,7 @@
 
 .lugarData {
   letter-spacing: 1px !important;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 .dataLocation {
@@ -104,24 +105,25 @@
   align-items: baseline;
 }
 
-.dataMedidas{
+.dataMedidas {
   margin-top: 7px;
   font-size: 14px;
 }
 
-.cardText a:first-child{
+.cardText a:first-child {
   font-size: 24px;
 }
 
-.cardText{
-  padding: calc(var(--margin)*1.5) 0 !important;
+.cardText {
+  padding: calc(var(--margin) * 1.5) 0 !important;
 }
 
-.cardText h2, .lugarData{
+.cardText h2,
+.lugarData {
   font-size: 24px;
 }
 
-.danteDiv{
+.danteDiv {
   margin-top: 250px;
 }
 
@@ -131,11 +133,11 @@
     align-items: center;
   }
 
-  .lugarData{
+  .lugarData {
     font-size: 1em !important;
   }
 
-  .cardSection{
+  .cardSection {
     width: 100%;
   }
 
@@ -166,11 +168,11 @@
     width: 100% !important;
   }
 
-  .dataMedidas{
+  .dataMedidas {
     font-size: 1em !important;
   }
 
-  .cardText{
+  .cardText {
     padding-top: 1.3em !important;
   }
 }
