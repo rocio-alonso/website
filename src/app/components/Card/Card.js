@@ -99,16 +99,17 @@ const Card = ({ data, isObra, dataObra }) => {
                     medidas: `${dataObra.medidas} `,
                   },
                 }}
+                translate="no"
               >
                 {dataObra.titulo}
               </Link>
 
-              <p className={`${styles.dataMedidas} subtitle text-sm thin`}>
+              <p className={`${styles.dataMedidas} subtitle text-sm thin mt-2`}>
                 {dataObraMedidas[0]}
               </p>
 
               <p
-                className={`${styles.dataMedidas} subtitle text-sm thin m-bottom`}
+                className={`${styles.dataMedidas} subtitle text-sm thin m-bottom mt-1`}
               >
                 {dataObraMedidas[1]}
               </p>

@@ -71,7 +71,7 @@ const page = () => {
           <h2
             className={`subtitle mb-20 title-big text-center ${styles.titleTallerResponsive}`}
           >
-            Modalidad del taller
+            Modalidad
           </h2>
 
           <div className={`${styles.modalidadesDiv} w-fit font-thin`}>
@@ -101,7 +101,7 @@ const page = () => {
           <h2
             className={`subtitle mb-20 title-big text-center ${styles.titleTallerResponsive}`}
           >
-            Recuperación de clases
+            Recupero de clases
           </h2>
           <p
             className={`font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}

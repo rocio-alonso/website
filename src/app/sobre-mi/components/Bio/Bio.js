@@ -47,6 +47,12 @@ const Bio = () => {
                 Mozzafiato, un atelier dedicado al dibujo y la pintura, he
                 guiado a más de 100 alumnos en su desarrollo artístico.
               </p>
+
+              <div className={`flex w-full justify-center`}>
+                  <Link className="subtitle bold button" href={"/cv.pdf"} download="cv" target="blank">
+                    Descargar CV
+                  </Link>
+                </div>
             </div>
           </div>
         </div>
@@ -58,8 +64,9 @@ const Bio = () => {
             <div className={styles.textBio}>
               <AnimateEntrance>
                 <h2 className="title text-2xl mb-20 mt-10">Actualidad</h2>
+                <p className="subtitle mt-20">Barcelona, 2024</p>
                 <p className="m-bottom subtitle">
-                  En 2024, me he radicado en Barcelona, donde estoy trabajando
+                  Me he radicado en Barcelona, donde estoy trabajando
                   en mi última serie titulada Horror Vacui, que explora la
                   fascinación y el vacío inherente en nuestra constante búsqueda
                   de llenar espacios, tanto físicos como existenciales.
@@ -80,7 +87,7 @@ const Bio = () => {
                 <p className="subtitle">
                   Mi trabajo busca revelar el vacío inherente a la fragilidad de
                   nuestra existencia y la compulsión humana por llenarlo. Creo
-                  que lo esencial es donde reside la verdadera riqueza,
+                  que en lo esencial es donde reside la verdadera riqueza,
                   destacando la importancia de lo simple, a menudo olvidado en
                   la vorágine de la sociedad contemporánea. Os invito a tomar
                   una pausa, embarcaros en un viaje introspectivo, y reflexionar

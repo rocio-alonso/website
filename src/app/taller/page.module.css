@@ -115,6 +115,10 @@
 }
 
 @media (max-width: 800px) {
+  .hero{
+    height: 85vh;
+  }
+
   .responsiveParagraph {
     display: none;
     text-align: justify;

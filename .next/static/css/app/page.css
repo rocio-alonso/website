@@ -825,7 +825,7 @@ main {
 
 .text {
   text-align: justify;
-  padding: 0 3vw !important;
+  padding: 0 4.5vw !important;
 }
 
 .text a {
@@ -1021,7 +1021,7 @@ video::-webkit-media-controls-panel {
 
   .subtitle {
     font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
   }
 }
@@ -1214,7 +1214,7 @@ video::-webkit-media-controls-panel {
 
   .page_heroText__g5S3T {
     font-size: 1em !important;
-    bottom: 10vh;
+    bottom: 8vh;
   }
 
   .page_heroText__g5S3T h2 {
@@ -1418,9 +1418,13 @@ video::-webkit-media-controls-panel {
   align-items: baseline;
 }
 
+.Card_dataMedidas__zetbk:first-child {
+  margin-top: 9px;
+}
+
 .Card_dataMedidas__zetbk {
-  margin-top: 7px;
   font-size: 14px;
+  line-height: 1;
 }
 
 .Card_cardText__IFyLM a:first-child {

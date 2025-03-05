@@ -79,8 +79,10 @@
   .menuIcon {
     display: block;
     font-size: 2em;
-    margin-right: calc(var(--margin) / 2);
     z-index: 500;
+    position: absolute;
+    margin-right: 8vw;
+    right: 0;
   }
 
   .header {
@@ -92,19 +94,26 @@
   }
 
   .headerDivResponsive {
-    display: block;
+    display: flex;
     top: 0;
     left: 0;
     position: fixed;
-    padding: 25vw 23vw 20vw 8vw !important;
     height: 100vh;
     background-color: white;
     color: black;
     z-index: 300;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .headerDivResponsive a{
     font-weight: 400;
+  }
+
+  .headerDivResponsive li{
+    border-bottom: 0 !important;
   }
 
   .headerDivResponsive::after {

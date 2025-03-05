@@ -41,8 +41,6 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
     };
   }, []);
 
-  console.log(isSmallViewport);
-
   const handlePrevious = () => {
     if (index > 0) {
       setIndex((prevIndex) => prevIndex - 1);
@@ -61,7 +59,7 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
         <div className={` ${styles.fetchQuery} paddingSection`}>
           <div className={`${styles.divText} flex flex-col justify-start`}>
             <Link
-              href={"/obras"}
+              href={`/obras#${formattedTitle}`}
               className="subtitle thin text-base flex items-center mb-10"
             >
               <IoChevronBackOutline className="thin" />
@@ -86,12 +84,18 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
               <div
                 className={`${styles.buttonHandlerDiv} flex items-center gap-10 m-bottom justify-center`}
               >
-                <Link
-                  className={`${styles.buttonConsultar} button`}
-                  href="mailto:rocioalonsoart@gmail.com"
-                >
-                  Consultar
-                </Link>
+                {coleccion?.stock ? (
+                  <Link
+                    className={`${styles.buttonConsultar} button`}
+                    href="mailto:rocioalonsoart@gmail.com"
+                  >
+                    Consultar
+                  </Link>
+                ) : (
+                  <p className="subtitle thin text-center text-base" translate="no">
+                  SOLD
+                </p>
+                )}
 
                 <section className="gap-10 carrousellHandler flex items-center justify-center mt-4 text-center">
                   <button
@@ -166,6 +170,7 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
             <div
               className={`${styles.buttonHandlerDiv} flex items-center gap-10 m-bottom justify-center`}
             >
+              {coleccion.stock === "0" && <p>SOLD</p>}
               <Link
                 className={`${styles.buttonConsultar} button`}
                 href="mailto:rocioalonsoart@gmail.com"

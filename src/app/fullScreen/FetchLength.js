@@ -39,7 +39,6 @@ const FetchLengthClient = (data) => {
         setColeccion(obra.obras[numberIndex]);
       }
     });
-    console.log(numberIndex);
   };
 
   const handleNext = () => {
@@ -51,9 +50,6 @@ const FetchLengthClient = (data) => {
         setColeccion(obra.obras[numberIndex]);
       }
     });
-
-    console.log(coleccion);
-    console.log(numberIndex);
   };
 
   useEffect(() => {
@@ -65,10 +61,6 @@ const FetchLengthClient = (data) => {
         setColeccion(obra.obras);
       }
     });
-    console.log(coleccion);
-    console.log(data.data[numberIndex]);
-    console.log(numberIndex);
-    console.log(titleColeccion);
   }, [data, number, titleColeccion, coleccion, numberIndex]);
 
   return (

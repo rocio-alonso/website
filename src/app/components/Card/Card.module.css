@@ -105,9 +105,13 @@
   align-items: baseline;
 }
 
+.dataMedidas:first-child {
+  margin-top: 9px;
+}
+
 .dataMedidas {
-  margin-top: 7px;
   font-size: 14px;
+  line-height: 1;
 }
 
 .cardText a:first-child {

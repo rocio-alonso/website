@@ -64,6 +64,7 @@ const ModalTaller = () => {
           <p
             className="size-6 button cursor-pointer subtitle thin"
             onClick={() => setShowModal(false)}
+            translate="no"
           >X</p>
         </div>
         <div

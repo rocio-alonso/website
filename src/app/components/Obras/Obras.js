@@ -48,9 +48,12 @@ const Obras = () => {
             <div className={`flex items-center mb-8 gap-4 ${styles.titleDiv}`}>
               <h2 className="title title-section thin" translate="no">
                 {dataItem.titulo}{" "}
-                {dataItem.titulo !== "Horror Vacui" && <p className="mb-10 subtitle thin text-base">{dataItem.ano}</p>}
+                {dataItem.titulo !== "Horror Vacui" && (
+                  <p className="mb-10 subtitle thin text-base">
+                    {dataItem.ano}
+                  </p>
+                )}
               </h2>
-              
             </div>
 
             {dataItem.titulo === "Horror Vacui" && (
@@ -90,7 +93,12 @@ const Obras = () => {
               </div>
             )}
 
-            <div className={`m-bottom ${styles.obrasDiv} ${dataItem.titulo === "Horror Vacui" ? `${styles.horroDiv}` : ""}`}>
+            <div
+              className={`m-bottom ${styles.obrasDiv} ${
+                dataItem.titulo === "Horror Vacui" ? `${styles.horroDiv}` : ""
+              }`}
+              id={`${dataItem.titulo}`}
+            >
               {dataItem.obras?.map((obraData, index) => (
                 <Card
                   dataObra={obraData}
