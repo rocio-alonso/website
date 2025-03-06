@@ -111,12 +111,13 @@
     font-size: 0.6em;
   }
 
-  .navbarBottom ul li {
-    margin-bottom: .1em !important;
-  }
-
   .navbarBottom p {
     display: none;
+  }
+
+  .navbarBottom ul li {
+    margin-top: 10px;
+    line-height: 1;
   }
 
   .hero::before {

@@ -92,9 +92,12 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
                     Consultar
                   </Link>
                 ) : (
-                  <p className="subtitle thin text-center text-base" translate="no">
-                  SOLD
-                </p>
+                  <p
+                    className="subtitle thin text-center text-base"
+                    translate="no"
+                  >
+                    SOLD
+                  </p>
                 )}
 
                 <section className="gap-10 carrousellHandler flex items-center justify-center mt-4 text-center">
@@ -170,13 +173,16 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
             <div
               className={`${styles.buttonHandlerDiv} flex items-center gap-10 m-bottom justify-center`}
             >
-              {coleccion?.stock === "0" && <p>SOLD</p>}
-              <Link
-                className={`${styles.buttonConsultar} button`}
-                href="mailto:rocioalonsoart@gmail.com"
-              >
-                Consultar
-              </Link>
+              {coleccion?.stock === "1" ? (
+                <Link
+                  className={`${styles.buttonConsultar} button mt-10`}
+                  href="mailto:rocioalonsoart@gmail.com"
+                >
+                  Consultar
+                </Link>
+              ) : (
+                <p className="subtitle thin text-xl m-bottom mt-10">SOLD</p>
+              )}
 
               <section className="gap-10 carrousellHandler flex items-center justify-center mt-4 text-center">
                 <button

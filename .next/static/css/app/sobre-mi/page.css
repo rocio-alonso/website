@@ -1355,12 +1355,13 @@ video::-webkit-media-controls-panel {
     font-size: 0.6em;
   }
 
-  .page_navbarBottom__xfHsl ul li {
-    margin-bottom: .1em !important;
-  }
-
   .page_navbarBottom__xfHsl p {
     display: none;
+  }
+
+  .page_navbarBottom__xfHsl ul li {
+    margin-top: 10px;
+    line-height: 1;
   }
 
   .page_hero__wjdj1::before {
