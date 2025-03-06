@@ -69,7 +69,7 @@ const Bio = () => {
               <AnimateEntrance>
                 <h2 className="title text-2xl mb-20 mt-10">Actualidad</h2>
                 <p className="subtitle mt-20">Barcelona, 2024</p>
-                <p className="m-bottom subtitle">
+                <p className="m-bottom subtitle mt-20">
                   Me he radicado en Barcelona, donde estoy trabajando en mi
                   última serie titulada Horror Vacui, que explora la fascinación
                   y el vacío inherente en nuestra constante búsqueda de llenar

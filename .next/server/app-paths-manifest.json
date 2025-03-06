@@ -1,7 +1,5 @@
 {
   "/icon.svg/route": "app/icon.svg/route.js",
-  "/api/getProducts/route": "app/api/getProducts/route.js",
   "/sobre-mi/page": "app/sobre-mi/page.js",
-  "/page": "app/page.js",
-  "/obras/page": "app/obras/page.js"
+  "/page": "app/page.js"
 }
