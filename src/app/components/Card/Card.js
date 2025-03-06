@@ -9,7 +9,6 @@ import styles from "@/app/components/Card/Card.module.css";
 const Card = ({ data, isObra, dataObra }) => {
   const dataObraString = String(dataObra?.medidas);
   const dataObraMedidas = dataObraString.split(",");
-  console.log(dataObraMedidas);
 
   return (
     <section

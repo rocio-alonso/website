@@ -170,7 +170,7 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
             <div
               className={`${styles.buttonHandlerDiv} flex items-center gap-10 m-bottom justify-center`}
             >
-              {coleccion.stock === "0" && <p>SOLD</p>}
+              {coleccion?.stock === "0" && <p>SOLD</p>}
               <Link
                 className={`${styles.buttonConsultar} button`}
                 href="mailto:rocioalonsoart@gmail.com"
