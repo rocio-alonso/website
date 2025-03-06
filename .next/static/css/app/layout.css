@@ -1017,14 +1017,14 @@ video::-webkit-media-controls-panel {
   }
 
   .title {
-    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    font-weight: 300;
+    font-family: "neue-haas-unica", sans-serif !important;
+    font-weight: 300 !important;
     font-style: normal;
   }
 
   .subtitle {
-    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    font-weight: 300;
+    font-family: "neue-haas-unica", sans-serif !important;
+    font-weight: 300 !important;
     font-style: normal;
   }
 }
@@ -1406,8 +1406,12 @@ video::-webkit-media-controls-panel {
 
   .Header_buttonHeader__qsnMx {
     margin: 0;
-    margin-bottom: calc(var(--margin));
+    margin-top: 6px;
     font-size: 1.3em;
+  }
+
+  .Header_activeLink__WJyjL a{
+    font-weight: 400 !important;
   }
 }
 

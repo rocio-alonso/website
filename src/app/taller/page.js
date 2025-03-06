@@ -33,7 +33,7 @@ const page = () => {
           Taller Mozzafiato
         </h2>
         <p
-          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
+          className={`subtitle text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >
           Ofrecemos un espacio creativo único en
           Barcelona, donde cada alumno puede explorar y desarrollar su propio
@@ -45,7 +45,7 @@ const page = () => {
         </p>
 
         <p
-          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
+          className={`subtitle text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >
           Nuestra metodología se basa en una enseñanza individualizada, con
           grupos reducidos para garantizar un enfoque cercano y personalizado.
@@ -57,7 +57,7 @@ const page = () => {
         </p>
 
         <p
-          className={`font-thin text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
+          className={`subtitle text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >
           En Mozzafiato, cada trazo cuenta. Buscamos que cada persona,
           independientemente de su nivel, desarrolle autonomía en sus decisiones
@@ -69,28 +69,28 @@ const page = () => {
       <section className="paddingBody flex flex-wrap mt-5">
         <div className={`${styles.divTallerDetails} w-1/3`}>
           <h2
-            className={`subtitle mb-20 title-big text-center ${styles.titleTallerResponsive}`}
+            className={`subtitle mb-20 title-big text-center subtitle ${styles.titleTallerResponsive}`}
           >
             Modalidad
           </h2>
 
-          <div className={`${styles.modalidadesDiv} w-fit font-thin`}>
-            <div className={`flex ${styles.modalidadDiv}`}>
+          <div className={`${styles.modalidadesDiv} w-fit`}>
+            <div className={`flex subtitle ${styles.modalidadDiv}`}>
               <CiClock1 className={`${styles.icon}`} />
               <p>2 Horas</p>
             </div>
 
-            <div className={`flex ${styles.modalidadDiv}`}>
+            <div className={`flex subtitle ${styles.modalidadDiv}`}>
               <PiBookBookmarkThin className={styles.icon} />
               <p>No es necesario conocimiento previo</p>
             </div>
 
-            <div className={`flex ${styles.modalidadDiv}`}>
-              <CiUser className={`${styles.icon} font-thin`} />
+            <div className={`flex subtitle ${styles.modalidadDiv}`}>
+              <CiUser className={`${styles.icon}`} />
               <p>Jóvenes y adultos</p>
             </div>
 
-            <div className={`flex ${styles.modalidadDiv}`}>
+            <div className={`flex subtitle ${styles.modalidadDiv}`}>
               <PiUsers className={styles.icon} />
               <p>Grupos de hasta 4 personas</p>
             </div>
@@ -104,7 +104,7 @@ const page = () => {
             Recupero de clases
           </h2>
           <p
-            className={`font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}
+            className={`subtitle w-4/5 text-justify ${styles.paragraphSpacing}`}
           >
             Si no puedes asistir a una clase, te pedimos que nos avises con al
             menos 48 horas de antelación. De esta manera, podremos reprogramar
@@ -126,12 +126,12 @@ const page = () => {
               <div className="gap">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <CiClock1 className={`${styles.icon}`} />
-                  <p className="font-thin">17hs - 19hs</p>
+                  <p className="subtitle">17hs - 19hs</p>
                 </div>
 
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <CiClock1 className={`${styles.icon}`} />
-                  <p className="font-thin">19hs - 21hs</p>
+                  <p className="subtitle">19hs - 21hs</p>
                 </div>
               </div>
             </div>
@@ -142,12 +142,12 @@ const page = () => {
               <div className="gap">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <CiClock1 className={`${styles.icon}`} />
-                  <p className="font-thin">17hs - 19hs</p>
+                  <p className="subtitle">17hs - 19hs</p>
                 </div>
 
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <CiClock1 className={`${styles.icon}`} />
-                  <p className="font-thin">19hs - 21hs</p>
+                  <p className="subtitle">19hs - 21hs</p>
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@ const page = () => {
             Explora materiales y técnicas
           </h2>
           <p
-            className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}
+            className={`subtitle m-bottom w-4/5 text-justify ${styles.paragraphSpacing}`}
           >
             Tendrás la oportunidad de conocer una amplia variedad de materiales
             y descubrir sus usos y posibilidades. Además, podrás experimentar
@@ -171,7 +171,7 @@ const page = () => {
           </p>
 
           <p
-            className={`m-bottom font-thin w-4/5 text-justify ${styles.paragraphSpacing}`}
+            className={`subtitle m-bottom w-4/5 text-justify ${styles.paragraphSpacing}`}
           >
             Cada alumno trabaja con el material y la técnica que prefiera,
             profundizando en sus intereses para desarrollar no solo sus

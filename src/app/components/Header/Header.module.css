@@ -127,9 +127,12 @@
   }
 
   .buttonHeader {
-    font-size: 1em;
     margin: 0;
-    margin-bottom: calc(var(--margin));
+    margin-top: 6px;
     font-size: 1.3em;
+  }
+
+  .activeLink a{
+    font-weight: 400 !important;
   }
 }
