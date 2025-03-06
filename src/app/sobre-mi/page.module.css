@@ -79,6 +79,10 @@
 }
 
 @media (max-width: 800px) {
+  .hero{
+    height: 87vh;
+  }
+
   .textAbout p,
   .textBio h2 {
     padding: 0 !important;
@@ -104,7 +108,7 @@
   .navbarBottom ul {
     display: block;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.6em;
   }
 
   .navbarBottom ul li {

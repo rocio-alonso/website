@@ -73,23 +73,24 @@ const HeroSlider2 = () => {
             />
           </div>
         </AnimateSlider>
-      </div>
-
-      <div className={`${styles.heroText} paddingSection`}>
-        <h2 className="title" translate="no">Horror Vacui </h2>
-        <p className="subtitle ultralight thin mb-5">
-          La belleza de lo ausente
-        </p>
-        <div className="flex mt-1">
-          <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>
-            Conoce mi obra
-          </Link>
-          <Link
-            className={`button secondary ${styles.buttonHeader2}`}
-            href={"/sobre-mi"}
-          >
-            Sobre mi
-          </Link>
+        <div className={`${styles.heroText} paddingSection`}>
+          <h2 className="title" translate="no">
+            Horror Vacui{" "}
+          </h2>
+          <p className="subtitle ultralight thin mb-5">
+            La belleza de lo ausente
+          </p>
+          <div className="flex mt-1">
+            <Link className={`button ${styles.buttonHeader}`} href={"/obras"}>
+              Conoce mi obra
+            </Link>
+            <Link
+              className={`button secondary ${styles.buttonHeader2}`}
+              href={"/sobre-mi"}
+            >
+              Sobre mi
+            </Link>
+          </div>
         </div>
       </div>
     </section>

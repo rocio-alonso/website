@@ -163,7 +163,7 @@
 
   .heroText {
     font-size: 1em !important;
-    bottom: 8vh;
+    bottom: 0;
   }
 
   .heroText h2 {

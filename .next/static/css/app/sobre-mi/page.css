@@ -1323,6 +1323,10 @@ video::-webkit-media-controls-panel {
 }
 
 @media (max-width: 800px) {
+  .page_hero__wjdj1{
+    height: 87vh;
+  }
+
   .page_textAbout__kQUqe p,
   .page_textBio__vNAxc h2 {
     padding: 0 !important;
@@ -1348,7 +1352,7 @@ video::-webkit-media-controls-panel {
   .page_navbarBottom__xfHsl ul {
     display: block;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.6em;
   }
 
   .page_navbarBottom__xfHsl ul li {
@@ -1532,7 +1536,7 @@ video::-webkit-media-controls-panel {
 
   .page_heroText__g5S3T {
     font-size: 1em !important;
-    bottom: 8vh;
+    bottom: 0;
   }
 
   .page_heroText__g5S3T h2 {
