@@ -24,6 +24,16 @@ const Bio = () => {
           <div>
             <div className={styles.textBio}>
               <h2 className="title text-2xl mb-10 mt-20">Biografía</h2>
+              <div className={`flex w-full justify-center`}>
+                <Link
+                  className="subtitle bold underline"
+                  href={"/cv.pdf"}
+                  download="cv"
+                  target="blank"
+                >
+                  Descargar CV
+                </Link>
+              </div>
               <p className="subtitle mt-20">Buenos Aires, 1992</p>
 
               <p className="m-bottom subtitle mt-20">
@@ -47,12 +57,6 @@ const Bio = () => {
                 Mozzafiato, un atelier dedicado al dibujo y la pintura, he
                 guiado a más de 100 alumnos en su desarrollo artístico.
               </p>
-
-              <div className={`flex w-full justify-center`}>
-                  <Link className="subtitle bold button" href={"/cv.pdf"} download="cv" target="blank">
-                    Descargar CV
-                  </Link>
-                </div>
             </div>
           </div>
         </div>
@@ -66,10 +70,10 @@ const Bio = () => {
                 <h2 className="title text-2xl mb-20 mt-10">Actualidad</h2>
                 <p className="subtitle mt-20">Barcelona, 2024</p>
                 <p className="m-bottom subtitle">
-                  Me he radicado en Barcelona, donde estoy trabajando
-                  en mi última serie titulada Horror Vacui, que explora la
-                  fascinación y el vacío inherente en nuestra constante búsqueda
-                  de llenar espacios, tanto físicos como existenciales.
+                  Me he radicado en Barcelona, donde estoy trabajando en mi
+                  última serie titulada Horror Vacui, que explora la fascinación
+                  y el vacío inherente en nuestra constante búsqueda de llenar
+                  espacios, tanto físicos como existenciales.
                 </p>
                 <p className="m-bottom subtitle">
                   Mi enfoque artístico se centra en la transformación de objetos
