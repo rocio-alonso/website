@@ -118,7 +118,7 @@ const Card = ({ data, isObra, dataObra }) => {
                 </p>
               ) : (
                 <Link
-                  className="m-auto thin flex w-full justify-center text-sm items-center"
+                  className={`${styles.consultarObras} m-auto thin flex w-full justify-center text-sm items-center subtitle`}
                   href="mailto:rocioalonsoart@gmail.com"
                 >
                   CONSULTAR

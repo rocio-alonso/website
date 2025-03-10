@@ -179,6 +179,10 @@
   .cardText {
     padding-top: 1.3em !important;
   }
+
+  .consultarObras{
+    font-size: 1.2em;
+  }
 }
 
 .imgObras {
