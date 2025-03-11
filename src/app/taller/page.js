@@ -35,13 +35,13 @@ const page = () => {
         <p
           className={`subtitle text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >
-          Ofrecemos un espacio creativo único en
-          Barcelona, donde cada alumno puede explorar y desarrollar su propio
-          estilo artístico. A través de clases personalizadas, acompañamos a los
-          estudiantes en su proceso de aprendizaje, enfocándonos tanto en la
-          técnica como en la expresión personal. Guiamos a artistas de todos los
-          niveles, proporcionándoles las herramientas necesarias para dominar el
-          dibujo y la pintura mientras potencian su creatividad y originalidad.
+          Ofrecemos un espacio creativo único en Barcelona, donde cada alumno
+          puede explorar y desarrollar su propio estilo artístico. A través de
+          clases personalizadas, acompañamos a los estudiantes en su proceso de
+          aprendizaje, enfocándonos tanto en la técnica como en la expresión
+          personal. Guiamos a artistas de todos los niveles, proporcionándoles
+          las herramientas necesarias para dominar el dibujo y la pintura
+          mientras potencian su creatividad y originalidad.
         </p>
 
         <p
@@ -121,32 +121,47 @@ const page = () => {
           <div className={`${styles.horariosDiv} gap`}>
             <div className={`flex m-bottom gap`}>
               <div className={`flex ${styles.modalidadDiv}`}>
+                <CiClock1 className={`${styles.icon}`} />
                 <p>Martes</p>
               </div>
               <div className="gap">
                 <div className={`flex ${styles.modalidadDiv}`}>
-                  <CiClock1 className={`${styles.icon}`} />
                   <p className="subtitle">17hs - 19hs</p>
                 </div>
 
                 <div className={`flex ${styles.modalidadDiv}`}>
-                  <CiClock1 className={`${styles.icon}`} />
                   <p className="subtitle">19hs - 21hs</p>
                 </div>
               </div>
             </div>
-            <div className={`flex gap`}>
+
+            <div className={`flex m-bottom gap`}>
               <div className={`flex ${styles.modalidadDiv}`}>
-                <p>Jueves</p>
+                <CiClock1 className={`${styles.icon}`} />
+                <p>Miércoles</p>
               </div>
               <div className="gap">
                 <div className={`flex ${styles.modalidadDiv}`}>
-                  <CiClock1 className={`${styles.icon}`} />
                   <p className="subtitle">17hs - 19hs</p>
                 </div>
 
                 <div className={`flex ${styles.modalidadDiv}`}>
-                  <CiClock1 className={`${styles.icon}`} />
+                  <p className="subtitle">19hs - 21hs</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={`flex gap`}>
+              <div className={`flex ${styles.modalidadDiv}`}>
+                <CiClock1 className={`${styles.icon}`} />
+                <p>Jueves</p>
+              </div>
+              <div className="gap">
+                <div className={`flex ${styles.modalidadDiv}`}>
+                  <p className="subtitle">17hs - 19hs</p>
+                </div>
+
+                <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">19hs - 21hs</p>
                 </div>
               </div>

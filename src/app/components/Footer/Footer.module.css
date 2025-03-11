@@ -20,6 +20,11 @@
     margin-bottom: var(--margin);
 }
 
+.navbarFooter2{
+    text-align: end;
+    justify-content: right;
+}
+
 @media (max-width: 800px) {
     .navbarFooter div{
         display: none !important;
@@ -27,5 +32,25 @@
 
     .footerSection{
         font-size: .8em !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .footerSection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbarFooter2{
+        justify-content:left;
+        text-align: left;
+    }
+    
+    .footerSection div:first-child{
+        margin-bottom: 2.5em;
+    }
+    
+    .footerSection div{
+        width: 100%;
     }
 }

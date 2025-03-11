@@ -1268,6 +1268,11 @@ video::-webkit-media-controls-panel {
     margin-bottom: var(--margin);
 }
 
+.Footer_navbarFooter2__ekeU6{
+    text-align: end;
+    justify-content: right;
+}
+
 @media (max-width: 800px) {
     .Footer_navbarFooter__Ipv_0 div{
         display: none !important;
@@ -1275,6 +1280,26 @@ video::-webkit-media-controls-panel {
 
     .Footer_footerSection__pWiTw{
         font-size: .8em !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .Footer_footerSection__pWiTw{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Footer_navbarFooter2__ekeU6{
+        justify-content:left;
+        text-align: left;
+    }
+    
+    .Footer_footerSection__pWiTw div:first-child{
+        margin-bottom: 2.5em;
+    }
+    
+    .Footer_footerSection__pWiTw div{
+        width: 100%;
     }
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\

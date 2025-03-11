@@ -47,7 +47,7 @@ const Footer = () => {
         <Navbar responsive={false} />
       </div>
 
-      <div className="text-end justify-right">
+      <div className={`${styles.navbarFooter2}`}>
         <p className="title m-bottom">Taller Mozzafiato</p>
         <p className="subtitle">Martes y Jueves</p>
         <p className="subtitle m-bottom">De 17hs a 19hs y de 19hs a 21hs</p>
@@ -56,7 +56,7 @@ const Footer = () => {
           <a
             href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20quisiera%20recibir%20más%20información"
             target="_blank"
-            className={`flex gap items-center m-bottom justify-end`}
+            className={`flex gap items-center m-bottom ${styles.navbarFooter2}`}
           >
             <FiPhone />
             <p className="subtitle">+34 677 37 49 70</p>
