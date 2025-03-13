@@ -18,13 +18,20 @@ const About = () => {
         className={`${styles.aboutMe} ${AboutStyles.aboutMe} paddingSection`}
       >
         <div className={`${styles.aboutMeVideo} ${AboutStyles.aboutMeVideo}`}>
-        <Image
-              width="1050"
-              height="100"
-              onLoadedData={() => setLoading(false)}
-              src="/images/reels/reel-1.gif"
-              alt="gif"
-            ></Image>
+            <video
+              width="600"
+              height="400"
+              autoPlay
+              muted
+              loop
+              controls={false}
+            >
+              <source
+                src={`https://res.cloudinary.com/drweoynzr/video/upload/f_auto:video,q_auto/v1/videos/bhud79lqornioj4q6yr9`}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
         </div>
 
         <div className={`${styles.aboutMeText} ${AboutStyles.aboutMetext} text`}>
