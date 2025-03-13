@@ -112,7 +112,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className={`${styles.divTallerDetails} w-1/3`}>
+        <div className={`${styles.divTallerDetails} flex flex-wrap justify-center flex-col w-1/3`}>
           <h2
             className={`subtitle mb-20 title-big text-center ${styles.titleTallerResponsive}`}
           >

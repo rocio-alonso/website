@@ -80,7 +80,7 @@
 
 @media (max-width: 800px) {
   .hero{
-    height: 100vh;
+    height: 100svh;
   }
 
   .textAbout p,

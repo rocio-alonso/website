@@ -5,9 +5,8 @@ import styles from "@/app/page.module.css";
 import AnimateEntrance from "../AnimateEntrance/AnimateEntrance";
 
 const ExposData = ({ data }) => {
-  console.log(data);
   return (
-      <section className="paddingSection flex flex-wrap justify-between gap-10 text-2xl">
+      <section className="paddingSection flex flex-wrap justify-between gap-10">
         {data.map((item, index) => (
           <Card key={index} data={item} />
         ))}

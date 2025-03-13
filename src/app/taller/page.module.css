@@ -1,6 +1,6 @@
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background-color: rgb(44, 44, 44);
   display: flex;
   justify-content: center;
@@ -109,14 +109,13 @@
 }
 
 .horariosDiv {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 @media (max-width: 800px) {
-  .hero{
-    height: 100vh;
+  .hero {
+    height: 100svh;
   }
 
   .responsiveParagraph {

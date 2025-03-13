@@ -716,9 +716,6 @@ video {
 .text-start{
   text-align: start;
 }
-.text-end{
-  text-align: end;
-}
 .align-middle{
   vertical-align: middle;
 }
@@ -1212,7 +1209,7 @@ video::-webkit-media-controls-panel {
   }
 
   .page_heroSection1__iN3Ot {
-    height: 100vh;
+    height: 100svh;
   }
 
   .page_heroText__g5S3T {

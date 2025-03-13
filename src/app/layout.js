@@ -7,6 +7,9 @@ import AnimateEntrance from "./components/AnimateEntrance/AnimateEntrance";
 export const metadata = {
   title: "Rocio Alonso",
   description: "Artista viviendo en Barcelona",
+   icons: {
+    icon: "/favicon.ico", // Ruta del favicon
+  },
 };
 
 export default function RootLayout({ children }) {
