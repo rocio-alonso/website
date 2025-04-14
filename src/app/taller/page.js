@@ -30,7 +30,7 @@ const page = () => {
         className={`paddingSection ${styles.divTallerDetails} ${styles.divTallerDetailsCenter} mt-10`}
       >
         <h2 className={`subtitle mb-20 title-big text-center`} translate="no">
-          Taller Mozzafiato
+          Academia de arte Mozzafiato
         </h2>
         <p
           className={`subtitle text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
@@ -141,6 +141,10 @@ const page = () => {
                 <p>Miércoles</p>
               </div>
               <div className="gap">
+              <div className={`flex ${styles.modalidadDiv}`}>
+                  <p className="subtitle">9.30hs - 11.30hs</p>
+                </div>
+
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">17hs - 19hs</p>
                 </div>

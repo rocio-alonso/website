@@ -25,12 +25,12 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://www.instagram.com/tallermozzafiato/"
+          href="https://www.instagram.com/academiamozzafiato/"
           target="_blank"
           className={`flex gap align-center  ${styles.imgLogo} mt-4`}
         >
           <PiInstagramLogoLight className="text-xl" />
-          <p className="subtitle">tallermozzafiato</p>
+          <p className="subtitle">academiamozzafiato</p>
         </a>
 
         <a
@@ -48,9 +48,12 @@ const Footer = () => {
       </div>
 
       <div className={`${styles.navbarFooter2}`}>
-        <p className="title m-bottom">Taller Mozzafiato</p>
+        <p className="title m-bottom">Academia de arte Mozzafiato</p>
         <p className="subtitle">Martes y Jueves</p>
         <p className="subtitle m-bottom">De 17hs a 19hs y de 19hs a 21hs</p>
+
+        <p className="subtitle">Miércoles</p>
+        <p className="subtitle m-bottom">De 9.30hs a 11hs, de 17hs a 19hs y de 19hs a 21hs</p>
 
         <div className="subtitle flex flex-col float-right justify-end">
           <a

@@ -10,15 +10,15 @@ const Card = ({ data, isObra, dataObra }) => {
   const dataObraString = String(dataObra?.medidas);
   const dataObraMedidas = dataObraString.split(",");
 
+  const [serverFolder, setServerFolder] = useState({});
+
   return (
     <section
       className={`${styles.cardSection} ${
         isObra && dataObra.titulo === "Dante" ? styles.danteDiv : ""
       }
       
-      ${
-        isObra && dataObra.titulo === "El acusado" ? styles.danteDiv : ""
-      }`}
+      ${isObra && dataObra.titulo === "El acusado" ? styles.danteDiv : ""}`}
     >
       <div
         className={`${styles.card} ${
@@ -68,20 +68,25 @@ const Card = ({ data, isObra, dataObra }) => {
 
         {!isObra ? (
           <div className={`${styles.cardText} text-center`}>
-            <h2 className={`subtitle text-center`}>{data.lugar}</h2>
-            <p
-              className={`${styles.lugarData} text-center subtitle thin m-bottom`}
+            <Link
+              //href={`./expo#${data.serverFolder}`}
+              href={""}
             >
-              {data.ubicacion}
-            </p>
-
-            <div
-              className={`${styles.divData} flex text-center text-xs thin justify-center`}
-            >
-              <p className="subtitle thin text-xs tracking-widest">
-                {data.ano}
+              <h2 className={`subtitle text-center`}>{data.lugar}</h2>
+              <p
+                className={`${styles.lugarData} text-center subtitle thin m-bottom`}
+              >
+                {data.ubicacion}
               </p>
-            </div>
+
+              <div
+                className={`${styles.divData} flex text-center text-xs thin justify-center`}
+              >
+                <p className="subtitle thin text-xs tracking-widest">
+                  {data.ano}
+                </p>
+              </div>
+            </Link>
           </div>
         ) : (
           <div

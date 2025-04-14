@@ -21,7 +21,7 @@ const Navbar = ({ responsive, onClick }) => {
           { href: "/", label: "Inicio" },
           { href: "/obras", label: "Mis obras" },
           { href: "/sobre-mi", label: "Sobre mi" },
-          { href: "/taller", label: "Taller Mozzafiato" },
+          { href: "/taller", label: "Academia Mozzafiato" },
           { href: "/contacto", label: "Contacto" },
         ].map((link) => (
           <li
@@ -34,7 +34,7 @@ const Navbar = ({ responsive, onClick }) => {
             <Link
               className="subtitle"
               href={link.href}
-              {...(link.label === "Taller Mozzafiato"
+              {...(link.label === "Academia Mozzafiato"
                 ? { translate: "no" }
                 : {})}
             >

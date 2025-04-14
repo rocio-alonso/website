@@ -8,7 +8,7 @@ export const metadata = {
   title: "Rocio Alonso",
   description: "Artista viviendo en Barcelona",
    icons: {
-    icon: "/favicon.ico", // Ruta del favicon
+    icon: "/favicon.ico",
   },
 };
 

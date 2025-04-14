@@ -27,12 +27,29 @@ const Grid = () => {
           />
         </div>
         <div className="row-span-2">
-          <Image
-            src={"/images/grid-mozzafiato/reel-4.gif"}
-            alt={`Property image`}
-            width={500}
-            height={500}
-          />
+          <video
+            width="600"
+            height="400"
+            autoPlay
+            muted
+            loop
+            playsInline
+            onLoadedData={() => {
+              console.log("✅ Video cargado");
+              setLoading(false);
+            }}
+            onCanPlay={() => {
+              console.log("✅ Video listo para reproducirse");
+              setLoading(false);
+            }}
+            onError={() => {
+              console.error("❌ Error al cargar el video");
+              setLoading(false);
+            }}
+          >
+            <source src="/images/grid-mozzafiato/reel-4.mp4" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+          </video>
         </div>
         <div className="col-start-2 row-start-2">
           <Image
@@ -43,12 +60,29 @@ const Grid = () => {
           />
         </div>
         <div className="row-span-2 col-start-1 row-start-2">
-        <Image
-            src={"/images/grid-mozzafiato/reel-2.gif"}
-            alt={`Property image`}
-            width={500}
-            height={500}
-          />
+          <video
+            width="600"
+            height="400"
+            autoPlay
+            muted
+            loop
+            playsInline
+            onLoadedData={() => {
+              console.log("✅ Video cargado");
+              setLoading(false);
+            }}
+            onCanPlay={() => {
+              console.log("✅ Video listo para reproducirse");
+              setLoading(false);
+            }}
+            onError={() => {
+              console.error("❌ Error al cargar el video");
+              setLoading(false);
+            }}
+          >
+            <source src="/images/grid-mozzafiato/reel-2.mp4" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+          </video>
         </div>
         <div className="col-span-2 col-start-2 row-start-3">
           <Image

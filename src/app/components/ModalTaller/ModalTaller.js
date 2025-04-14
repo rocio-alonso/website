@@ -32,9 +32,14 @@ const ModalTaller = () => {
                 <h3 className={`flex subtitle`}>1 Clase semanal</h3>
                 <p className={`${styles.price}`}>€80/mes</p>
               </div>
+
               <div className={stylesModal.arancelBox}>
                 <h3 className={`flex subtitle`}>2 Clases semanales</h3>
                 <p className={`${styles.price}`}>€140/mes</p>
+              </div>
+
+              <div className={stylesModal.arancelBox}>
+                <p className={`${styles.price}`}>¡Primer clase gratis!</p>
               </div>
             </div>
           </div>
@@ -65,7 +70,9 @@ const ModalTaller = () => {
             className="size-6 button cursor-pointer subtitle thin"
             onClick={() => setShowModal(false)}
             translate="no"
-          >X</p>
+          >
+            X
+          </p>
         </div>
         <div
           className={`paddingSection justify-between flex ${styles.divModalChild} ${stylesModal.divModalChild}`}
@@ -82,6 +89,9 @@ const ModalTaller = () => {
               <div className={stylesModal.arancelBox}>
                 <h3 className={`flex subtitle`}>2 Clases semanales</h3>
                 <p className={`${styles.price}`}>€140/mes</p>
+              </div>
+              <div className={stylesModal.arancelBox}>
+                <p className={`${styles.price}`}>¡Primer clase gratis!</p>
               </div>
             </div>
           </div>
