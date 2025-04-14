@@ -37,10 +37,10 @@ const ModalTaller = () => {
                 <h3 className={`flex subtitle`}>2 Clases semanales</h3>
                 <p className={`${styles.price}`}>€140/mes</p>
               </div>
+            </div>
 
-              <div className={stylesModal.arancelBox}>
-                <p className={`${styles.price}`}>¡Primer clase gratis!</p>
-              </div>
+            <div className={`${stylesModal.arancelBox} mt-3`}>
+              <p className={`${styles.price}`}>¡Primer clase gratis!</p>
             </div>
           </div>
 
@@ -90,9 +90,9 @@ const ModalTaller = () => {
                 <h3 className={`flex subtitle`}>2 Clases semanales</h3>
                 <p className={`${styles.price}`}>€140/mes</p>
               </div>
-              <div className={stylesModal.arancelBox}>
-                <p className={`${styles.price}`}>¡Primer clase gratis!</p>
-              </div>
+            </div>
+            <div className={`${stylesModal.arancelBox} mt-3`}>
+              <p className={`${styles.price}`}>¡Primer clase gratis!</p>
             </div>
           </div>
 
