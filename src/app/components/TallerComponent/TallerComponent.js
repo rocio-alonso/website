@@ -16,11 +16,11 @@ const TallerComponent = () => {
             </div>
             <div className={`${styles.tallerText} w-2/4`}>
               <h2 className={`title mb-20 title-section title-big text-center`} translate="no">
-                Taller Mozzafiato
+                Academia Mozzafiato
               </h2>
               <p className="subtitle m-bottom text">
                 Somos un espacio de arte especializado en dibujo y pintura,
-                ubicado en el corazón del barrio de El Guinardó, Barcelona. En
+                ubicado en el corazón del barrio de Vila de Gràcia, Barcelona. En
                 nuestras clases, podrás desarrollar tus habilidades artísticas
                 con un enfoque personalizado y técnicas adaptadas a cada nivel.
               </p>
@@ -35,10 +35,10 @@ const TallerComponent = () => {
               <p className="subtitle m-bottom text">
                 Puedes comenzar las clases en cualquier momento del año y,
                 además, ¡la matrícula es gratuita! Haz que tus ideas cobren
-                vida. ¡Reserva tu plaza y empieza a crear en Taller Mozzafiato!
+                vida. ¡Reserva tu plaza y empieza a crear en la Academia de Arte Mozzafiato!
               </p>
-              <Link className={`${styles.tallerButton} button`} href="/taller">
-                Conoce el taller
+              <Link className={`${styles.tallerButton} button`} href="/academia">
+                Conoce la Academia
               </Link>
             </div>
           </section>

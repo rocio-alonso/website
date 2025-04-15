@@ -21,10 +21,6 @@ const DivModalTaller = () => {
             <h3 className={`flex subtitle`}>2 Clases semanales</h3>
             <p className={`${styles.price}`}>€140/mes</p>
           </div>
-
-          <div className={stylesModal.arancelBox}>
-            <p className={`${styles.price}`}>¡Primer clase gratis!</p>
-          </div>
         </div>
       </div>
 

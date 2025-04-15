@@ -11,6 +11,12 @@ import AnimateEntrance from "../components/AnimateEntrance/AnimateEntrance";
 import Premios from "@/app/components/Premios/Premios";
 import ColeccionesPriv from "../components/ColeccionesPriv/ColeccionesPriv";
 
+export const metadata = {
+  title: "Sobre Mi",
+  description:
+    "Comencé mi recorrido artístico a la temprana edad de 4 años, explorando inicialmente la escultura y, posteriormente, el dibujo y la pintura.",
+};
+
 const page = () => {
   return (
     <main>

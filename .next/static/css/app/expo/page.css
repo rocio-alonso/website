@@ -1,0 +1,239 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/expo/page.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.page_hero__ocxbX {
+  width: 100vw;
+  height: 24vh;
+  background-color: #bcbcbc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.page_hero__ocxbX::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.page_imgDiv__eyXxD {
+  column-count: 2;
+  column-gap: 2em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.page_imgDiv__eyXxD img {
+  display: block;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 800px) {
+  .page_imgDiv__eyXxD {
+    column-count: 1;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/Card/Card.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Card_card__Tuw2S {
+  width: 26vw;
+  height: fit-content;
+  transition: all ease 0.5s !important;
+  font-size: 1.1em;
+
+  font-family: "neue-haas-unica", sans-serif;
+  font-style: normal;
+}
+
+.Card_card__Tuw2S:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  background-color: rgba(206, 206, 206, 0.09);
+  border-radius: 5px;
+}
+
+.Card_card__Tuw2S:hover > .Card_cardText__IFyLM {
+  padding: calc(var(--margin) * 2.2) calc(var(--margin)) calc(var(--margin) * 2)
+    calc(var(--margin));
+}
+
+.Card_cardObra__YJ_mq {
+  width: 25vw;
+  font-size: 1em;
+}
+
+.Card_cardObra__YJ_mq:hover > .Card_cardText__IFyLM {
+  padding: calc(var(--margin) * 2.1) 3px;
+}
+
+.Card_card__Tuw2S:hover > .Card_cardText__IFyLM a:first-child,
+.Card_card__Tuw2S:hover > .Card_cardText__IFyLM h2 {
+  cursor: pointer;
+}
+
+.Card_card__Tuw2S .Card_cardText__IFyLM div {
+  width: 100%;
+}
+
+.Card_card__Tuw2S a:first-child {
+  font-weight: 500;
+}
+
+.Card_cardText__IFyLM {
+  transition: all ease 0.5s !important;
+  padding: calc(var(--margin) * 2) 3px;
+}
+
+.Card_cardImage__PhPFO {
+  position: relative;
+  overflow: hidden;
+  height: 37vh;
+}
+
+.Card_cardImage__PhPFO img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 1.2s ease-in-out;
+}
+
+.Card_obraCardImg__YoY53 {
+  overflow: hidden;
+  position: relative;
+}
+
+.Card_obraImg__MRYcE {
+  transition: transform 1.2s ease-in-out;
+}
+
+.Card_card__Tuw2S:hover > .Card_obraCardImg__YoY53 .Card_obraImg__MRYcE {
+  transform: scale(1.1);
+}
+
+.Card_card__Tuw2S:hover > .Card_cardImage__PhPFO img {
+  width: 110%;
+  height: 110%;
+}
+
+.Card_dataBox__5Snnt {
+  width: fit-content;
+  padding: 1% 0;
+  margin: calc(var(--margin) / 2) 0 0 0;
+  margin: 0 auto;
+}
+
+.Card_divData__M4ggs {
+  gap: calc(var(--margin));
+  margin-top: 2.6em;
+  align-items: baseline;
+}
+
+.Card_lugarData__v_R3E {
+  letter-spacing: 1px !important;
+  font-size: 0.85em;
+}
+
+.Card_dataLocation__Gzlut {
+  align-items: center;
+  gap: calc(var(--margin) / 2);
+  align-items: baseline;
+}
+
+.Card_dataMedidas__zetbk:first-child {
+  margin-top: 9px;
+}
+
+.Card_dataMedidas__zetbk {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.Card_cardText__IFyLM a:first-child {
+  font-size: 24px;
+}
+
+.Card_cardText__IFyLM {
+  padding: calc(var(--margin) * 1.5) 0 !important;
+}
+
+.Card_cardText__IFyLM h2,
+.Card_lugarData__v_R3E {
+  font-size: 24px;
+}
+
+.Card_danteDiv__VEwHs {
+  margin-top: 250px;
+}
+
+@media (max-width: 800px) {
+  .Card_card__Tuw2S {
+    width: 100%;
+    align-items: center;
+  }
+
+  .Card_lugarData__v_R3E {
+    font-size: 1em !important;
+  }
+
+  .Card_cardSection__kTcnD {
+    width: 100%;
+  }
+
+  .Card_card__Tuw2S p,
+  .Card_card__Tuw2S a:first-child {
+    font-size: 1.2em;
+  }
+
+  .Card_card__Tuw2S p {
+    font-weight: 100;
+  }
+
+  .Card_card__Tuw2S a:nth-child(2) {
+    width: auto;
+    padding: 0 10vw;
+  }
+
+  .Card_card__Tuw2S img {
+    width: 100vw !important;
+  }
+
+  .Card_cardObra__YJ_mq .Card_cardText__IFyLM {
+    margin: 0 !important;
+    padding: calc(var(--margin) * 2) 5px;
+  }
+
+  .Card_fullCard__r_zyo {
+    width: 100% !important;
+  }
+
+  .Card_dataMedidas__zetbk {
+    font-size: 1em !important;
+  }
+
+  .Card_cardText__IFyLM {
+    padding-top: 1.3em !important;
+  }
+
+  .Card_consultarObras__OQDM_{
+    font-size: 1.2em;
+  }
+}
+
+.Card_imgObras__yksZj {
+  width: 90vw !important;
+}
+

@@ -5,7 +5,10 @@ import Footer from "./components/Footer/Footer";
 import AnimateEntrance from "./components/AnimateEntrance/AnimateEntrance";
 
 export const metadata = {
-  title: "Rocio Alonso",
+  title: {
+    default: "Rocio Alonso",
+    template: "Rocio Alonso"
+  },
   description: "Artista viviendo en Barcelona",
    icons: {
     icon: "/favicon.ico",

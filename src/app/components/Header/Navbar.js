@@ -21,7 +21,7 @@ const Navbar = ({ responsive, onClick }) => {
           { href: "/", label: "Inicio" },
           { href: "/obras", label: "Mis obras" },
           { href: "/sobre-mi", label: "Sobre mi" },
-          { href: "/taller", label: "Academia Mozzafiato" },
+          { href: "/academia", label: "Academia Mozzafiato" },
           { href: "/contacto", label: "Contacto" },
         ].map((link) => (
           <li
