@@ -68,25 +68,20 @@ const Card = ({ data, isObra, dataObra }) => {
 
         {!isObra ? (
           <div className={`${styles.cardText} text-center`}>
-            <Link
-              //href={`./expo#${data.serverFolder}`}
-              href={""}
+            <h2 className={`subtitle text-center`}>{data.lugar}</h2>
+            <p
+              className={`${styles.lugarData} text-center subtitle thin m-bottom`}
             >
-              <h2 className={`subtitle text-center`}>{data.lugar}</h2>
-              <p
-                className={`${styles.lugarData} text-center subtitle thin m-bottom`}
-              >
-                {data.ubicacion}
-              </p>
+              {data.ubicacion}
+            </p>
 
-              <div
-                className={`${styles.divData} flex text-center text-xs thin justify-center`}
-              >
-                <p className="subtitle thin text-xs tracking-widest">
-                  {data.ano}
-                </p>
-              </div>
-            </Link>
+            <div
+              className={`${styles.divData} flex text-center text-xs thin justify-center`}
+            >
+              <p className="subtitle thin text-xs tracking-widest">
+                {data.ano}
+              </p>
+            </div>
           </div>
         ) : (
           <div

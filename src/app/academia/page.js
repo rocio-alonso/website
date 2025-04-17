@@ -98,7 +98,7 @@ const page = () => {
 
             <div className={`flex subtitle ${styles.modalidadDiv}`}>
               <PiUsers className={styles.icon} />
-              <p>Grupos de hasta 4 personas</p>
+              <p>Plazas limitadas</p>
             </div>
           </div>
         </div>
@@ -126,53 +126,72 @@ const page = () => {
           >
             Horarios
           </h2>
-          <div className={`${styles.horariosDiv} gap`}>
-            <div className={`flex m-bottom gap`}>
+          <div className={`${styles.horariosDiv} gap pl-4`}>
+            <div className="grid grid-cols-2 grid-rows-2 gap-2 mb-7">
               <div className={`flex ${styles.modalidadDiv}`}>
                 <CiClock1 className={`${styles.icon}`} />
                 <p>Martes</p>
               </div>
-              <div className="gap">
+
+              <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">17hs - 19hs</p>
                 </div>
+              </div>
 
+              <div></div>
+
+              <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">19hs - 21hs</p>
                 </div>
               </div>
             </div>
 
-            <div className={`flex m-bottom gap`}>
+            <div className="grid grid-cols-2 grid-rows-2 gap-2 mb-7">
               <div className={`flex ${styles.modalidadDiv}`}>
                 <CiClock1 className={`${styles.icon}`} />
                 <p>Miércoles</p>
               </div>
-              <div className="gap">
+
+              <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">9.30hs - 11.30hs</p>
                 </div>
+              </div>
 
+              <div></div>
+
+              <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">17hs - 19hs</p>
                 </div>
+              </div>
 
+              <div></div>
+
+              <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">19hs - 21hs</p>
                 </div>
               </div>
             </div>
 
-            <div className={`flex gap`}>
+            <div className="grid grid-cols-2 grid-rows-2 gap-2">
               <div className={`flex ${styles.modalidadDiv}`}>
                 <CiClock1 className={`${styles.icon}`} />
                 <p>Jueves</p>
               </div>
-              <div className="gap">
+
+              <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">17hs - 19hs</p>
                 </div>
+              </div>
+              
+              <div></div>
 
+              <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">19hs - 21hs</p>
                 </div>

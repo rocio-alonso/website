@@ -1,9 +1,8 @@
 {
   "/api/getProducts/route": "app/api/getProducts/route.js",
-  "/page": "app/page.js",
-  "/obras/page": "app/obras/page.js",
-  "/contacto/page": "app/contacto/page.js",
-  "/academia/page": "app/academia/page.js",
   "/sobre-mi/page": "app/sobre-mi/page.js",
-  "/fullScreen/page": "app/fullScreen/page.js"
+  "/academia/page": "app/academia/page.js",
+  "/contacto/page": "app/contacto/page.js",
+  "/obras/page": "app/obras/page.js",
+  "/page": "app/page.js"
 }

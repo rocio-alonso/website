@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "@/app/globals.css";
@@ -7,6 +9,12 @@ import stylesHeader from "@/app/components/Header/Header.module.css";
 import AnimateEntrance from "@/app/components/AnimateEntrance/AnimateEntrance";
 
 const Bio = () => {
+  const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      setLoading(true);
+    }, []);
+    
   return (
     <AnimateEntrance>
       <section className="paddingSection w-full flex">
@@ -112,17 +120,27 @@ const Bio = () => {
 
         <div className={`${styles.imageAbout} w-1/4`}>
           <video
-            width="250"
-            height="100"
-            controls
-            preload="none"
+            width="600"
+            height="400"
             autoPlay
-            loop
             muted
-            className="w-full"
+            loop
+            playsInline
+            onLoadedData={() => {
+              console.log("✅ Video cargado");
+              setLoading(false);
+            }}
+            onCanPlay={() => {
+              console.log("✅ Video listo para reproducirse");
+              setLoading(false);
+            }}
+            onError={() => {
+              console.error("❌ Error al cargar el video");
+              setLoading(false);
+            }}
           >
             <source src="/images/reels/reel-3.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
+            Tu navegador no soporta el elemento de video.
           </video>
         </div>
       </section>

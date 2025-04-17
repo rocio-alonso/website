@@ -28,8 +28,7 @@
   padding: calc(var(--margin) * 2.1) 3px;
 }
 
-.card:hover > .cardText a:first-child,
-.card:hover > .cardText h2 {
+.card:hover > .cardText a:first-child {
   cursor: pointer;
 }
 
