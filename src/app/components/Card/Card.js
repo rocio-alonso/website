@@ -30,16 +30,18 @@ const Card = ({ data, isObra, dataObra }) => {
       >
         {!isObra && (
           <div className={styles.cardImage}>
-            <Image
-              src={
-                data.img
-                  ? `/images/expo/${data.img}`
-                  : "/images/expo/default.jpg"
-              }
-              alt="exposition Image"
-              width={500}
-              height={500}
-            />
+            <Link href={`./expo/${data.serverFolder}`}>
+              <Image
+                src={
+                  data.img
+                    ? `/images/expo/${data.img}`
+                    : "/images/expo/default.jpg"
+                }
+                alt="exposition Image"
+                width={500}
+                height={500}
+              />
+            </Link>
           </div>
         )}
 
@@ -68,20 +70,22 @@ const Card = ({ data, isObra, dataObra }) => {
 
         {!isObra ? (
           <div className={`${styles.cardText} text-center`}>
-            <h2 className={`subtitle text-center`}>{data.lugar}</h2>
-            <p
-              className={`${styles.lugarData} text-center subtitle thin m-bottom`}
-            >
-              {data.ubicacion}
-            </p>
-
-            <div
-              className={`${styles.divData} flex text-center text-xs thin justify-center`}
-            >
-              <p className="subtitle thin text-xs tracking-widest">
-                {data.ano}
+            <Link href={`./expo/${data.serverFolder}`}>
+              <h2 className={`subtitle text-center`}>{data.lugar}</h2>
+              <p
+                className={`${styles.lugarData} text-center subtitle thin m-bottom`}
+              >
+                {data.ubicacion}
               </p>
-            </div>
+
+              <div
+                className={`${styles.divData} flex text-center text-xs thin justify-center`}
+              >
+                <p className="subtitle thin text-xs tracking-widest">
+                  {data.ano}
+                </p>
+              </div>
+            </Link>
           </div>
         ) : (
           <div

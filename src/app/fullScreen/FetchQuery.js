@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import styles from "@/app/fullScreen/page.module.css";
 import "@/app/globals.css";
 
@@ -10,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const FetchQuery = ({ data, number, formattedTitle }) => {
+  const router = useRouter();
   const [index, setIndex] = useState(number || 0);
   const [coleccion, setColeccion] = useState(null);
   const [isSmallViewport, setIsSmallViewport] = useState(false);
@@ -27,7 +29,7 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
 
   useEffect(() => {
     const checkViewportSize = () => {
-      if (window.innerWidth <= 800) {
+      if (window.innerWidth <= 1100) {
         setIsSmallViewport(true);
       } else {
         setIsSmallViewport(false);
@@ -57,14 +59,14 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
     <div className={` ${styles.fetchQuery} paddingSection`}>
       {!isSmallViewport && (
         <div className={` ${styles.fetchQuery} paddingSection`}>
-          <div className={`${styles.divText} flex flex-col justify-start`}>
-            <Link
-              href={`/obras#${formattedTitle}`}
-              className="subtitle thin text-base flex items-center mb-10"
+          <div className={`${styles.divText} flex flex-col justify-start fixed z-20`} >
+            <button
+              onClick={() => router.back()}
+              className="subtitle thin text-base flex items-center mb-10 w-fit"
             >
               <IoChevronBackOutline className="thin" />
               Volver
-            </Link>
+            </button>
 
             <div>
               {coleccion && (
@@ -122,7 +124,9 @@ const FetchQuery = ({ data, number, formattedTitle }) => {
           </div>
 
           {coleccion && (
-            <div className={styles.imageDiv}>
+            <div
+              className={`${styles.imageDiv} absolute right-0 paddingSection`}
+            >
               <Image
                 src={`/images/obras${coleccion.img}`}
                 alt="exposition Image"
