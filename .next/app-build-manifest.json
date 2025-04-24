@@ -12,27 +12,17 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/expo/[id]/page": [
+    "/contacto/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/expo/[id]/page.css",
-      "static/chunks/app/expo/[id]/page.js"
+      "static/css/app/contacto/page.css",
+      "static/chunks/app/contacto/page.js"
     ],
-    "/api/getImages/route": [
+    "/academia/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/api/getImages/route.js"
-    ],
-    "/api/getProducts/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/getProducts/route.js"
-    ],
-    "/expos/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/expos/page.css",
-      "static/chunks/app/expos/page.js"
+      "static/css/app/academia/page.css",
+      "static/chunks/app/academia/page.js"
     ]
   }
 }

@@ -36,7 +36,7 @@ const ContactPage = () => {
             <div className="subtitle flex flex-col float-left justify-start">
               <p className="title mb-2 bolder1">Teléfono</p>
               <a
-                href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Me%20quisiera%20recibir%20más%20información"
+                href="https://api.whatsapp.com/send/?phone=34677374970&text=Hola!%20Quisiera%20recibir%20más%20información"
                 target="_blank"
                 className={`gap align-center flex items-center`}
               >
@@ -56,12 +56,12 @@ const ContactPage = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/tallermozzafiato/"
+                href="https://www.instagram.com/academiamozzafiato/"
                 target="_blank"
                 className={`gap flex items-center ${styles.imgLogo} mt-5`}
               >
                 <PiInstagramLogoLight className="text-xl" />
-                <p className="subtitle">tallermozzafiato</p>
+                <p className="subtitle">academiamozzafiato</p>
               </a>
 
               <p className="title mb-2 mt-5 bolder1">Mail</p>
@@ -79,7 +79,7 @@ const ContactPage = () => {
 
               <div className="flex float-left">
                 <CiLocationOn className="text-xl mb-1" />
-                <p>El Guinardó, Barcelona</p>
+                <p>Vila de Gràcia, Barcelona</p>
               </div>
             </div>
           </div>
