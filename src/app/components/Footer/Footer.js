@@ -50,10 +50,10 @@ const Footer = () => {
       <div className={`${styles.navbarFooter2}`}>
         <p className="title m-bottom">Academia de Arte Mozzafiato</p>
         <p className="subtitle">Martes, Miércoles y Jueves</p>
-        <p className="subtitle m-bottom">17 a 19  | 19 a 21hs</p>
+        <p className="subtitle m-bottom">17 a 19  | 19 a 21h</p>
 
         <p className="subtitle">Miércoles</p>
-        <p className="subtitle m-bottom">9.30 a 11.30hs</p>
+        <p className="subtitle m-bottom">9.30 a 11.30h</p>
 
         <div className="subtitle flex flex-col float-right justify-end">
           <a
