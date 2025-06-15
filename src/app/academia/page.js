@@ -154,13 +154,13 @@ const page = () => {
                 <p>Miércoles</p>
               </div>
 
-              <div className="gap flex">
+              {/*<div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">9.30 - 11.30h</p>
                 </div>
               </div>
 
-              <div></div>
+              <div></div>*/}
 
               <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
