@@ -67,15 +67,12 @@ const About = () => {
             loop
             playsInline
             onLoadedData={() => {
-              console.log("✅ Video cargado");
               setLoading(false);
             }}
             onCanPlay={() => {
-              console.log("✅ Video listo para reproducirse");
               setLoading(false);
             }}
             onError={() => {
-              console.error("❌ Error al cargar el video");
               setLoading(false);
             }}
           >

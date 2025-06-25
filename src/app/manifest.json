@@ -1,0 +1,10 @@
+{
+  "name": "Rocio Alonso",
+  "short_name": "Rocio Alonso",
+  "description": "Artista viviendo en Barcelona",
+  "start_url": "/",
+
+  "icons": [{ "src": "/favicon.ico", "sizes": "any", "type": "/x-icon" }],
+  "background_color": "#fff",
+  "theme_color": "#fff"
+}

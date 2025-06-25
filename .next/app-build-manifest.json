@@ -12,17 +12,57 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
+    "/obras/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/obras/page.css",
+      "static/chunks/app/obras/page.js"
+    ],
+    "/api/getProducts/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/getProducts/route.js"
+    ],
+    "/sobre-mi/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/sobre-mi/page.css",
+      "static/chunks/app/sobre-mi/page.js"
+    ],
+    "/academia/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/academia/page.css",
+      "static/chunks/app/academia/page.js"
+    ],
     "/contacto/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/contacto/page.css",
       "static/chunks/app/contacto/page.js"
     ],
-    "/academia/page": [
+    "/expos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/academia/page.js",
-      "static/css/app/academia/page.css"
+      "static/css/app/expos/page.css",
+      "static/chunks/app/expos/page.js"
+    ],
+    "/expo/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/expo/[id]/page.css",
+      "static/chunks/app/expo/[id]/page.js"
+    ],
+    "/api/getImages/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/getImages/route.js"
+    ],
+    "/fullScreen/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/fullScreen/page.js",
+      "static/css/app/fullScreen/page.css"
     ]
   }
 }

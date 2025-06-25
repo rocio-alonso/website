@@ -6,7 +6,7 @@ import Obras from "@/app/components/Obras/Obras";
 export const metadata = {
   title: "Mis obras",
   description:
-    "Ofrecemos un espacio creativo único en el corazón de Vila de Gràcia , frente al Mercat de la Llibertat, donde cada alumno puede explorar y desarrollar su propio estilo artístico.",
+    "Te invito a conocer mis obras",
 };
 
 const page = async () => {

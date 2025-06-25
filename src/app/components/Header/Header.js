@@ -63,6 +63,7 @@ const Header = () => {
               width={100}
               alt="Rocio Alonso Logo"
               className={`${styles.headerImg}`}
+              priority
             />
           ) : (
             <Image
@@ -71,6 +72,7 @@ const Header = () => {
               width={100}
               alt="Rocio Alonso Logo"
               className={`${styles.headerImg}`}
+              priority
             />
           )}
         </Link>
