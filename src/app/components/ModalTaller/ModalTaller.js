@@ -33,10 +33,10 @@ const ModalTaller = () => {
                 <p className={`${styles.price}`}>€80/mes</p>
               </div>
 
-              <div className={stylesModal.arancelBox}>
+              {/*<div className={stylesModal.arancelBox}>
                 <h3 className={`flex subtitle`}>2 Clases semanales</h3>
                 <p className={`${styles.price}`}>€140/mes</p>
-              </div>
+              </div>*/}
             </div>
           </div>
 
@@ -82,10 +82,10 @@ const ModalTaller = () => {
                 <h3 className={`flex subtitle`}>1 Clase semanal</h3>
                 <p className={`${styles.price}`}>€80/mes</p>
               </div>
-              <div className={stylesModal.arancelBox}>
+              {/*<div className={stylesModal.arancelBox}>
                 <h3 className={`flex subtitle`}>2 Clases semanales</h3>
                 <p className={`${styles.price}`}>€140/mes</p>
-              </div>
+              </div>*/}
             </div>
           </div>
 
