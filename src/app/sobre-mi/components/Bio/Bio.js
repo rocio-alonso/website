@@ -126,11 +126,9 @@ const Bio = () => {
             loop
             playsInline
             onLoadedData={() => {
-              console.log("✅ Video cargado");
               setLoading(false);
             }}
             onCanPlay={() => {
-              console.log("✅ Video listo para reproducirse");
               setLoading(false);
             }}
             onError={() => {

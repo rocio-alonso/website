@@ -1,7 +1,5 @@
 import Product from "@/app/models/Product";
 import dbConnect from "@/app/database/dbConnect";
-import axios from "axios";
-import mongoose from "mongoose";
 
 const getAllProductsDB = async () => {
   await dbConnect();

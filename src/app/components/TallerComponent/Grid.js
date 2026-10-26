@@ -35,11 +35,9 @@ const Grid = () => {
             loop
             playsInline
             onLoadedData={() => {
-              console.log("✅ Video cargado");
               setLoading(false);
             }}
             onCanPlay={() => {
-              console.log("✅ Video listo para reproducirse");
               setLoading(false);
             }}
             onError={() => {
@@ -68,11 +66,9 @@ const Grid = () => {
             loop
             playsInline
             onLoadedData={() => {
-              console.log("✅ Video cargado");
               setLoading(false);
             }}
             onCanPlay={() => {
-              console.log("✅ Video listo para reproducirse");
               setLoading(false);
             }}
             onError={() => {

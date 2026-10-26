@@ -5,11 +5,8 @@ import { useSearchParams } from "next/navigation";
 
 import FetchQuery from "./FetchQuery";
 
-import { IoChevronBackOutline } from "react-icons/io5";
 import styles from "@/app/fullScreen/page.module.css";
 
-import Image from "next/image";
-import Link from "next/link";
 
 const FetchLengthClient = (data) => {
   const searchParams = useSearchParams();

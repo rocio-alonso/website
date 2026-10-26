@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import "@/app/globals.css";
 import styles from "@/app/sobre-mi/page.module.css";

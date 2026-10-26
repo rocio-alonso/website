@@ -11,7 +11,6 @@ const Obras = () => {
 
   const handleFullScreen = (dataFullScreen) => {
     setFullScreenData(dataFullScreen);
-    console.log(fullScreenData);
   };
 
   useEffect(() => {

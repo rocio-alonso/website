@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Image from "next/image";
 import styles from "@/app/expo/[id]/page.module.css";
 import ImageLayout from "@/app/expo/ImageHandler/ImageLayout";
 
@@ -14,7 +12,6 @@ const ImageHandler = (data) => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      let imagesByFolder = [];
       try {
         setLoading(true);
 
@@ -42,8 +39,6 @@ const ImageHandler = (data) => {
 
         expos.map((expoSingle) => {
           if (dataFetched === expoSingle.serverFolder) {
-            console.log(expoSingle);
-            console.log(dataFetched);
             setExpo(expoSingle);
           }
         });

@@ -4,7 +4,6 @@ import styles from "@/app/academia/page.module.css";
 import stylesModal from "@/app/components/ModalTaller/ModalTaller.module.css";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import AnimateEntrance from "../AnimateEntrance/AnimateEntrance";
-import { IoCloseOutline } from "react-icons/io5";
 
 const ModalTaller = () => {
   const [showModal, setShowModal] = useState(false);
