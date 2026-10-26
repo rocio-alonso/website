@@ -98,11 +98,6 @@
   font-size: 0.85em;
 }
 
-.dataLocation {
-  align-items: center;
-  gap: calc(var(--margin) / 2);
-  align-items: baseline;
-}
 
 .dataMedidas:first-child {
   margin-top: 9px;
@@ -184,6 +179,3 @@
   }
 }
 
-.imgObras {
-  width: 90vw !important;
-}
