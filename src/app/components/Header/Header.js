@@ -58,7 +58,7 @@ const Header = () => {
         <Link href="/" className={`flex items-center ${styles.imgLogo}`}>
           {isScrolled || menuOpen ? (
             <Image
-              src="/logoBlack.svg"
+              src="/images/brand/logo-black.svg"
               height={100}
               width={100}
               alt="Rocio Alonso Logo"
@@ -67,7 +67,7 @@ const Header = () => {
             />
           ) : (
             <Image
-              src="/logoWhite.svg"
+              src="/images/brand/logo-white.svg"
               height={100}
               width={100}
               alt="Rocio Alonso Logo"

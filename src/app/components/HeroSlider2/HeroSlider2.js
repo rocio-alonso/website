@@ -8,18 +8,18 @@ import AnimateSlider from "../AnimateEntrance/AnimateSlider";
 const HeroSlider2 = () => {
   const desktopImages = useMemo(
     () => [
-      "/images/imagenes/esta-si-3.JPG",
-      "/images/imagenes/esta-si.JPG",
-      "/images/imagenes/esta-si-2.JPG",
+      "/images/hero/desktop-03.jpg",
+      "/images/hero/desktop-01.jpg",
+      "/images/hero/desktop-02.jpg",
     ],
     []
   );
 
   const mobileImages = useMemo(
     () => [
-      "/images/imagenes/responsive-bg/hero-responsive-bg-3.JPG",
-      "/images/imagenes/responsive-bg/hero-responsive-bg-1.JPG",
-      "/images/imagenes/responsive-bg/hero-responsive-bg-2.JPG",
+      "/images/hero/mobile-03.jpg",
+      "/images/hero/mobile-01.jpg",
+      "/images/hero/mobile-02.jpg",
     ],
     []
   );

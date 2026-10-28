@@ -40,7 +40,7 @@ const About = () => {
             >
               <div className="flex absolute z-50 w-full h-full items-center justify-center">
                 <Image
-                  src={`/images/about.jpg`}
+                  src={`/images/home/about-poster.jpg`}
                   alt="exposition Image"
                   width={500}
                   height={500}
@@ -48,7 +48,7 @@ const About = () => {
                 />
 
                 <Image
-                  src={`/loading.gif`}
+                  src={`/images/ui/loading.gif`}
                   alt="exposition Image"
                   width={100}
                   height={100}
@@ -76,7 +76,7 @@ const About = () => {
               setLoading(false);
             }}
           >
-            <source src="/images/reels/reel-1.mp4" type="video/mp4" />
+            <source src="/videos/home/about-reel.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
