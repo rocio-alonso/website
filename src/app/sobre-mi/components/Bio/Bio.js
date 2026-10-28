@@ -19,7 +19,7 @@ const Bio = () => {
       <section className="paddingSection w-full flex">
         <div className={`${styles.imageAbout} w-1/4 mt-10`}>
           <Image
-            src="/images/imagenes/sobre-mi-img.JPG"
+            src="/images/about-me/portrait.jpg"
             alt="about me"
             width={500}
             height={500}
@@ -126,11 +126,9 @@ const Bio = () => {
             loop
             playsInline
             onLoadedData={() => {
-              console.log("✅ Video cargado");
               setLoading(false);
             }}
             onCanPlay={() => {
-              console.log("✅ Video listo para reproducirse");
               setLoading(false);
             }}
             onError={() => {
@@ -138,7 +136,7 @@ const Bio = () => {
               setLoading(false);
             }}
           >
-            <source src="/images/reels/reel-3.mp4" type="video/mp4" />
+            <source src="/videos/about-me/bio-reel.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>

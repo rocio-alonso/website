@@ -9,7 +9,6 @@ import "@/app/globals.css";
 import { IoChevronBackOutline } from "react-icons/io5";
 
 import Image from "next/image";
-import Link from "next/link";
 
 const ImageLayout = ({ data, number = 0, title }) => {
   const router = useRouter();
@@ -17,8 +16,6 @@ const ImageLayout = ({ data, number = 0, title }) => {
   const [index, setIndex] = useState(number || 0);
   const [coleccion, setColeccion] = useState(null);
   const [isSmallViewport, setIsSmallViewport] = useState(false);
-
-  console.log(data);
 
   useEffect(() => {
     if (

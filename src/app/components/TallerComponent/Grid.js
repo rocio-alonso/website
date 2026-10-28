@@ -12,7 +12,7 @@ const Grid = () => {
       <div className={styles.parent}>
         <div>
           <Image
-            src={"/images/grid-mozzafiato/image-4.jpeg"}
+            src={"/images/academia/gallery/photo-01.jpg"}
             alt={`Property image`}
             width={500}
             height={500}
@@ -20,7 +20,7 @@ const Grid = () => {
         </div>
         <div>
           <Image
-            src={"/images/grid-mozzafiato/image-7.jpg"}
+            src={"/images/academia/gallery/photo-02.jpg"}
             alt={`Property image`}
             width={500}
             height={500}
@@ -35,11 +35,9 @@ const Grid = () => {
             loop
             playsInline
             onLoadedData={() => {
-              console.log("✅ Video cargado");
               setLoading(false);
             }}
             onCanPlay={() => {
-              console.log("✅ Video listo para reproducirse");
               setLoading(false);
             }}
             onError={() => {
@@ -47,13 +45,13 @@ const Grid = () => {
               setLoading(false);
             }}
           >
-            <source src="/images/grid-mozzafiato/reel-4.mp4" type="video/mp4" />
+            <source src="/videos/academia/gallery-01.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
         <div className="col-start-2 row-start-2">
           <Image
-            src={"/images/grid-mozzafiato/image-5.jpeg"}
+            src={"/images/academia/gallery/photo-03.jpg"}
             alt={`Property image`}
             width={500}
             height={500}
@@ -68,11 +66,9 @@ const Grid = () => {
             loop
             playsInline
             onLoadedData={() => {
-              console.log("✅ Video cargado");
               setLoading(false);
             }}
             onCanPlay={() => {
-              console.log("✅ Video listo para reproducirse");
               setLoading(false);
             }}
             onError={() => {
@@ -80,13 +76,13 @@ const Grid = () => {
               setLoading(false);
             }}
           >
-            <source src="/images/grid-mozzafiato/reel-2.mp4" type="video/mp4" />
+            <source src="/videos/academia/gallery-02.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
         <div className="col-span-2 col-start-2 row-start-3">
           <Image
-            src={"/images/grid-mozzafiato/image-6.jpg"}
+            src={"/images/academia/gallery/photo-04.jpg"}
             alt={`Property image`}
             width={500}
             height={500}

@@ -19,9 +19,6 @@
   font-style: normal;
 }
 
-.heroSection {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif !important;
-}
 
 .heroSection1 {
   width: 100vw;
@@ -205,9 +202,6 @@
     margin-left: 0;
   }
 
-  .aboutMeText .button {
-    width: 100%;
-  }
 
   .divCards {
     width: 100%;

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import cardStyles from "@/app/components/Card/Card.module.css";
 import stylesAbout from "@/app/sobre-mi/page.module.css";
-import { GoLocation } from "react-icons/go";
 
 import styles from "@/app/page.module.css";
 import AnimateEntrance from "@/app/components/AnimateEntrance/AnimateEntrance";

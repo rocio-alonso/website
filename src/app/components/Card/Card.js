@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "@/app/globals.css";
@@ -9,8 +9,6 @@ import styles from "@/app/components/Card/Card.module.css";
 const Card = ({ data, isObra, dataObra }) => {
   const dataObraString = String(dataObra?.medidas);
   const dataObraMedidas = dataObraString.split(",");
-
-  const [serverFolder, setServerFolder] = useState({});
 
   return (
     <section

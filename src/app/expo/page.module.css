@@ -19,24 +19,3 @@
   height: 100%;
   z-index: 1;
 }
-
-.imgDiv {
-  column-count: 2;
-  column-gap: 2em;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.imgDiv img {
-  display: block;
-  width: 100%;
-  margin-bottom: 2em;
-}
-
-@media (max-width: 800px) {
-  .imgDiv {
-    column-count: 1;
-  }
-}

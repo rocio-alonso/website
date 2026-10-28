@@ -24,7 +24,7 @@ const ContactPage = () => {
       >
         <div className={`${stylesForm.imgContact}`}>
           <Image
-            src={"/images/imagenes/contact.jpg"}
+            src={"/images/contact/portrait.jpg"}
             alt={`Property image`}
             width={500}
             height={500}

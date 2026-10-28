@@ -50,9 +50,6 @@
     margin-top: 2em;
   }
 
-  .responsiveSection {
-    display: none;
-  }
 
   .heroSection1 {
     flex-direction: column-reverse;

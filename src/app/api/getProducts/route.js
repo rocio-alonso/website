@@ -1,6 +1,4 @@
 import { NextResponse } from "next/server";
-import path from "path";
-import fs from "fs";
 import { getAllProductsDB } from "@/app/actions";
 
 export async function GET(req) {
