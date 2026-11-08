@@ -1,5 +1,4 @@
 import React from "react";
-import "@/app/globals.css";
 import styles from "@/app/obras/page.module.css";
 import Obras from "@/app/components/Obras/Obras";
 

@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../Header/Navbar";
 import styles from "@/app/components/Footer/Footer.module.css";
-import "@/app/globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { PiInstagramLogoLight } from "react-icons/pi";

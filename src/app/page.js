@@ -1,4 +1,3 @@
-import "@/app/globals.css";
 
 import About from "@/app/components/About/About";
 import Exposiciones from "./components/Exposiciones/Exposiciones";

@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 import styles from "@/app/fullScreen/page.module.css";
-import "@/app/globals.css";
 
 import { IoChevronBackOutline } from "react-icons/io5";
 

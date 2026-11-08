@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import CardDetail from "@/app/components/MaterialesDetails/CardDetail";
 import styles from "@/app/components/MaterialesDetails/MaterialesDetails.module.css";
 import AnimateEntrance from "../AnimateEntrance/AnimateEntrance";
-import "@/app/globals.css";
 
 const MaterialsDetailsData = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0);

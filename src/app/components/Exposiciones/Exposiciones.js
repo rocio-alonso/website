@@ -1,4 +1,3 @@
-import "@/app/globals.css";
 import Card from "@/app/components/Card/Card";
 import styles from "@/app/page.module.css";
 import { getAllProductsDB } from "@/app/actions";

@@ -1,4 +1,3 @@
-import "@/app/globals.css";
 import React from "react";
 import Card from "@/app/components/Card/Card";
 import styles from "@/app/page.module.css";
