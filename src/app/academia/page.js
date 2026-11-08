@@ -177,32 +177,29 @@ const page = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-2 gap-2">
+            <div className="flex flex-col gap-2">
               <div className={`flex ${styles.modalidadDiv}`}>
                 <CiClock1 className={`${styles.icon}`} />
                 <p>Jueves</p>
               </div>
            <div className="gap flex">
-  <div className={`flex ${styles.modalidadDiv}`}>
-    <p className="subtitle">10:30 - 12:30h</p>
-  </div>
-</div>
-              <div className="gap flex">
-                <div className={`flex ${styles.modalidadDiv}`}>
-                  <p className="subtitle">17 - 19h</p>
-                </div>
-              </div>
-
-              <div></div>
-
-              <div className="gap flex">
+            <div className={`flex ${styles.modalidadDiv}`}>
+             <p className="subtitle">10:30 - 12:30h</p>
+            </div>
+            </div>
+             <div className="gap flex">
+             <div className={`flex ${styles.modalidadDiv}`}>
+              <p className="subtitle">17 - 19h</p>
+            </div>
+           </div>
+          
+                <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">19 - 21h</p>
                 </div>
               </div>
             </div>
-          </div> 
-        </div>
+            </div>
       </section>
 
       <section
