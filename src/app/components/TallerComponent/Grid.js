@@ -47,7 +47,7 @@ const Grid = () => {
               setLoading(false);
             }}
           >
-            <source src="/images/grid-mozzafiato/reel-4.mp4" type="video/mp4" />
+            <source src="/images/grid-mozzafiato/reel-4-web.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
@@ -80,7 +80,7 @@ const Grid = () => {
               setLoading(false);
             }}
           >
-            <source src="/images/grid-mozzafiato/reel-2.mp4" type="video/mp4" />
+            <source src="/images/grid-mozzafiato/reel-2-web.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
