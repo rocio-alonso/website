@@ -192,15 +192,13 @@ const page = () => {
               <p className="subtitle">17 - 19h</p>
             </div>
            </div>
-          
                 <div className="gap flex">
-                <div className={`flex ${styles.modalidadDiv}`}>
+                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">19 - 21h</p>
                 </div>
               </div>
             </div>
-            </div>
-      </section>
+          </section>
 
       <section
         className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}
