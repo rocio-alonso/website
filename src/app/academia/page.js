@@ -204,7 +204,7 @@ const page = () => {
         className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}
       >
         <div className={`w-1/2 ${styles.divTallerDetails}`}>
-          <h2 className={`subtitle mb-20 title-big text-center`}>
+          <h2 className={`subtitle mb-20 title-big text-center`}> 
             Explora materiales y técnicas
           </h2>
           <p
