@@ -182,7 +182,11 @@ const page = () => {
                 <CiClock1 className={`${styles.icon}`} />
                 <p>Jueves</p>
               </div>
-
+           <div className="gap flex">
+  <div className={`flex ${styles.modalidadDiv}`}>
+    <p className="subtitle">10:30 - 12:30h</p>
+  </div>
+</div>
               <div className="gap flex">
                 <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">17 - 19h</p>
