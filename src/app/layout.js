@@ -1,6 +1,7 @@
 import '@/app/globals.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const SITE_URL = "https://rocioalonso.com";
 const SITE_DESCRIPTION =
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
         <Header></Header>
         {children}
         <Footer></Footer>
+        <Analytics />
       </body>
     </html>
   );
