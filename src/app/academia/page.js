@@ -177,28 +177,37 @@ const page = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="grid grid-cols-2 grid-rows-3 gap-2 mb-7">
               <div className={`flex ${styles.modalidadDiv}`}>
                 <CiClock1 className={`${styles.icon}`} />
                 <p>Jueves</p>
               </div>
-           <div className="gap flex">
-            <div className={`flex ${styles.modalidadDiv}`}>
-             <p className="subtitle">10:30 - 12:30h</p>
-            </div>
-            </div>
-             <div className="gap flex">
-             <div className={`flex ${styles.modalidadDiv}`}>
-              <p className="subtitle">17 - 19h</p>
-            </div>
-           </div>
-                <div className="gap flex">
-                 <div className={`flex ${styles.modalidadDiv}`}>
+
+              <div className="gap flex">
+                <div className={`flex ${styles.modalidadDiv}`}>
+                  <p className="subtitle">10:30 - 12:30h</p>
+                </div>
+              </div>
+
+              <div></div>
+
+              <div className="gap flex">
+                <div className={`flex ${styles.modalidadDiv}`}>
+                  <p className="subtitle">17 - 19h</p>
+                </div>
+              </div>
+
+              <div></div>
+
+              <div className="gap flex">
+                <div className={`flex ${styles.modalidadDiv}`}>
                   <p className="subtitle">19 - 21h</p>
                 </div>
               </div>
             </div>
-           </div>
+          </div>
+        </div>
+      </section>
 
      <section className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}>
      <div className={`w-1/2 ${styles.divTallerDetails}`}>
@@ -222,10 +231,6 @@ const page = () => {
          <MaterialesDetails />
         </div>
         </section>
-
-      {/*<div className="flex w-full justify-center mt-20 mb-40">
-          <iframe
-           
 
       <section className="paddingBody mt-10">
         <Grid />
