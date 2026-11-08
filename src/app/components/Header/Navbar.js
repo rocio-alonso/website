@@ -21,7 +21,7 @@ const Navbar = ({ responsive, onClick }) => {
           { href: "/", label: "Inicio" },
           { href: "/obras", label: "Mis obras" },
           { href: "/sobre-mi", label: "Sobre mi" },
-          { href: "/academia", label: "Academia Mozzafiato" },
+          { href: "/academia", label: "Rocío Alonso Art Studio" },
           { href: "/contacto", label: "Contacto" },
         ].map((link) => (
           <li
@@ -34,7 +34,7 @@ const Navbar = ({ responsive, onClick }) => {
             <Link
               className="subtitle"
               href={link.href}
-              {...(link.label === "Academia Mozzafiato"
+              {...(link.label === "Rocío Alonso Art Studio"
                 ? { translate: "no" }
                 : {})}
             >
