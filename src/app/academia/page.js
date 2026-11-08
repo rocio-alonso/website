@@ -10,7 +10,7 @@ import ModalTaller from "../components/ModalTaller/ModalTaller";
 import MaterialesDetails from "../components/MaterialesDetails/MaterialesDetails";
 
 export const metadata = {
-  title: "Academia de Arte Mozzafiato",
+  title: "Rocío Alonso Art Studio",
   description:
     "Ofrecemos un espacio creativo único en el corazón de Vila de Gràcia , frente al Mercat de la Llibertat, donde cada alumno puede explorar y desarrollar su propio estilo artístico.",
 };
@@ -35,7 +35,7 @@ const page = () => {
         className={`paddingSection ${styles.divTallerDetails} ${styles.divTallerDetailsCenter} mt-10`}
       >
         <h2 className={`subtitle mb-20 title-big text-center`} translate="no">
-          Academia de Arte Mozzafiato
+          Rocío Alonso Art Studio
         </h2>
         <p
           className={`subtitle text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
@@ -65,7 +65,7 @@ const page = () => {
         <p
           className={`subtitle text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >
-          En Mozzafiato, cada trazo cuenta. Buscamos que cada persona,
+          En Rocío Alonso Art Studio, cada trazo cuenta. Buscamos que cada persona,
           independientemente de su nivel, desarrolle autonomía en sus decisiones
           creativas, cultivando su propio sello artístico en un ambiente
           motivador y enriquecedor.
