@@ -1,35 +1,19 @@
-export default function sitemap() {
-  return [
-    {
-      url: "https://rocioalonso.com",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
-    },
-    {
-      url: "https://rocioalonso.com/obras",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://rocioalonso.com/sobre-mi",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: "https://rocioalonso.com/academia",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
+const SITE_URL = "https://rocioalonso.com";
 
-    {
-      url: "https://rocioalonso.com/contacto",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.4,
-    },
-  ];
+const routes = [
+  { path: "", changeFrequency: "monthly", priority: 1 },
+  { path: "/obras", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/academia", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/expos", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/sobre-mi", changeFrequency: "yearly", priority: 0.6 },
+  { path: "/contacto", changeFrequency: "yearly", priority: 0.5 },
+];
+
+export default function sitemap() {
+  return routes.map(({ path, changeFrequency, priority }) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: new Date(),
+    changeFrequency,
+    priority,
+  }));
 }

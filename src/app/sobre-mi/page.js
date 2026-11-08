@@ -12,14 +12,16 @@ import Premios from "@/app/components/Premios/Premios";
 import ColeccionesPriv from "../components/ColeccionesPriv/ColeccionesPriv";
 
 export const metadata = {
-  title: "Sobre Mi",
+  title: "Sobre mí",
   description:
-    "Comencé mi recorrido artístico a la temprana edad de 4 años, explorando inicialmente la escultura y, posteriormente, el dibujo y la pintura.",
+    "Conoce a Rocío Alonso, artista visual en Barcelona: su trayectoria en escultura, dibujo y pintura desde los 4 años.",
+  alternates: { canonical: "/sobre-mi" },
 };
 
 const page = () => {
   return (
     <main>
+      <h1 className="sr-only">Sobre Rocío Alonso</h1>
       <div className={styles.hero}>
         <div className={`z-50 w-full text-white flex justify-center`}></div>
 

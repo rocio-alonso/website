@@ -41,7 +41,7 @@ const About = () => {
               <div className="flex absolute z-50 w-full h-full items-center justify-center">
                 <Image
                   src={`/images/about.jpg`}
-                  alt="exposition Image"
+                  alt="Rocío Alonso, artista visual"
                   width={500}
                   height={500}
                   className="w-auto h-full flex absolute"
@@ -49,7 +49,7 @@ const About = () => {
 
                 <Image
                   src={`/loading.gif`}
-                  alt="exposition Image"
+                  alt=""
                   width={100}
                   height={100}
                   className="flex absolute"

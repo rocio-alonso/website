@@ -4,6 +4,10 @@ import FetchLength from "./FetchLength";
 
 import { getAllProductsDB } from "@/app/actions";
 
+export const metadata = {
+  robots: { index: false, follow: true },
+};
+
 const page = async () => {
   const response = await getAllProductsDB();
   const data = response.products[4].obras;

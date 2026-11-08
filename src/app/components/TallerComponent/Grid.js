@@ -13,7 +13,7 @@ const Grid = () => {
         <div>
           <Image
             src={"/images/grid-mozzafiato/image-4.jpeg"}
-            alt={`Property image`}
+            alt="Rocío Alonso Art Studio, clases de arte en Gràcia, Barcelona"
             width={500}
             height={500}
           />
@@ -21,7 +21,7 @@ const Grid = () => {
         <div>
           <Image
             src={"/images/grid-mozzafiato/image-7.jpg"}
-            alt={`Property image`}
+            alt="Rocío Alonso Art Studio, clases de arte en Gràcia, Barcelona"
             width={500}
             height={500}
           />
@@ -54,7 +54,7 @@ const Grid = () => {
         <div className="col-start-2 row-start-2">
           <Image
             src={"/images/grid-mozzafiato/image-5.jpeg"}
-            alt={`Property image`}
+            alt="Rocío Alonso Art Studio, clases de arte en Gràcia, Barcelona"
             width={500}
             height={500}
           />
@@ -87,7 +87,7 @@ const Grid = () => {
         <div className="col-span-2 col-start-2 row-start-3">
           <Image
             src={"/images/grid-mozzafiato/image-6.jpg"}
-            alt={`Property image`}
+            alt="Rocío Alonso Art Studio, clases de arte en Gràcia, Barcelona"
             width={500}
             height={500}
           />

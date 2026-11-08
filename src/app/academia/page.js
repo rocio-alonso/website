@@ -10,14 +10,38 @@ import ModalTaller from "../components/ModalTaller/ModalTaller";
 import MaterialesDetails from "../components/MaterialesDetails/MaterialesDetails";
 
 export const metadata = {
-  title: "Rocío Alonso Art Studio",
+  title: "Clases de pintura y dibujo en Gràcia, Barcelona",
   description:
-    "Ofrecemos un espacio creativo único en el corazón de Vila de Gràcia , frente al Mercat de la Llibertat, donde cada alumno puede explorar y desarrollar su propio estilo artístico.",
+    "Rocío Alonso Art Studio: clases de pintura, dibujo y técnicas mixtas para todos los niveles en Vila de Gràcia, frente al Mercat de la Llibertat, Barcelona.",
+  alternates: { canonical: "/academia" },
+};
+
+const studioJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "Rocío Alonso Art Studio",
+  description:
+    "Clases de pintura, dibujo y técnicas mixtas para todos los niveles en Vila de Gràcia, Barcelona.",
+  url: "https://rocioalonso.com/academia",
+  telephone: "+34677374970",
+  email: "mailto:rocioalonsoart@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Barcelona",
+    addressRegion: "Cataluña",
+    addressCountry: "ES",
+  },
+  areaServed: "Barcelona",
+  founder: { "@type": "Person", name: "Rocío Alonso" },
 };
 
 const page = () => {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(studioJsonLd) }}
+      />
       <section className={styles.hero}>
         <div className={`${styles.heroText} paddingSection text-white`}>
           <h2 className="text-6xl thin title">Nuestro espacio</h2>
@@ -34,9 +58,9 @@ const page = () => {
       <div
         className={`paddingSection ${styles.divTallerDetails} ${styles.divTallerDetailsCenter} mt-10`}
       >
-        <h2 className={`subtitle mb-20 title-big text-center`} translate="no">
+        <h1 className={`subtitle mb-20 title-big text-center`} translate="no">
           Rocío Alonso Art Studio
-        </h2>
+        </h1>
         <p
           className={`subtitle text-justify ${styles.paragraphSpacing} w-2/3 mb-10`}
         >

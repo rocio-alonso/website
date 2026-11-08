@@ -20,7 +20,7 @@ const Bio = () => {
         <div className={`${styles.imageAbout} w-1/4 mt-10`}>
           <Image
             src="/images/imagenes/sobre-mi-img.JPG"
-            alt="about me"
+            alt="Retrato de Rocío Alonso"
             width={500}
             height={500}
             className="mb-20"

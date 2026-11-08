@@ -16,6 +16,7 @@ const ContactPage = () => {
 
   return (
     <main>
+      <h1 className="sr-only">Contacto</h1>
       <div className={stylesForm.hero}>
         <div className={`z-50 w-full text-white flex justify-center`}></div>
       </div>
@@ -25,7 +26,7 @@ const ContactPage = () => {
         <div className={`${stylesForm.imgContact}`}>
           <Image
             src={"/images/imagenes/contact.jpg"}
-            alt={`Property image`}
+            alt="Estudio de Rocío Alonso en Barcelona"
             width={500}
             height={500}
           />

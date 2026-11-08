@@ -60,7 +60,7 @@ const HeroSlider2 = () => {
           <div className="w-full h-screen overflow-hidden">
             <Image
               src={images[currentIndex]}
-              alt="Hero Slider"
+              alt="Obra de Rocío Alonso"
               width={800}
               height={800}
               style={{

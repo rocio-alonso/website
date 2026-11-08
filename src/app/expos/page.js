@@ -7,7 +7,8 @@ import ExposData from "@/app/components/Exposiciones/ExposData";
 export const metadata = {
   title: "Exposiciones",
   description:
-    "Aquí podrás explorar todas las exposiciones en las que participé.",
+    "Exposiciones individuales y colectivas de Rocío Alonso, artista visual en Barcelona.",
+  alternates: { canonical: "/expos" },
 };
 
 const page = async () => {
@@ -15,6 +16,7 @@ const page = async () => {
   const data = response.products[3].exposiciones;
   return (
     <main>
+      <h1 className="sr-only">Exposiciones de Rocío Alonso</h1>
       <div className={`${styles2.heroText}`}>
       </div>
 
