@@ -198,26 +198,19 @@ const page = () => {
                 </div>
               </div>
             </div>
-          </section>
+           </div>
 
-      <section
-        className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}
-      >
-        <div className={`w-1/2 ${styles.divTallerDetails}`}>
-          <h2 className={`subtitle mb-20 title-big text-center`}> 
-            Explora materiales y técnicas
-          </h2>
-          <p
-            className={`subtitle m-bottom w-4/5 text-justify ${styles.paragraphSpacing}`}
-          >
-            Tendrás la oportunidad de conocer una amplia variedad de materiales
-            y descubrir sus usos y posibilidades. Además, podrás experimentar
-            con técnicas mixtas, collage y mucho más.
+     <section className={`mt-10 paddingBody flex ${styles.sectionTallerDetails}`}>
+     <div className={`w-1/2 ${styles.divTallerDetails}`}>
+      <h2 className={`subtitle mb-20 title-big text-center`}>
+        Explora materiales y técnicas
+         </h2> 
+          <p className={`subtitle m-bottom w-4/5 text-justify ${styles.paragraphSpacing}`}>
+          Tendrás la oportunidad de conocer una amplia variedad de materiales
+          y descubrir sus usos y posibilidades. Además, podrás experimentar  
+          con técnicas mixtas, collage y mucho más.
           </p>
-
-          <p
-            className={`subtitle m-bottom w-4/5 text-justify ${styles.paragraphSpacing}`}
-          >
+         <p className={`subtitle m-bottom w-4/5 text-justify ${styles.paragraphSpacing}`}>
             Cada alumno trabaja con el material y la técnica que prefiera,
             profundizando en sus intereses para desarrollar no solo sus
             habilidades técnicas y el oficio de las artes visuales, sino también
@@ -225,12 +218,10 @@ const page = () => {
           </p>
         </div>
 
-        <div
-          className={`w-1/2 flex justify-center items-center ${styles.divTallerDetails}`}
-        >
-          <MaterialesDetails />
+       <div className={`w-1/2 flex justify-center items-center ${styles.divTallerDetails}`}>
+         <MaterialesDetails />
         </div>
-      </section>
+        </section>
 
       {/*<div className="flex w-full justify-center mt-20 mb-40">
           <iframe
